@@ -1,0 +1,110 @@
+[
+    {
+        "ProductId": "040101",
+        "ProductName": "【滋恩】特级大红袍圆罐装50g*2",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/57b14b39-d895-4ba5-9c18-ad995883b18d/20150526040640_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "69.00",
+        "ProductMarketPrice": "172.00",
+        "ProductComment": "30323",
+        "ProductScore": "4.76",
+        "ProductSaleCount": 96
+    },
+    {
+        "ProductId": "040102",
+        "ProductName": "【滋恩】清新大红袍礼盒",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/392cbd80-b640-44c1-b817-170e71ab8e6f/20150917051147_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "149.00",
+        "ProductMarketPrice": "288.00",
+        "ProductComment": "15471",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 1
+    },
+    {
+        "ProductId": "040103",
+        "ProductName": "【滋恩】香韵大红袍一片叶子系列铁盒装112g*2",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/9dd84b5f-1a54-4dec-8e53-82bb009ef56b/20150914031051_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "139.00",
+        "ProductMarketPrice": "464.00",
+        "ProductComment": "10258",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 25
+    },
+    {
+        "ProductId": "040104",
+        "ProductName": "【滋恩】福建三大茗茶金骏眉-大红袍-铁观音170g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/71599a2b-74c6-44f1-bb9b-7e0e080ca8b2/20150917051250_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "159.00",
+        "ProductMarketPrice": "478.00",
+        "ProductComment": "24857",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 17
+    },
+    {
+        "ProductId": "040105",
+        "ProductName": "【滋恩】香韵大红袍精品系列铁盒装112g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/5f3bcfed-657d-4cf7-b598-733c8a3c0dba/20150820094508_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "",
+        "ProductSalePrice": "85.00",
+        "ProductMarketPrice": "232.00",
+        "ProductComment": "37563",
+        "ProductScore": "4.76",
+        "ProductSaleCount": 48
+    },
+    {
+        "ProductId": "040106",
+        "ProductName": "【壶润】高山大红袍罐装125g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/c650fb73-8450-498a-a79c-8b9269eb202e/20151112114823_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "149.00",
+        "ProductMarketPrice": "288.00",
+        "ProductComment": "1",
+        "ProductScore": "5.00",
+        "ProductSaleCount": 2
+    },
+    {
+        "ProductId": "040201",
+        "ProductName": "【武夷星】一级香融肉桂盒装112g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/a5b5626f-fa89-4c6f-a6d7-65fe54044d73/20150625031146_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "81.90",
+        "ProductMarketPrice": "158.00",
+        "ProductComment": "10540",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 3
+    },
+    {
+        "ProductId": "040202",
+        "ProductName": "【武夷星】一级福袋袋装35g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/730d321e-3551-4c1a-95dd-bc964914bbe9/20150625024533_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "2件包邮",
+        "ProductSalePrice": "41.00",
+        "ProductMarketPrice": "88.00",
+        "ProductComment": "6997",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 3
+    },
+    {
+        "ProductId": "040203",
+        "ProductName": "【武夷星】一级肉桂罐装105g升级版",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/9fd3486f-242f-4564-8f84-c500a2644892/20150625110619_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "",
+        "ProductSalePrice": "53.00",
+        "ProductMarketPrice": "128.00",
+        "ProductComment": "730",
+        "ProductScore": "4.79",
+        "ProductSaleCount": 46
+    }
+]

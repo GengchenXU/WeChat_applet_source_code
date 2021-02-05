@@ -1,0 +1,12 @@
+<template name="signin">
+  <modal class="login" title="请登录你的账号" confirm-text="确认" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="saveUser">
+     <label>
+       <view>账号：</view>
+       <input placeholder="请输入你的账号" />
+     </label>
+     <label>
+       <view>密码：</view>
+       <input placeholder="请输入你的密码" />
+     </label>
+  </modal>
+</template>

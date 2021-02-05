@@ -1,0 +1,17 @@
+<view class="machine-container">
+  <image class="height_560" src="/images/machineImages/1.jpg"></image>
+  <image class="height_120" src="/images/machineImages/2.png"></image>
+  <image class="height_200" src="/images/machineImages/3.png"></image>
+  <image class="height_560" src="/images/machineImages/4.jpg"></image>
+  <image class="height_560" src="/images/machineImages/5.jpg"></image>
+  <image class="height_560" src="/images/machineImages/6.jpg"></image>
+  <image class="height_560" src="/images/machineImages/7.jpg"></image>
+  <image class="height_560" src="/images/machineImages/8.jpg"></image>
+  <image class="height_560" src="/images/machineImages/9.jpg"></image>
+  <image class="height_240" src="/images/machineImages/10.jpg"></image>
+  <image class="height_50" src="/images/machineImages/11.jpg"></image>
+  <image class="height_80" src="/images/machineImages/12.jpg"></image>
+  <image class="height_150" src="/images/machineImages/13.jpg"></image>
+  <image class="height_560" src="/images/machineImages/14.jpg"></image>
+  <image class="height_560" src="/images/machineImages/15.jpg"></image>
+</view>

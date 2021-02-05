@@ -1,0 +1,91 @@
+.sort-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .sort-container .nav {
+    width: 100%;
+    height: 43px;
+    background-color: #fff;
+    border-bottom: 1px solid #c6c7c9;
+    position: relative; }
+    .sort-container .nav .choose {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .sort-container .nav .choose li {
+        flex: 1;
+        height: 40px;
+        text-align: center;
+        color: #999;
+        font-size: 12px;
+        line-height: 40px; }
+        .sort-container .nav .choose li.active {
+          color: #e65512;
+          border-bottom: 3px #E65512 solid; }
+    .sort-container .nav .fenlei, .sort-container .nav .paixu {
+      z-index: 999;
+      width: 100%;
+      position: absolute;
+      top: 43px;
+      left: 0;
+      color: #4e4e4e;
+      text-align: center;
+      display: flex;
+      flex-direction: column; }
+      .sort-container .nav .fenlei li, .sort-container .nav .paixu li {
+        flex: 1;
+        background-color: #ddd;
+        width: 100%;
+        font-weight: bold;
+        height: 30px;
+        line-height: 30px;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        font-size: 12px;
+        border-bottom: 1px solid #000; }
+  .sort-container .section {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    flex: 1; }
+    .sort-container .section ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .sort-container .section ul .goodLi {
+        width: 100%;
+        margin-top: 12px;
+        color: #999;
+        padding: 3px 5px;
+        background-color: #f5f5f5; }
+        .sort-container .section ul .goodLi li {
+          display: flex; }
+        .sort-container .section ul .goodLi div.goodLeft {
+          flex: 1;
+          margin: 3px 0; }
+          .sort-container .section ul .goodLi div.goodLeft image {
+            width: 100%;
+            height: 80px; }
+        .sort-container .section ul .goodLi div.goodRight {
+          flex: 3;
+          padding: 6px;
+          color: #000; }
+          .sort-container .section ul .goodLi div.goodRight p.goodName {
+            font-size: 10px;
+            display: block; }
+          .sort-container .section ul .goodLi div.goodRight p.goodPrice {
+            padding: 3px 0;
+            font-size: 12px;
+            color: #cd0606;
+            display: block; }
+            .sort-container .section ul .goodLi div.goodRight p.goodPrice span.nowPrice {
+              font-size: 140%;
+              font-weight: bold; }
+            .sort-container .section ul .goodLi div.goodRight p.goodPrice del {
+              padding-left: 3px;
+              text-decoration: line-through; }
+          .sort-container .section ul .goodLi div.goodRight p.pingjia {
+            display: block;
+            font-size: 10px;
+            color: #999;
+            text-align: right; }

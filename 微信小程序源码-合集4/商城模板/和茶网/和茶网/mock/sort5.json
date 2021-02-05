@@ -1,0 +1,122 @@
+[
+    {
+       "ProductId": "050101",
+       "ProductName": "【远荣】特级清雅清香铁观音礼罐装250g(新包装)",
+       "ProductImage": "http://img1.hecha.cn/ProductImages/5d05b27e-cf8c-473d-8e03-c435991c6671/20150807015206_m.JPG",
+       "ProductUrl": "",
+       "ProductSaleRule": "1件包邮",
+       "ProductSalePrice": "69.00",
+       "ProductMarketPrice": "238.00",
+       "ProductComment": "15219",
+       "ProductScore": "4.75",
+       "ProductSaleCount": 90
+   },
+   {
+       "ProductId": "050102",
+       "ProductName": "【远荣】特级知足清香铁观音圆罐70g",
+       "ProductImage": "http://img1.hecha.cn/ProductImages/edfbc46b-9e1f-437a-859e-9b992b89de19/20150804101911_m.JPG",
+       "ProductUrl": "",
+       "ProductSaleRule": "2件包邮",
+       "ProductSalePrice": "32.80",
+       "ProductMarketPrice": "105.00",
+       "ProductComment": "63695",
+       "ProductScore": "4.76",
+       "ProductSaleCount": 666
+   },
+   {
+       "ProductId": "050103",
+       "ProductName": "【滋恩】清和特级清香铁观音圆罐装70g*2",
+       "ProductImage": "http://img1.hecha.cn/ProductImages/712ad97c-7577-43a6-ad23-94319496586e/20150709024640_m.JPG",
+       "ProductUrl": "",
+       "ProductSaleRule": "1件包邮",
+       "ProductSalePrice": "69.00",
+       "ProductMarketPrice": "216.00",
+       "ProductComment": "59196",
+       "ProductScore": "4.75",
+       "ProductSaleCount": 80
+   },
+   {
+       "ProductId": "050104",
+       "ProductName": "【远荣】憧憬特级浓香+特级知足清香铁观音70g*2",
+       "ProductImage": "http://img1.hecha.cn/ProductImages/e4904984-6e1c-4f29-b75c-747f9d98e22b/20150804101638_m.JPG",
+       "ProductUrl": "",
+       "ProductSaleRule": "1件包邮",
+       "ProductSalePrice": "59.00",
+       "ProductMarketPrice": "223.00",
+       "ProductComment": "79577",
+       "ProductScore": "4.75",
+       "ProductSaleCount": 50
+   },
+   {
+       "ProductId": "050105",
+       "ProductName": "【远荣】铁观音Q1000礼盒250g",
+       "ProductImage": "http://img1.hecha.cn/ProductImages/f84ed28e-0ad5-4668-b0c7-ca980c6858f8/20150527050449_m.JPG",
+       "ProductUrl": "",
+       "ProductSaleRule": "",
+       "ProductSalePrice": "219.00",
+       "ProductMarketPrice": "568.00",
+       "ProductComment": "14394",
+       "ProductScore": "4.75",
+       "ProductSaleCount": 43
+   },
+   {
+       "ProductId": "050106",
+       "ProductName": "【华祥苑】金牡丹200一级清香铁观音礼盒装300g",
+       "ProductImage": "http://img1.hecha.cn/ProductImages/24a52282-5f7a-4796-8ce3-349c6e6bff3d/20150625034236_m.JPG",
+       "ProductUrl": "",
+       "ProductSaleRule": "1件包邮",
+       "ProductSalePrice": "149.00",
+       "ProductMarketPrice": "298.00",
+       "ProductComment": "2034",
+       "ProductScore": "4.76",
+       "ProductSaleCount": 13
+   },
+   {
+        "ProductId": "050201",
+        "ProductName": "【远荣】特级醇真碳焙铁观音礼罐装250g(新包装)",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/73481d00-d804-47f5-9013-f21aff95544a/20150807115011_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "69.00",
+        "ProductMarketPrice": "228.00",
+        "ProductComment": "6745",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 66
+    },
+    {
+        "ProductId": "050202",
+        "ProductName": "【远荣】憧憬特级浓香铁观音圆罐70g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/7488fd10-f6d7-4bfe-9d89-bfe43bd2930e/20150804101802_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "买1送1 1件包邮",
+        "ProductSalePrice": "69.00",
+        "ProductMarketPrice": "118.00",
+        "ProductComment": "10861",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 23
+    },
+    {
+        "ProductId": "050203",
+        "ProductName": "【远荣】憧憬特级浓香+特级知足清香铁观音70g*2",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/e4904984-6e1c-4f29-b75c-747f9d98e22b/20150804101638_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "59.00",
+        "ProductMarketPrice": "223.00",
+        "ProductComment": "79577",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 50
+    },
+    {
+        "ProductId": "050204",
+        "ProductName": "【远荣】特级醇雅碳焙铁观音礼罐装250g*2-菊",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/a8317f9d-7774-4704-955d-0f44fd0cdada/20150212103627_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "108.00",
+        "ProductMarketPrice": "336.00",
+        "ProductComment": "2381",
+        "ProductScore": "4.77",
+        "ProductSaleCount": 30
+    }
+]

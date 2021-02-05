@@ -1,0 +1,36 @@
+<view class="sort-container">
+  <view class="nav">
+    <ul class="choose">
+      <li class="{{activeHidden?'active':''}}" bindtap="changeShow" data-index="1" >选择分类</li>
+      <li class="{{!activeHidden?'active':''}}" bindtap="changeShow" data-index="2">选择排序</li>
+    </ul>
+    <ul class="fenlei" wx:if="{{fenleiHidden}}">
+      <li bindtap="switchSort" wx:for="{{listMenu}}" wx:for-item="item" data-index="{{index+1}}">{{item}}</li>
+    </ul>
+    <ul class="paixu" wx:if="{{paixuHidden}}">
+      <li bindtap="switchPaixu" data-index="0">销量（高到低）</li>
+      <li bindtap="switchPaixu" data-index="1">销量（低到高）</li>
+      <li bindtap="switchPaixu" data-index="2">价格（高到低）</li>
+      <li bindtap="switchPaixu" data-index="3">价格（低到高）</li>
+    </ul>
+  </view>
+  <scroll-view class="section" scroll-y="{{true}}">
+    <ul>
+      <navigator class="goodLi" url="/pages/detail/detail?goodId={{item.ProductId}}" wx:for="{{listGood}}" wx:for-item="item">
+        <li>
+            <div class="goodLeft">
+              <image src="{{item.ProductImage}}" mode="aspectFit"></image>
+            </div>
+            <div class="goodRight">
+              <p class="goodName">{{item.ProductName}}</p>
+              <p class="goodPrice">
+                ￥<span class="nowPrice">{{item.ProductSalePrice}}</span>
+                <del>市场价:￥<span class="oldPrice">{{item.ProductMarketPrice}}</span></del>
+              </p>
+              <p class="pingjia">评价  {{item.ProductComment}}</p>
+            </div>
+        </li>
+      </navigator>
+    </ul>
+  </scroll-view>
+</view>

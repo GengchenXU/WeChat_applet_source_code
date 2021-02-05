@@ -1,0 +1,95 @@
+.shoppingCart-container {
+  width: 100%; }
+  .shoppingCart-container .hasGood {
+    width: 100%; }
+    .shoppingCart-container .hasGood .goodList {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .shoppingCart-container .hasGood .goodList li {
+        flex: 1;
+        width: 100%;
+        height: 160rpx;
+        padding-top: 10rpx;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #f1f1f1; }
+        .shoppingCart-container .hasGood .goodList li .pic {
+          flex: 1;
+          padding-left: 26rpx; }
+          .shoppingCart-container .hasGood .goodList li .pic image {
+            width: 150rpx;
+            height: 150rpx;
+            margin: 0 auto;
+            vertical-align: middle; }
+        .shoppingCart-container .hasGood .goodList li .info {
+          flex: 2;
+          font-size: 12px;
+          line-height: 36rpx;
+          color: #212121;
+          padding-top: 10rpx; }
+          .shoppingCart-container .hasGood .goodList li .info .sum {
+            color: #999;
+            margin-top: 10rpx;
+            padding-left: 20rpx;
+            display: flex;
+            line-height: 48rpx;
+            font-weight: bold; }
+            .shoppingCart-container .hasGood .goodList li .info .sum text {
+              text-align: center;
+              width: 48rpx;
+              height: 48rpx;
+              margin: 0 20rpx;
+              display: inline;
+              border: 1px solid #999; }
+        .shoppingCart-container .hasGood .goodList li .right {
+          flex: 1;
+          text-align: center;
+          padding-top: 10rpx; }
+          .shoppingCart-container .hasGood .goodList li .right .price {
+            color: #F47920;
+            font-size: 14px;
+            font-weight: bold; }
+          .shoppingCart-container .hasGood .goodList li .right .shanchu {
+            display: block;
+            width: 120rpx;
+            height: 60rpx;
+            line-height: 60rpx;
+            background-color: #FF2501;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 8rpx;
+            margin: 16rpx 0 0 30rpx; }
+    .shoppingCart-container .hasGood .footer {
+      width: 100%;
+      height: 120rpx;
+      position: fixed;
+      bottom: 0;
+      background-color: #eeeef0; }
+      .shoppingCart-container .hasGood .footer ul {
+        width: 66%;
+        margin-left: 30%;
+        display: flex;
+        flex-direction: row; }
+        .shoppingCart-container .hasGood .footer ul .goodAll {
+          line-height: 120rpx;
+          color: #888;
+          font-size: 14px;
+          flex: 1; }
+          .shoppingCart-container .hasGood .footer ul .goodAll text {
+            font-weight: bold;
+            color: red; }
+        .shoppingCart-container .hasGood .footer ul .calcute text {
+          display: block;
+          margin: 0 auto;
+          margin-top: 20rpx;
+          width: 160rpx;
+          height: 80rpx;
+          border-radius: 8rpx;
+          line-height: 80rpx;
+          background-color: #FF2501;
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+          flex: 1; }

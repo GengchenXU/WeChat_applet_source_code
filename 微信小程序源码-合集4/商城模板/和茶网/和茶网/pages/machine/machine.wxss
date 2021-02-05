@@ -1,0 +1,29 @@
+.machine-container{
+  display: flex;
+  flex-direction: column;
+}
+.machine-container image{
+  width:100%;
+  flex:1;
+}
+.machine-container .height_560{
+  height: 560px;
+}
+.machine-container .height_120{
+  height: 120px;
+}
+.machine-container .height_240{
+  height: 240px;
+}
+.machine-container .height_200{
+  height: 200px;
+}
+.machine-container .height_50{
+  height: 50px;
+}
+.machine-container .height_80{
+  height: 80px;
+}
+.machine-container .height_150{
+  height: 150px;
+}

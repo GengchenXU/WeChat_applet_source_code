@@ -1,0 +1,50 @@
+<view class="detail-container">
+  <scroll-view scroll-y="{{true}}" class="section">
+    <swiper indicator-dots="{{true}}"
+    autoplay="{{true}}" interval="{{4000}}" duration="{{300}}" class="imgView">
+      <block wx:for="{{lunboImg}}" >
+        <swiper-item class="lunbo">
+          <image src="{{item}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="productInfo">
+      <view class="prodeuctLeft">
+        <view class="ProductName">{{ProductName}}</view>
+        <view class="price">
+          <text class="nowPrice">￥{{newPrice}}</text>
+          <text class="oldPrice">市场价：<span>￥{{oldPrice}}</span></text>
+        </view>
+      </view>
+      <view class="share">
+          <view>
+            <image src="/images/detailImages/share.png"></image>
+            <text>分享</text>
+          </view>
+      </view>
+    </view>
+    <view class="pingfen">
+      <text>客户评分：</text>
+      <image src="/images/detailImages/star.png"></image>
+      <image src="/images/detailImages/star.png"></image>
+      <image src="/images/detailImages/star.png"></image>
+      <image src="/images/detailImages/star.png"></image>
+    </view>
+    <view class="shangpin">
+      <text class="tip">商品参数</text>
+      <ul>
+        <li class="shangpin{{index}}" wx:for="{{goodDetail}}" wx:for-item="item">{{item}}</li>
+      </ul>
+    </view>
+    <view class="shadow"></view>
+    <view class="imgBox">
+      <image wx:for="{{imgBox}}" src="{{item.ImageUrl}}"></image>
+    </view>
+  </scroll-view>
+  <view class="footer">
+    <text class="white"></text>
+    <text class="addToCar" bindtap="addToCar">加入购物车</text>
+    <text class="nowBuy">立即购买</text>
+  </view>
+  <modal class="noGood" title="加入购物车成功" confirm-text="确定" cancel-text="去结算" hidden="{{modalHidden}}" bindconfirm="hiddenModal"></modal>
+</view>

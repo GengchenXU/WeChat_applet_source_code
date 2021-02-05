@@ -1,0 +1,137 @@
+/* pages/more/more.wxss */
+.store-list-all{
+    padding: 20rpx;
+    text-align: center;
+    background-color: #fff;
+}
+.title{
+    display: block;
+    font-size: 32rpx;
+    color: #222;
+    padding: 10rpx 0 20rpx;
+}
+.sub-title{
+    font-size: 24rpx;
+    display: block;
+    color: #666;
+}
+.store-list{
+    margin-top: 30rpx;
+    font-size: 24rpx;
+    border: solid #e8e8e8;
+    border-width: 1px 0 0 1px;
+}
+.pstore-item{
+    float: left;
+    display: flex;
+    width: 33.33%; 
+    color: #222;
+}
+.pstore-item text{
+    display: block; /**此处必须为block**/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 10rpx 0;
+    border: solid #e8e8e8;
+    border-width: 0 1px 1px 0;   
+}
+.pstore-item .name{
+    width: 65%;
+    background-color: #fafafa;
+}
+.pstore-item .nums{
+    width: 35%;
+}
+/*当前区域门店*/
+.store-list-local{
+    width: 100%;
+    margin-top: 20rpx;
+}
+/* 门店数量*/
+.store-count{
+    padding: 20rpx 30rpx;
+    background-color: #fff;
+    border-bottom: solid #e8e8e8 1px;
+    font-size: 24rpx;
+    color: #999;
+}
+.store-item{
+    position: relative;
+    margin-bottom: 20rpx;
+    background-color: #fff;
+    border-bottom: solid #e8e8e8 1px;
+    overflow: hidden;  
+}
+.store-status{
+    position: absolute;
+    right: 20rpx;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130rpx;
+    height: 60rpx;
+    background: url(../../image/store-status.png) no-repeat;
+    background-size: 130rpx auto;
+    font-size: 28rpx;
+    color: #fff;
+}
+.store-status.green{
+    background-position: 0 0;
+}
+.store-status.gray{
+    background-position: left bottom;
+}
+.store-pic{
+    display: block;
+    width: 100%;
+    height: 400rpx
+}
+.store-basic-info,.store-adress{
+    margin: 40rpx 20rpx;
+}
+.store-basic-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.store-name{
+    display: flex;
+    align-items: center;
+    font-size: 32rpx;
+    font-weight: bold;
+}
+.store-distance, .store-distance .icon{
+    font-size: 24rpx;
+    color: #666;
+    margin-right: 5rpx;
+}
+.store-adress{
+    font-size: 28rpx;
+    color: #666;
+}
+/*优惠小标签*/
+.dtag{
+    display: inline-block;
+    margin: 4rpx;
+    padding: 4rpx 6rpx;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    background-color: #49caec;
+    border-radius: 4px;
+    font-size: 24rpx;
+}
+.no-store-tip-msg{
+    padding: 50rpx 20rpx;
+    line-height: 1.5;
+    background-color: #fff;
+    font-size: 28rpx;
+    color: #222;
+    text-align: justify;
+}
+.no-store-tip-msg text{
+    color:#e61773;
+}
+@import "../../css/font.wxss";

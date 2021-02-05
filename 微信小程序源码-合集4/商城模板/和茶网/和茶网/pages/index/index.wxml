@@ -1,0 +1,27 @@
+<view class="index-container">
+  <swiper indicator-dots="{{lunbo.indicatorDots}}"
+  autoplay="{{lunbo.autoplay}}" interval="{{lunbo.interval}}" duration="{{lunbo.duration}}">
+    <block wx:for="{{lunbo.imgUrls}}">
+      <swiper-item class="lunbo">
+        <image src="{{item}}" class="slide-image" mode="" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="imageAlw">
+    <image  bindtap="bindToSortMenu" class="imageLong" src="/images/indexImages/index1.jpg" ></image>
+    <image  bindtap="bindToSortMenu" class="image100" src="/images/indexImages/index2.jpg"></image>
+    <image  bindtap="bindToSortMenu" class="image50" src="/images/indexImages/index3.jpg"></image>
+    <image  bindtap="bindToSortMenu" class="image50" src="/images/indexImages/index4.jpg"></image>
+    <image  bindtap="bindToSortMenu" class="imageLong" src="/images/indexImages/index5.jpg"></image>
+  </view>
+  <ul class="imageBox" >
+    <navigator wx:for="{{imgBox}}" wx:for-item="item" url="/pages/detail/detail?goodId={{item.ProductId}}">
+      <li>
+        <image src="{{item.ProductImage}}" class="image50"></image>
+        <p class="title">{{item.ProductName}}</p>
+        <p class="price">￥<span>{{item.ProductSalePrice}}</span></p>
+      </li>
+    </navigator>
+  </ul>
+  <image bindtap="bindToSortMenu" style="width:100%;height:26px" src="/images/indexImages/lookMore.jpg"></image>
+</view>

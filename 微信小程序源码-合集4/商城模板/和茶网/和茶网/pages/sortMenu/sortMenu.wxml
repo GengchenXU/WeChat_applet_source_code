@@ -1,0 +1,8 @@
+<view class="sortMenu-container">
+  <navigator url="/pages/index/index">
+    <image src="/images/sortMenuImages/sortMenu1.jpg"></image>
+  </navigator>
+  <navigator wx:for="{{imageBox}}" wx:for-item="item" url="/pages/sort/sort?sortId={{item.sortId}}">
+    <image bindtap=""  src="{{item.src}}"></image>
+  </navigator>
+</view>

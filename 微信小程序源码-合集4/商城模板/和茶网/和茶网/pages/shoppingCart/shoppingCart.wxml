@@ -1,0 +1,25 @@
+<view class="shoppingCart-container">
+    <modal class="noGood" title="您的购物车中没有商品" confirm-text="随便逛逛" cancel-text="去挑选商品" hidden="{{modalHidden}}" bindconfirm="signConfirm"></modal>
+    <view class="hasGood">
+      <ul class="goodList">
+        <li wx:for="{{shoppingCartInfo}}" wx:for-item="item">
+          <view class="pic"><image src="{{item.goodImg}}"></image></view>
+          <view class="info">{{item.goodName}}
+            <view class="sum">数量：<text bindtap="sub" data-index="{{index}}">－</text>{{item.goodSum}}<text bindtap="add" data-index="{{index}}">＋</text></view>
+          </view>
+          <view class="right">
+            <text class="price">￥{{item.goodPrice}}</text>
+            <text class="shanchu" bindtap="deleteGood" data-index="{{index}}">删除商品</text>
+          </view>
+        </li>
+      </ul>
+      <view class="footer">
+        <ul>
+          <li class="goodAll">商品<text>￥{{allMoney}}</text></li>
+          <li class="calcute">
+            <text>结算</text>
+          </li>
+        </ul>
+      </view>
+    </view>
+</view>

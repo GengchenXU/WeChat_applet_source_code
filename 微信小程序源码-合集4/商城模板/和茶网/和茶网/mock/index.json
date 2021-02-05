@@ -1,0 +1,74 @@
+[
+    {
+       "ProductId": "020101",
+       "ProductName": "【雅丽百花缘】雪菊圆罐装30g*2罐特惠装",
+       "ProductImage": "http://img1.hecha.cn/ProductImages/1b0528bd-d94c-4a97-a11b-5e85c9c74e36/20150604105629_m.JPG",
+       "ProductUrl": "",
+       "ProductSaleRule": "1件包邮",
+       "ProductSalePrice": "69.00",
+       "ProductMarketPrice": "216.00",
+       "ProductComment": "64239",
+       "ProductScore": "4.75",
+       "ProductSaleCount": 28
+    },
+    {
+       "ProductId": "020102",
+       "ProductName": "【雅丽百花缘】雪菊3罐礼盒装",
+       "ProductImage": "http://img1.hecha.cn/ProductImages/fa455867-2f67-4943-bfa8-bc63bdea96c8/20150605024140_m.JPG",
+       "ProductUrl": "",
+       "ProductSaleRule": "1件包邮",
+       "ProductSalePrice": "139.00",
+       "ProductMarketPrice": "278.00",
+       "ProductComment": "33316",
+       "ProductScore": "4.75",
+       "ProductSaleCount": 0
+    },
+    {
+        "ProductId": "010101",
+        "ProductName": "【顶峰】特级明前五星-致远-西湖龙井单罐50g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/0a27bfbe-13e0-4e50-9622-d3ee1107cb22/20150618041443_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "69.00",
+        "ProductMarketPrice": "228.00",
+        "ProductComment": "11467",
+        "ProductScore": "4.79",
+        "ProductSaleCount": 1047
+    },
+    {
+        "ProductId": "010102",
+        "ProductName": "【滋恩】雨前一级馨芽龙井铁罐50g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/203c8b0d-7ead-4d30-b79c-dc9c061cae92/20150526041109_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "65.00",
+        "ProductMarketPrice": "138.00",
+        "ProductComment": "37810",
+        "ProductScore": "4.76",
+        "ProductSaleCount": 847
+    },
+    {
+        "ProductId": "010103",
+        "ProductName": "【滋恩】雨前一级馨芽龙井铁罐50g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/203c8b0d-7ead-4d30-b79c-dc9c061cae92/20150526041109_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "65.00",
+        "ProductMarketPrice": "138.00",
+        "ProductComment": "37810",
+        "ProductScore": "4.76",
+        "ProductSaleCount": 847
+    },
+    {
+        "ProductId": "010104",
+        "ProductName": "【顶峰】明前特级-坐忘-西湖龙井铁盒装80g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/81f6d833-4f82-4122-9c82-a0fdb8303b7e/20150526042619_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "129.00",
+        "ProductMarketPrice": "399.00",
+        "ProductComment": "17625",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 53
+    }
+]

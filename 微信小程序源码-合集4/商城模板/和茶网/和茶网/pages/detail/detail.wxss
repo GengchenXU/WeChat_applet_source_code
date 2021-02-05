@@ -1,0 +1,105 @@
+.detail-container .section .imgView {
+  width: 100%;
+  height: 750rpx; }
+  .detail-container .section .imgView .lunbo image {
+    width: 100%;
+    height: 750rpx; }
+
+.detail-container .section .productInfo {
+  width: 100%;
+  padding: 30rpx 30rpx 6rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999;
+  display: flex; }
+  .detail-container .section .productInfo .prodeuctLeft {
+    flex: 3; }
+    .detail-container .section .productInfo .prodeuctLeft .ProductName {
+      width: 100%;
+      height: 80rpx;
+      font-size: 11px;
+      color: #444; }
+    .detail-container .section .productInfo .prodeuctLeft .price {
+      display: flex;
+      width: 100%; }
+      .detail-container .section .productInfo .prodeuctLeft .price .nowPrice {
+        flex: 2;
+        font-size: 18px;
+        color: #FC8A66; }
+      .detail-container .section .productInfo .prodeuctLeft .price .oldPrice {
+        flex: 3;
+        font-size: 11px;
+        color: #999; }
+  .detail-container .section .productInfo .share {
+    flex: 1;
+    padding: 30rpx; }
+    .detail-container .section .productInfo .share view {
+      margin-left: 40rpx;
+      border-left: 1px solid #999;
+      display: flex;
+      flex-direction: column;
+      padding-left: 20rpx; }
+      .detail-container .section .productInfo .share view image {
+        width: 36rpx;
+        height: 40rpx; }
+      .detail-container .section .productInfo .share view text {
+        font-size: 10px;
+        color: #444; }
+
+.detail-container .section .pingfen {
+  padding: 16rpx 0 8rpx 30rpx;
+  border-bottom: 1px solid #999;
+  height: 38rpx; }
+  .detail-container .section .pingfen text {
+    font-size: 10px;
+    color: #999; }
+  .detail-container .section .pingfen image {
+    width: 32rpx;
+    height: 32rpx;
+    margin-left: 6rpx; }
+
+.detail-container .section .shangpin {
+  width: 100%; }
+  .detail-container .section .shangpin .tip {
+    width: 100%;
+    padding: 16rpx 0 30rpx 30rpx;
+    font-size: 12px;
+    color: #000; }
+  .detail-container .section .shangpin ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .detail-container .section .shangpin ul li {
+      width: 375rpx;
+      padding: 10rpx 0 10rpx 60rpx;
+      font-size: 10px;
+      color: #707070;
+      box-sizing: border-box; }
+    .detail-container .section .shangpin ul .shangpin6 {
+      width: 700rpx; }
+
+.detail-container .section .shadow {
+  height: 32rpx; }
+
+.detail-container .section .imgBox image {
+  height: 500rpx; }
+
+.detail-container .footer {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: #F1F1F1;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row; }
+  .detail-container .footer .white {
+    flex: 2; }
+  .detail-container .footer .addToCar {
+    flex: 1;
+    background-color: #f47920; }
+  .detail-container .footer .nowBuy {
+    flex: 1;
+    background-color: #FF2501; }

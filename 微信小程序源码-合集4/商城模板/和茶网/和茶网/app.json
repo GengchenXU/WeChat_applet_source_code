@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/machine/machine",
+    "pages/sortMenu/sortMenu",
+    "pages/my/my",
+    "pages/shoppingCart/shoppingCart",
+    "pages/sort/sort",
+    "pages/detail/detail"
+  ],
+  "debug":true,
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#8BC44F",
+    "navigationBarTitleText": "和茶网",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#8BC44F",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/baseImages/my.png",
+        "selectedIconPath": "images/baseImages/my_active.png"
+      },
+      {
+        "pagePath": "pages/sortMenu/sortMenu",
+        "text": "分类",
+        "iconPath": "images/baseImages/sort.png",
+        "selectedIconPath": "images/baseImages/sort_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/baseImages/index.png",
+        "selectedIconPath": "images/baseImages/index_active.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "iconPath": "images/baseImages/shoppingCart.png",
+        "selectedIconPath": "images/baseImages/shoppingCart_active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/machine/machine",
+        "iconPath": "images/baseImages/tea.png",
+        "selectedIconPath": "images/baseImages/tea_active.png",
+        "text": "茶饮机"
+      }
+    ]
+  }
+}

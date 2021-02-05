@@ -1,0 +1,66 @@
+<!--pages/order/order.wxml-->
+<view class="orderlist">
+    <view class="order-list" wx:for="{{orderList}}">
+        <view class="list">
+
+            <view class="list-header" data-reset-page="{{item.page}}" data-order-id="{{item.order_id}}" bindtap="goDetail">
+                <span class="icon icon-store"></span>
+                <text class="store-name">{{item.store_name}}</text>
+                <text class="order-time">{{item.add_time}}</text>
+            </view>
+
+            <view class="item-list product-list" data-order-id="{{item.order_id}}" data-reset-page="{{item.page}}" bindtap="goDetail">
+                <view class="item" wx:for="{{item.goods_list}}" wx:for-item="product">
+                    <view class="item-img">
+                        <image src="{{product.goods_img}}"></image>
+                    </view>
+                    <view class="item-info">
+                        <view class="item-name">{{product.goods_name}}</view>
+                        <view class="item-price">¥ {{product.goods_price}}</view>
+                    </view>
+                    <view class="item-num">x {{product.goods_number}}</view>
+                </view>
+            </view>
+
+            <view class="list-footer">
+                <view class="order-status">
+                    <view class="status">
+                        <view wx:for="{{item.progress.info}}" wx:for-item="icon" wx:for-index="idx" class="status-item {{idx == item.progress.last_index-1 ? 'active' : ''}} {{idx === item.progress.info.length - 1 ? 'last-status-item' : ''}}" >
+                            <span class="icon {{'icon-' + (icon.icon === 'cancel' ? 'refund' : icon.icon)}}"></span>
+                            <view></view>
+                            <text>{{icon.text}}</text>
+                            <view class="hint" wx:if="{{icon.icon == 'await_pay' && item.left_time > 0}}"> {{item.clock}} </view>
+                        </view>
+                    </view>
+                    <view class="count">
+                        <text>合计：</text>
+                        <text class="strong">¥ {{item.order_amount}}</text>
+                    </view>
+                </view>
+                <view class="btn-wrap">
+                    <block wx:for="{{item.button_list}}" wx:for-item="btn">
+                        <!--picker理由取消订单-->
+                        <picker wx:if="{{btn.action === 'refund_order'}}" data-reset-page="{{item.page}}" data-current-sn="{{item.order_sn}}" bindchange="bindPickerChange" value="{{reasonDataIndex}}" range="{{reasonData}}">
+                            <button  type="{{btn.is_highlight == 1 ? 'primary': 'default'}}" size="mini" hover-class="none">{{btn.text}}</button>
+                        </picker>
+                        <button wx:if="{{btn.action !== 'refund_order'}}" type="{{btn.is_highlight == 1 ? 'primary': 'default'}}" data-btn="{{btn}}" data-item="{{item}}" bindtap="orderAction" size="mini" hover-class="none">{{btn.text}}</button>
+                    </block>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>
+<view class="order-loading" wx:if="{{showLoadingFlag}}">
+     <image src="../../image/loading-super.gif"></image>
+     <text>努力加载中</text>
+</view>
+<view class="no-more-order" wx:if="{{showLoadedFlag}}">
+    没有更多订单了~
+</view>
+<view class="no-order-box" wx:if="{{!hasOrder}}">
+    <view class="icon">
+        <image src="../../image/no-order.png"></image>
+        <view class="msg">您还没有相关的订单哦</view>
+    </view>
+</view>

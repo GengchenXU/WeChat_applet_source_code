@@ -1,0 +1,74 @@
+[
+    {
+        "ProductId": "010101",
+        "ProductName": "【顶峰】2016新茶 特级明前五星-致远-西湖龙井单罐50g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/0a27bfbe-13e0-4e50-9622-d3ee1107cb22/20150618041443_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "69.00",
+        "ProductMarketPrice": "228.00",
+        "ProductComment": "11467",
+        "ProductScore": "4.79",
+        "ProductSaleCount": 1047
+    },
+    {
+        "ProductId": "010102",
+        "ProductName": "【滋恩】雨前一级馨芽龙井铁罐50g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/203c8b0d-7ead-4d30-b79c-dc9c061cae92/20150526041109_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "65.00",
+        "ProductMarketPrice": "138.00",
+        "ProductComment": "37810",
+        "ProductScore": "4.76",
+        "ProductSaleCount": 847
+    },
+    {
+        "ProductId": "010103",
+        "ProductName": "【滋恩】雨前一级馨芽龙井铁罐50g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/203c8b0d-7ead-4d30-b79c-dc9c061cae92/20150526041109_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "65.00",
+        "ProductMarketPrice": "138.00",
+        "ProductComment": "37810",
+        "ProductScore": "4.76",
+        "ProductSaleCount": 847
+    },
+    {
+        "ProductId": "010104",
+        "ProductName": "【顶峰】2015 明前特级-坐忘-西湖龙井铁盒装80g",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/81f6d833-4f82-4122-9c82-a0fdb8303b7e/20150526042619_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "129.00",
+        "ProductMarketPrice": "399.00",
+        "ProductComment": "17625",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 53
+    },
+    {
+        "ProductId": "010105",
+        "ProductName": "【顶峰】 雨前三级-静思-西湖龙井单罐",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/9ca07985-8b40-4b12-a690-3e5e8b428f90/20150215073044_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "76.00",
+        "ProductMarketPrice": "228.00",
+        "ProductComment": "18285",
+        "ProductScore": "4.78",
+        "ProductSaleCount": 345
+    },
+    {
+        "ProductId": "010106",
+        "ProductName": "【滋恩】2016新茶 雨前龙井牛皮纸250g（绿）",
+        "ProductImage": "http://img1.hecha.cn/ProductImages/9cc691c9-49c4-4210-8023-869567c40c0c/20150226093758_m.JPG",
+        "ProductUrl": "",
+        "ProductSaleRule": "1件包邮",
+        "ProductSalePrice": "89.00",
+        "ProductMarketPrice": "179.00",
+        "ProductComment": "65531",
+        "ProductScore": "4.75",
+        "ProductSaleCount": 120
+    }
+]

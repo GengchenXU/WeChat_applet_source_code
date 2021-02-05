@@ -1,0 +1,30 @@
+<import src="../cart-ctrl/cart-ctrl.wxml"/>
+<template name="productItem">
+    <view class="pro-item" data-goods-id="{{product.goods_id}}" catchtap="_goDetail" wx:if="{{product}}">
+        <view class="pro-pic">
+            <image src="{{product.goods_grid}}"></image>
+            <view class="tag-wrap" wx:if="{{product.valid==0}}">
+                <view class="tag-soldout"></view>
+            </view>
+        </view>
+        <view class="pro-info">
+            <text class="pro-title dot-m">{{product.goods_title}}</text>
+            <view class="pro-discount">
+                <view class="tag" wx:for="{{product.tags}}">
+                    <text class="dtag arrow" style="background-color: {{item.resultColor}}">
+                        <text class="b" style="border-left-color: {{item.resultColor}}"> </text>
+                        <text>{{item.tag}}</text>
+                    </text>
+                    <text>{{item.str}}</text>
+                </view>
+            </view>
+            <view class="pro-price">
+                <text class="sale_price" >¥ {{product.sale_price}}</text>
+                <text class="market_price" wx:if="{{product.market_price}}">¥ {{product.market_price}}</text>
+            </view>
+        </view>
+        <view class="buy-count" wx:if="{{showCartCtrl}}">
+            <template is="cartCtrl" data="{{ product: product, currentProCount: currentProCount, index: index, findex: findex  }}" />
+        </view>
+    </view>
+</template>

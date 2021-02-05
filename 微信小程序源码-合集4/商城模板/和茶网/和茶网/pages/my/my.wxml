@@ -1,0 +1,64 @@
+<view class="my-container">
+  <modal class="login" title="请登录你的账号" confirm-text="确认" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="signConfirm">
+     <label>
+       <view>账号：</view>
+       <input placeholder="请输入你的账号" bindinput="saveUsername" />
+     </label>
+     <label>
+       <view>密码：</view>
+       <input password="{{true}}" placeholder="请输入你的密码" bindinput="savePassword" />
+     </label>
+  </modal>
+  <view class="box" wx:if="{{boxHidden}}">
+    <view class="header">
+      <view class="headerTop">
+        <image class="touxiang" src="/images/myImages/hptouxiang.jpg" mode="aspectFit"></image>
+        <view class="info">
+          <p class="tele">{{modal.username}}</p>
+          <p class="intro">
+            <b class="puka">普卡</b>
+            <b class="vip">VIP</b>
+          </p>
+        </view>
+      </view>
+      <view class="headerBottom">
+        <image src="/images/myImages/vip.png" mode="aspectFit"></image>
+        <image class="gray" src="/images/myImages/vip2.png" mode="aspectFit"></image>
+        <image class="gray" src="/images/myImages/vip3.png" mode="aspectFit"></image>
+        <image class="gray" src="/images/myImages/vip4.png" mode="aspectFit"></image>
+      </view>
+    </view>
+    <view class="jifen">
+      <ul>
+        <li class="nowJiFen">
+          <text class="num">300</text>
+          <b>积分</b>
+        </li>
+        <li class="youhuijuan">
+          <text class="num">0</text>
+          <b>优惠券</b>
+        </li>
+        <li class="guanzhu">
+          <text>关注微信</text>
+        </li>
+        <li class="youhuijuan">
+          <text class="num">+50</text>
+          <b>签到送积分</b>
+        </li>
+      </ul>
+    </view>
+    <view class="jianju"></view>
+    <view class="person">
+      <ul>
+        <li wx:for="{{imgBox}}" wx:for-item="item">
+          <span><image src="{{item.icon}}"></image></span>
+          <b>{{item.info}}</b>
+          <a><image src="/images/myImages/you.png"></image></a>
+        </li>
+      </ul>
+    </view>
+    <view class="tuichu">
+      <text bindtap="exit">退出登录</text>
+    </view>
+  </view>
+</view>

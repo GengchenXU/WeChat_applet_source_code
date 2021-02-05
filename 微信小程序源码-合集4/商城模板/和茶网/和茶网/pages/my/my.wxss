@@ -1,0 +1,155 @@
+.my-container .login label {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20rpx; }
+  .my-container .login label view {
+    width: 120rpx;
+    text-align: right; }
+  .my-container .login label input {
+    flex: 1;
+    border-bottom: 1px solid #000; }
+
+.my-container .header {
+  width: 100%;
+  background-color: #66cbff; }
+
+.my-container .headerTop {
+  display: flex; }
+
+.my-container .headerTop .touxiang {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin: 20px 0 0 25%; }
+
+.my-container .info {
+  flex: 1;
+  padding-top: 36px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.my-container .tele {
+  flex: 1;
+  color: #fff;
+  font-size: 14px; }
+
+.my-container .intro {
+  flex: 1; }
+
+.my-container .intro .puka {
+  background-color: #4069ff;
+  padding: 2px 6px;
+  font-size: 10px;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.my-container .intro .vip {
+  padding: 2px 6px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #f5b32b;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+.my-container .headerBottom {
+  width: 60%;
+  height: 26px;
+  margin-left: 25%;
+  padding: 5px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .my-container .headerBottom image {
+    height: 26px;
+    flex: 1; }
+  .my-container .headerBottom .gray {
+    -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); }
+
+.my-container .jifen {
+  width: 100%;
+  height: 60px; }
+  .my-container .jifen ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0; }
+    .my-container .jifen ul li {
+      flex: 1;
+      border-left: 1px solid #C6C7C9;
+      width: 25%;
+      height: 34px;
+      text-align: center; }
+    .my-container .jifen ul .nowJiFen {
+      border: none; }
+      .my-container .jifen ul .nowJiFen .num {
+        color: #e30013;
+        font-size: 14px;
+        display: block;
+        font-weight: bold; }
+      .my-container .jifen ul .nowJiFen b {
+        font-size: 12px;
+        color: #595758; }
+    .my-container .jifen ul .youhuijuan .num {
+      color: #e30013;
+      font-size: 14px;
+      display: block;
+      font-weight: bold; }
+    .my-container .jifen ul .youhuijuan b {
+      font-size: 12px;
+      color: #595758; }
+    .my-container .jifen ul .guanzhu text {
+      padding: 3px;
+      font-size: 12px;
+      color: #fff;
+      background-color: #4b9536;
+      border-radius: 2px; }
+
+.my-container .jianju {
+  background-color: #C6C7C9;
+  height: 12px; }
+
+.my-container .person ul {
+  width: 100%; }
+  .my-container .person ul li {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #C6C7C9;
+    display: flex; }
+    .my-container .person ul li span {
+      padding: 7px; }
+      .my-container .person ul li span image {
+        width: 26px;
+        height: 26px; }
+    .my-container .person ul li b {
+      padding-left: 30px;
+      font-size: 12px;
+      line-height: 40px;
+      color: #595758; }
+    .my-container .person ul li a {
+      flex: 1;
+      text-align: right; }
+      .my-container .person ul li a image {
+        width: 8px;
+        height: 16px;
+        margin-top: 12px;
+        margin-right: 36px; }
+
+.my-container .tuichu {
+  width: 100%;
+  padding-top: 30rpx;
+  padding-left: 20%;
+  box-sizing: border-box; }
+  .my-container .tuichu text {
+    background-color: #65a51e;
+    display: block;
+    width: 60%;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 14px; }

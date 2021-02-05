@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/store-detail/store-detail",
+    "pages/detail/detail",
+    "pages/list/list",
+    "pages/more/more",
+    "pages/center/center",
+    "pages/user-detail/user-detail",
+    "pages/editname/editname",
+    "pages/editphone/editphone",
+    "pages/login/login",
+    "pages/order/order",
+    "pages/order-detail/order-detail",
+    "pages/coupon-list/coupon-list",
+    "pages/coupon-detail/coupon-detail"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#e61773",
+    "navigationBarTitleText": "五洲到家",
+    "navigationBarTextStyle":"light",
+    "backgroundColor": "#e61773",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+ "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#e61773",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "image/tabbar/home_un.png",
+      "selectedIconPath": "image/tabbar/home.png"
+    }, {
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "image/tabbar/order_un.png",
+      "selectedIconPath": "image/tabbar/order.png"
+    }, {
+      "pagePath": "pages/center/center",
+      "text": "我的",
+      "iconPath": "image/tabbar/user_un.png",
+      "selectedIconPath": "image/tabbar/user.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
