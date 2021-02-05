@@ -1,0 +1,24 @@
+.approver{
+  display:flex;
+  flex-direction: column;
+  padding: 5px 15px;
+}
+.total{
+  text-align:center;
+}
+.item{
+  margin-top:10px;
+  display:flex;
+  flex-direction:row;
+  border-bottom:1px solid #eee
+}
+.image{
+  height:30px;
+  width:30px;
+  border-radius:50%;
+}
+.name{
+  margin-left:20px;
+  line-height:30px;
+  word-break:break-all;
+}

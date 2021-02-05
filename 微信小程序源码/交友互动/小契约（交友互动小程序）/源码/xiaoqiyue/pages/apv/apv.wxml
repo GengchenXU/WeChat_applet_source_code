@@ -1,0 +1,26 @@
+<view style="padding: 5px 15px;background-color: white;" class="layout-column marUpTop">
+    <view class="marTop">请审批以下任务：</view>
+    <view class="marTop"/>
+    <view class="layout-inline halfTop">
+      <view class="title">标题</view>
+      <view class='info'>{{task.name}}</view>
+    </view>
+    <view class="layout-inline halfTop">
+      <view class="title">执行时间</view>
+      <view class='info'>{{task.excTime}}</view>
+    </view>
+    <view class="layout-inline halfTop">
+      <view class="title">完成信息</view>
+      <view class='info'>{{task.completeMsg}}</view>
+    </view>
+    <view class="line"/>
+    <textarea class="border desc approval" value="{{apvContent}}" name="content" maxlength="-1" bindinput="setContent"></textarea>
+    <view class="layout-row">
+      <form bindsubmit='pass' report-submit>
+        <button class="pass" form-type='submit' type="primary" size="mini" >通过</button>
+      </form>
+      <form bindsubmit='fail' report-submit>
+        <button class="fail" form-type='submit' type="warn" size="mini" >不通过</button>
+      </form>
+    </view>
+</view>

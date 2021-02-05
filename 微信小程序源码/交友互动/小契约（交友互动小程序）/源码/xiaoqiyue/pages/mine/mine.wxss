@@ -1,0 +1,74 @@
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #777777;  
+    text-align: center;  
+    line-height: 80rpx;
+}  
+.swiper-tab-list{  
+    font-size: 30rpx;
+    display: inline-block;  
+    width: 33.33%;  
+    color: #777777;
+}  
+.on{ 
+    color: #265a88;  
+    border-bottom: 5rpx solid #265a88;
+}  
+.swiper-box{ 
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+}
+.list {
+    display:flex;
+    flex-direction:row;
+    padding:10px 15px;
+    position: relative;
+}
+.icon {
+    width:20px;
+    height:20px;
+    border-radius:50%;
+}
+.name {
+    margin-left:5px;
+    font-size:15px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.progress {
+    position:absolute;
+    width:85px;
+    right:15px;
+}
+.btn {
+  line-height:1.5;
+  font-size:15px;
+  padding:0px 5px;
+  height:20px;
+  position:absolute;
+  width: 40px;
+}
+.invite {
+  right:60px;
+}
+.delete {
+  right: 15px;
+}
+.pageCmp {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  background-color:#F6F6F6;
+  height:40px;
+}
+.page {
+  height:40px;
+  width:40px;
+}
+.page-no {
+  font-size: 15px;
+  line-height:40px;
+}

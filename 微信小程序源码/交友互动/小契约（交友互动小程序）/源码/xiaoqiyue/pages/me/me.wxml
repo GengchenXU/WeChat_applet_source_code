@@ -1,0 +1,18 @@
+<view>
+  <view class="user">
+    <image class="icon" src="{{avatarUrl}}"/>
+    <text class="name" style='width:{{winWidth - 100}}px;'>{{nickName}}</text>
+  </view>
+  <view class="marUpTop func">
+    <view class="item" bindtap="sysConf">
+      <image class="item-image" src="/images/sysConf.png"/>
+      <text class="item-name">系统配置</text> 
+      <image class="right-image" src="/images/right.png"/>
+    </view>
+    <view class="item" bindtap="feedback">
+      <image class="item-image" src="/images/feedback.png"/>
+      <text class="item-name">意见反馈</text> 
+      <image class="right-image" src="/images/right.png"/>
+    </view>
+  </view>
+</view>

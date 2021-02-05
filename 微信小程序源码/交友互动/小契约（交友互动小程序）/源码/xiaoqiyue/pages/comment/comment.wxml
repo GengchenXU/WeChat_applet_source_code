@@ -1,0 +1,8 @@
+<view class="comments marUpTop">
+  <text class="total">共{{totalNum}}条</text>
+  <view class="comment" wx:for="{{comments}}" wx:key="id" wx:for-item="comment">
+    <image class="image" src="{{comment.icon}}"></image>
+    <text class="name" style='width:{{windowWidth - 70}}px;'>{{comment.name}}<text style="color:black;">{{(comment.replyName == null || comment.replyName.length == 0) ? "" : "回复"}}</text><text>{{(comment.replyName == null || comment.replyName.length == 0) ? "" : comment.replyName}}</text>：<text style="color:black;">{{comment.content}}</text></text>
+  </view>
+  <text class="bottomLoad" bindtap='bottomLoad' hidden='{{initLoadDataNum < pageSize}}'>{{bottomLoadMsg}}</text>
+</view>

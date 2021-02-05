@@ -1,0 +1,6 @@
+<view class="layout-column marUpTop">
+  <view class="halfTop item" bindtap='clearCache'>清理缓存</view>
+  <modal hidden="{{cacheClearHidden}}" title="提示" confirm-text="清理" bindcancel="cancel" bindconfirm="beginClear">
+清除缓存后，之前的历史消息将无法看到，确认清理？
+  </modal>
+</view>

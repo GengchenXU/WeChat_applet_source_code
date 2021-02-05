@@ -1,0 +1,42 @@
+<template name="normal">
+  <view class="content-msg">{{msg}}</view>
+</template>
+<template name="apv">
+  <view class="content-msg apv">
+    <view class="apv-title">审批提醒</view>
+    <view class="apv-content">{{msg}}</view>
+    <view class="apv-do" data-id="{{id}}" data-attValue="{{attValue}}" bindtap="detail">
+      <text>审批</text>
+      <image class="right-image" src="/images/right.png"/>
+    </view>
+  </view>
+</template>
+<template name="end">
+  <view class="msg-end" style='width:{{windowWidth - 70}}px;'>
+    <image class="end-image" src="/images/{{attValue.suc ? 'success.png' : 'failure.png'}}"></image>
+    <view style="width:{{windowWidth - 145}}px;" class="end-msg">{{msg}}<text style="color:#5D718D;" data-id="{{attValue.id}}" bindtap='endDetail'> [详情]</text></view>
+  </view>
+</template>
+
+<view wx:if="{{isRefresh}}" class="fresh">
+    <image src="/images/timer.gif" class="timer"></image>
+</view>
+<scroll-view  style="height: {{windowHeight}}px;" scroll-y  bindscroll="scroll" scroll-into-view="msgId_{{scrollInitId}}" bindtouchstart="start" bindtouchend="end" bindscrolltolower="hiddenDownBtn">
+  <view class="msg-item" wx:for="{{msgs}}" wx:for-item="msg" wx:key="id" id="msgId_{{msg.id}}">
+    <view>
+      <image src="{{msg.icon}}" class="msg-icon"></image>
+    </view>
+    <view class="msg-content">
+      <text class="name-time" decode="true">{{msg.sendName}} {{msg.createTime}}</text>
+      <block wx:if="{{msg.type == 1}}"><template is="apv" data="{{...msg}}"/></block>
+      <block wx:elif="{{msg.type == 2}}"><template is="end" data="{{...msg, windowWidth}}"/></block>
+      <block wx:else><template is="normal" data="{{...msg}}"/></block>
+    </view>
+  </view>
+  <form bindsubmit='jumpToUpUnRead' report-submit>
+    <button class="toUpUnRead" form-type='submit' hidden='{{upBtnHidden}}'>☝ <text>{{unReadNum}}</text>条未读</button>
+  </form>
+  <form bindsubmit='jumpToDownUnRead' report-submit>
+    <button class="toDownUnRead" form-type='submit' hidden='{{downBtnHidden}}'>︾ <text>{{downUnReadNum}}</text>条未读</button>
+  </form>
+</scroll-view>

@@ -1,0 +1,87 @@
+<view class="task">
+    <view class="marUpTop">
+      <view>
+        <text style="position:relative;background-color:white;">标题</text>
+        <image class="more" bindtap="more" src="/images/{{moreImg}}"/>
+        <block wx:for="{{task.approver}}"  wx:for-item="item" wx:key="key" wx:item="index">
+          <block><image hidden="{{(windowWidth - 147)/20 < (index + 1)}}" class="approver" src="{{item.icon}}" bindtap="showApprover"></image></block>
+        </block>
+        <text hidden="{{ellipsisHidden}}">...</text>
+        <view wx:if="{{task.status == 0}}"><image class="hookStatus" src="/images/noStart.png"/></view>
+        <view wx:if="{{task.status == 1}}"><image class="hookStatus" src="/images/ing.png"/></view>
+        <view wx:if="{{task.status == 2}}"><image class="hookStatus" src="/images/pass.png"/></view>
+        <view wx:if="{{task.status == 3}}"><image class="hookStatus" src="/images/fail.png"/></view>
+      </view>
+      <view class="name">{{task.name}}</view>
+    </view>
+    <view class="otherInfo" hidden="{{otherInfoHidden}}">
+      <view class="layout-inline halfTop">
+        <view class='title'>描述</view>
+        <view class="info">{{task.desc}}</view>
+      </view>
+      <view class="layout-inline halfTop">
+        <view class='title'>开始时间</view>
+        <view class="info">{{task.startDate}}</view>
+      </view>
+      <view class="layout-inline halfTop">
+        <view class='title'>结束时间</view>
+        <view class="info">{{task.endDate}}</view>
+      </view>
+      <view class="layout-inline halfTop">
+        <view class='title'>执行频率</view>
+        <view class="info">{{task.excRule}}</view>
+      </view>
+      <view class="layout-inline halfTop">
+        <view class='title'>单次通过率</view>
+        <view class="info">{{task.approvalPassRate}}</view>
+      </view>
+      <view class="layout-inline halfTop">
+        <view class='title'>完成率设定</view>
+        <view class="info">{{task.passRate}}</view>
+      </view>
+      <view class="layout-inline halfTop">
+        <view class='title'>是否公开</view>
+        <view class="info">{{task.open}}</view>
+      </view>
+    </view>
+    <view class="line"/>
+    <view hidden="{{!(canApv == 'false' && task.status == 1)}}">
+      <switch checked="{{watchUnStart}}" color="#265A88" bindchange="watchUnStart"/>
+      <text style="font-size: 13px;">只看未开始</text>
+    </view>
+    <view hidden="{{!(canApv == 'true' && task.status == 1)}}">
+      <switch checked="{{watchUnApv}}" color="#265A88" bindchange="watchUnApv"/>
+      <text style="font-size: 13px;">只看未审批</text>
+    </view>
+    <scroll-view  style="height: {{windowHeight - 81}}px;margin-top:5px;" scroll-y scroll-into-view="taskId_{{scrollInitId}}" bindscroll="scroll" scroll-top="{{scrollTop}}">
+      <view style="{{history.curDay ? 'background-color:#E0ECF5;' : ''}}" class="border item" wx:for="{{task.approvalTask}}" wx:for-item="history" wx:key="id">
+          <view class="layout-column" style="font-size: 15px;">
+              <view class="layout-row relCss">
+                <view id="taskId_{{history.id}}" style="font-size:13px;">{{history.excTime}}</view>
+                <view wx:if="{{history.status == 0}}"><view class="status status-notStart">{{history.statusName}}</view></view>
+                <view wx:if="{{history.status == 1}}"><view class="status">{{history.statusName}}</view></view>
+                <view wx:if="{{history.status == 2}}"><view class="status status-suc">{{history.statusName}}</view></view>
+                <view wx:if="{{history.status == 3}}"><view class="status status-fail">{{history.statusName}}</view></view>
+                <form bindsubmit='toApv' report-submit data-taskId="{{history.id}}">
+                  <button form-type='submit' class="apv" hidden="{{canOper == 'false' || history.hiddenApv}}">审批</button>
+                </form>
+                <image class="img" hidden="{{canApv == 'true' && history.status == 0}}" bindtap="hiddenContent" data-taskId="{{history.id}}" src="/images/{{history.pngPath}}"></image>
+              </view>
+              <form bindsubmit="formSubmit" report-submit data-taskId="{{history.id}}" hidden="{{canOper == 'false' || canApv == 'true' || history.hasDone || history.hidden}}" style="margin-top: 10px;">
+                <textarea class="border result halfTop" value="已完成" name="content" maxlength="-1"></textarea>
+                <button class="btn" formType="submit">提交</button>
+              </form>
+          </view>
+          <view class="layout-row halfTop relCss" wx:for="{{history.approvalResult}}" hidden="{{history.hidden}}" wx:for-item="info" wx:key="id" wx:item="index" style="{{index == 0 ? 'margin-top:15px;' : ''}}">
+              <image src="{{info.icon}}" class="icon"></image>
+              <view class="content" style='width:{{windowWidth - 110}}px;'>
+                  <text class="time">{{info.time}}{{index == 0 ? '（提交审批）' : ''}}</text>
+                  <view class="msg">{{info.content}}
+                    <view wx:if="{{info.status == 1 || info.status == 2}}"><image class="apvImage" src="/images/pass.png"/></view>
+                    <view wx:if="{{info.status == 3}}"><image class="apvImage" src="/images/fail.png"/></view>
+                  </view>
+              </view>
+          </view>
+      </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,43 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wxc34883118499117a",
+	"projectname": "%E5%B0%8F%E5%A5%91%E7%BA%A6",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "同意拉钩",
+					"pathName": "pages/home/home",
+					"query": "inviteUser=泡菜&toPage=agree&id=9943edf2cf5740db84a28559b4f5632",
+					"scene": "1012"
+				},
+				{
+					"id": 1,
+					"name": "模板消息入口",
+					"pathName": "pages/home/home",
+					"query": "toPage=dynamic",
+					"scene": "1014"
+				}
+			]
+		}
+	}
+}

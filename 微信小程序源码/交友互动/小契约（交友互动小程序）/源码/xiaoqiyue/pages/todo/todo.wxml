@@ -1,0 +1,16 @@
+<view class="parent layout-column">
+  <form bindsubmit='myTask' report-submit>
+    <button form-type='submit' class="task mine"><text>{{myTaskNum + '\n'}}我的拉钩</text></button>
+  </form>
+  <form bindsubmit='relMe' report-submit>
+    <button form-type='submit' class="task relme"><text>{{relMeNum + '\n'}}待我审批</text></button>
+  </form>
+</view>
+<image bindtap="reward" animation="{{animation4Reward}}" class="reward" src='/images/reward.png'></image>
+  <image bindtap="pull" animation="{{animation4Pull}}" class="pull" src='/images/pull.png'></image>
+  <modal hidden="{{rewardHidden}}" title="打赏" confirm-text="确定" bindconfirm="hiddenPayCode" no-cancel="true">
+    <view class="layout-column">
+      <view style='text-align:center;'><image style='width:150px;height:150px;' src='/images/payCode.png' bindtap='savePayCode'></image></view>
+      <text style='text-align:center;font-size: 12px;margin-top:5px;'>点击二维码保存图片，用微信扫描手机图片进行打赏（用于感谢小程序开发者，完全出于自愿）</text>
+    </view>
+  </modal>

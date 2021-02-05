@@ -1,0 +1,30 @@
+.weeks {
+    font-size:15px;
+}
+.rate {
+    font-size:15px;
+}
+checkbox {
+    display: none;
+}
+.date {
+    color: #000000;
+}
+.img {
+    right:20px;
+    position:absolute;
+    height:17px;
+    width:17px;
+}
+.gray {
+    color:gray;
+    font-size:17px;
+}
+.margin-left {
+    margin-left: 45px;
+}
+.layout-column {
+    display:flex;
+    flex-direction: column;
+    font-size: 15px;
+}

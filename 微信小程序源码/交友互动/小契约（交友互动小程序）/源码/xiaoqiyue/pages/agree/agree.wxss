@@ -1,0 +1,20 @@
+.info {
+  color: grey;
+  margin-left:5px;
+}
+.title {
+  width:85px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.agree {
+  position:fixed;
+  bottom:35px;
+  left:80px;
+}
+.refuse{
+  position:fixed;
+  bottom:35px;
+  right:85px;
+}

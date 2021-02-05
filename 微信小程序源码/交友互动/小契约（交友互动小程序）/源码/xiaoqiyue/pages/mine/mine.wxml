@@ -1,0 +1,61 @@
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">未开始({{notStartTotalNums}})</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">进行中({{progressTotalNums}})</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">已结束({{doneTotalNums}})</view>  
+</view> 
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 40}}px;" bindchange="bindChange">  
+    <swiper-item>  
+      <scroll-view  style="height: {{winHeight - 80}}px;" scroll-y>
+        <view wx:for="{{notStartDatas}}" wx:for-item="notStart" wx:key="id" wx:for-index="index">
+          <view class="list" style="background-color:{{index % 2 == 0 ? '#F6F6F6' : '#ffffff'}}" data-taskId="{{notStart.id}}" >
+            <image bindtap="toTaskDetail" src="/images/notStart.png" class="icon" data-taskId="{{notStart.id}}"></image>
+            <text bindtap="toTaskDetail" style="width:{{winWidth - 140}}px;" class="name" data-taskId="{{notStart.id}}">{{notStart.name}}</text>
+            <button open-type="share" data-taskId="{{notStart.id}}" data-hookName="{{notStart.userName}}" type='primary' style="background-color: #265a88;" class='btn invite'>邀请</button>
+            <form bindsubmit='del' report-submit data-taskId="{{notStart.id}}">
+              <button form-type='submit' type='primary' style="background-color: red;" class='btn delete'>删除</button>
+            </form>
+          </view> 
+        </view>
+      </scroll-view>
+      <view class="pageCmp">
+        <image class="page" bindtap='upPage' src="{{notStartCurPage == 1 ? '/images/up-grey.png' : '/images/up.png'}}"/>
+        <text class="page-no">{{notStartCurPage}}/{{notStartTotalPage}}</text>
+        <image class="page" bindtap='downPage' src="{{notStartCurPage == notStartTotalPage ? '/images/down-grey.png' : '/images/down.png'}}"/>
+      </view>
+    </swiper-item>
+    <swiper-item>  
+      <scroll-view  style="height: {{winHeight - 80}}px;" scroll-y>
+        <view wx:for="{{progressDatas}}" wx:for-item="progress" wx:key="id" wx:for-index="index">
+          <view class="list" style="background-color:{{index % 2 == 0 ? '#F6F6F6' : '#ffffff'}}" data-taskId="{{progress.id}}" bindtap="toTaskDetail">
+            <image src="/images/doing.png" class="icon" data-taskId="{{progress.id}}"></image>
+            <text class="name" style="width:{{winWidth - 140}}px;" data-taskId="{{progress.id}}">{{progress.name}}</text>
+            <progress class="progress" data-taskId="{{progress.id}}" activeColor="{{progress.activeColor}}" percent="{{progress.progress}}" show-info="true" active/>
+          </view>
+        </view>
+      </scroll-view>
+      <view class="pageCmp">
+        <image class="page" bindtap='upPage' src="{{progressCurPage == 1 ? '/images/up-grey.png' : '/images/up.png'}}"/>
+        <text class="page-no">{{progressCurPage}}/{{progressTotalPage}}</text>
+        <image class="page" bindtap='downPage' src="{{progressCurPage == progressTotalPage ? '/images/down-grey.png' : '/images/down.png'}}"/>
+      </view>
+    </swiper-item>  
+    <swiper-item>  
+      <scroll-view  style="height: {{winHeight - 80}}px;" scroll-y>
+        <view wx:for="{{doneDatas}}" wx:for-item="done" wx:key="id" wx:for-index="index">
+          <view class="list" style="background-color:{{index % 2 == 0 ? '#F6F6F6' : '#ffffff'}}" data-taskId="{{done.id}}">
+            <image src="/images/done.png" class="icon" data-taskId="{{done.id}}" bindtap="toTaskDetail"></image>
+            <text style="width:{{winWidth - 95}}px;" class="name" data-taskId="{{done.id}}" bindtap="toTaskDetail">{{done.name}}</text>
+            <form bindsubmit='del' report-submit data-taskId="{{done.id}}">
+              <button form-type='submit' type='primary' style="background-color: red;" class='btn delete'>删除</button>
+            </form>
+          </view> 
+        </view>
+      </scroll-view>
+      <view class="pageCmp">
+        <image class="page" bindtap='upPage' src="{{doneCurPage == 1 ? '/images/up-grey.png' : '/images/up.png'}}"/>
+        <text class="page-no">{{doneCurPage}}/{{doneTotalPage}}</text>
+        <image class="page" bindtap='downPage' src="{{doneCurPage == doneTotalPage ? '/images/down-grey.png' : '/images/down.png'}}"/>
+      </view>
+    </swiper-item>  
+</swiper>

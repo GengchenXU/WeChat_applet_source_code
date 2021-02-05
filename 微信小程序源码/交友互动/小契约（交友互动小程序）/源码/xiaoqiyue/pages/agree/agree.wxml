@@ -1,0 +1,41 @@
+<view class="layout-column marUpTop" style="font-size: 15px;font-family:'微软雅黑';padding:5px 15px;">
+    <view class="marTop">您是否愿意和 <text>{{inviteUser}}</text> 进行如下拉钩:</view>
+    <view class="marTop"/>
+    <view class="layout-inline">
+      <view class='title'>标题</view>
+      <view class="info">{{task.name}}</view>
+    </view>
+    <view class="layout-inline halfTop">
+      <view class='title'>描述</view>
+      <view class="info">{{task.desc}}</view>
+    </view>
+    <view class="layout-inline halfTop">
+      <view class='title'>开始时间</view>
+      <view class="info">{{task.startDate}}</view>
+    </view>
+    <view class="layout-inline halfTop">
+      <view class='title'>结束时间</view>
+      <view class="info">{{task.endDate}}</view>
+    </view>
+    <view class="layout-inline halfTop">
+      <view class='title'>执行频率</view>
+      <view class="info">{{task.excRule}}</view>
+    </view>
+    <view class="layout-inline halfTop">
+      <view class='title'>单次通过率</view>
+      <view class="info">{{task.approvalPassRate}}</view>
+    </view>
+    <view class="layout-inline halfTop">
+      <view class='title'>完成率设定</view>
+      <view class="info">{{task.passRate}}</view>
+    </view>
+
+    <view class="layout-row">
+        <form bindsubmit='agree' report-submit>
+          <button class='agree' form-type='submit' type="primary" size="mini">同意</button>
+        </form>
+        <form bindsubmit='refuse' report-submit>
+          <button class='refuse' form-type='submit' type="warn" size="mini">拒绝</button>
+        </form>
+    </view>
+</view>

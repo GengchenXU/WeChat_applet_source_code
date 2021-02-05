@@ -1,0 +1,72 @@
+<form bindsubmit="formSubmit" report-submit>
+<view class="layout-column marUpTop">
+    <input class="border" maxlength="100" placeholder="拉钩标题" name="name"/>
+    <textarea class="border desc marTop" placeholder="详细描述下，包括：拉钩内容、奖惩条约" name="desc" maxlength="1000"/>
+    <view class="layout-row border marTop">
+        <view class="gray">开始时间</view>
+        <picker class="date margin-left" mode="date" value="{{initDate}}" start="{{initDate}}" bindchange="changeStartDate" name="startDate">
+            <view class="picker">
+            {{startDate}}
+            </view>
+        </picker>
+        <image class="img" src="../../images/right.png"></image>
+    </view>
+    <view class="layout-row border marTop">
+        <view class="gray">结束时间</view>
+        <picker class="date margin-left" mode="date" value="{{initDate}}" start="{{initDate}}" end="{{initEndDate}}" bindchange="changeEndDate" name="endDate">
+            <view class="picker">
+            {{endDate}}
+            </view>
+        </picker>
+        <image class="img" src="../../images/right.png"></image>
+    </view>
+      <view class="layout-row marTop border" bindtap="changeExcRule">
+        <view class="gray">执行频率</view>
+        <view class="margin-left">{{excRule[excRuleIndex].name}}</view>
+        <image class="img" src="../../images/right.png"></image>
+    </view>
+    <modal class="excRule" hidden="{{excRuleHidden}}" title="请选择" no-cancel="true" confirm-text="选择" bindconfirm="confirmExcRule">
+        <radio-group class="layout-column" name="excRule">
+            <label class="marTop" wx:for="{{excRule}}" wx:for-item="rule" wx:for-index="r" wx:key="value">
+                <radio data-num="{{r}}" bindtap="selectExcRule" value="{{rule.value}}" checked="{{r == excRuleIndex}}"/>
+                <text data-num="{{r}}" bindtap="selectExcRule">{{rule.name}}</text>
+            </label>
+        </radio-group>
+        <checkbox-group hidden="{{customizeWeekHidden}}" class="marTop" name="excRuleValue">
+            <label class="weeks" wx:for="{{weeks}}" wx:for-item="week" wx:for-index="index" wx:key="value">
+                <checkbox value="{{week.value}}"/>
+                <text bindtap="changeWeekColor" data-num="{{index}}" style="background-color: {{weeksColor[index]}}; margin-left: 15px; border-radius:50%;border:1px solid gray;padding: 3px 3px;color:{{weeksFontColor[index]}};">{{week.name}}</text>
+            </label>
+        </checkbox-group>
+    </modal>
+    <view class="layout-row border marTop" bindtap="changeApproPassRate">
+        <view class="gray">单次通过率</view>
+        <text style="margin-left: 26px;" name="approvalPassRate" value="{{approvalPassRate[approvalPassRateIndex].value}}">{{approvalPassRate[approvalPassRateIndex].name}}</text>
+        <image class="img" src="../../images/right.png"></image>
+    </view>
+    <view class="border marTop">
+        <view class="layout-row">
+            <view class="gray">完成率设定</view>
+            <image class="img" bindtap="showPassRateHelp" src="../../images/help.png"></image>
+            <modal hidden="{{passRateHelpHidden}}" title="提示" confirm-text="知道啦" no-cancel="true" bindcancel="cancel" bindconfirm="passRateHelpConfirm">
+    预先设定一个拉钩结束后的完成率比重。完成率 = 通过的任务数 * 100 / 总任务数。
+            </modal>
+         </view>
+        <slider style='margin-top:15px;' value="80" min="1" show-value="true" name="passRate" activeColor="#285A85"/>
+    </view>
+    <view class="layout-row border marTop">
+      <view class="gray">是否公开</view>
+      <switch class="margin-left" checked="true" color="#265A88" name="open"/>
+      <image class="img" bindtap="showOpenHelp" src="../../images/help.png"></image>
+            <modal hidden="{{openHelpHidden}}" title="提示" confirm-text="知道啦" no-cancel="true" bindcancel="cancel" bindconfirm="openHelpConfirm">
+    公开的拉钩信息将会显示在“动态”页中，可以被其他人看到。
+            </modal>
+    </view>
+    <modal hidden="{{formMsgHidden}}" title="提示" confirm-text="去完善" no-cancel="true" bindcancel="cancel" bindconfirm="hiddenFromMsg">
+    <text>{{formMsg}}</text>
+    </modal>
+    <view class="border marTop">
+        <button type="primary" size="default" style="background-color: #265a88;" formType="submit" disabled="{{disableHookBtn}}">去拉钩</button>
+    </view>
+</view>
+</form>

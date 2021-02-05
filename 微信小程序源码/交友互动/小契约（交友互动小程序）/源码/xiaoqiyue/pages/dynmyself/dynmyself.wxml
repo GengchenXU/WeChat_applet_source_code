@@ -1,0 +1,26 @@
+<view class="dyn">
+  <view class="dyn-item" wx:for="{{dynamic}}" wx:for-item="dyn" wx:key="id">
+    <view>
+      <image src="{{dyn.icon}}" class="dyn-icon"></image>
+    </view>
+    <view class="dyn-content" style="width:{{ windowWidth - 80}}px;">
+      <text class="user-name" decode="true">{{dyn.name}}</text>
+      <view class="content-msg">{{dyn.hook.desc}}</view>
+      <text class="detail" data-id="{{dyn.hook.id}}" bindtap='detail'>详情</text>
+      <view class="status-time">
+        <text style='color:green;' wx:if="{{dyn.hookStatus == 2}}">完成于 {{dyn.createTime}}</text>
+        <text style='color:gray;line-height:20px;' wx:if="{{dyn.hookStatus == 0}}">创建于 {{dyn.createTime}}</text>
+      </view>
+      <view class="goods">
+        <block wx:for="{{dyn.goods}}" wx:key="id" wx:for-item="good" wx:index="index"><text style='color:#2197D9;'>{{index != 0 ? ', ' : ''}}{{good.name}}</text></block>{{dyn.goods.length > 0 ? ' like' : ''}}<text bindtap='showAllGood' data-id="{{dyn.id}}">{{dyn.goods.length < dyn.goodNum ? '  [查看全部]' : ''}}</text>
+      </view>
+      <view class="comments">
+        <view wx:for="{{dyn.comments}}" wx:for-item="comment" wx:key="id" class="comment">
+          <text style='color:#5D718D;' data-id="{{dyn.id}}" data-replyKey="{{comment.key}}" data-replyName="{{comment.name}}">{{comment.name}}<text style="color:black;">{{(comment.replyName == null || comment.replyName.length == 0) ? "" : "回复"}}</text><text>{{(comment.replyName == null || comment.replyName.length == 0) ? "" : comment.replyName}}</text>：<text style="color:black;">{{comment.content}}</text></text>
+        </view>
+        <text bindtap="showAllComments" data-id="{{dyn.id}}" class="all-comment" wx:if="{{dyn.comments.length < dyn.commentsTotalNum}}">查看全部</text>
+      </view>
+    </view>
+  </view>
+  <text class="bottomLoad" bindtap='bottomLoad' hidden='{{firstLoadDataNum < pageSize }}'>{{bottomLoadMsg}}</text>
+</view>

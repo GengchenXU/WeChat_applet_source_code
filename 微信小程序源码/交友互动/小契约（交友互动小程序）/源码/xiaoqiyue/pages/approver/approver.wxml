@@ -1,0 +1,7 @@
+<view class="approver marUpTop">
+  <text class="total">共{{apvSize}}人</text>
+  <view class="item" wx:for="{{approver}}" wx:key="key" wx:for-item="item">
+    <image class="image" src="{{item.icon}}"></image>
+    <text class="name" style='width:{{windowWidth - 80}}px;'>{{item.name}}</text>
+  </view>
+</view>

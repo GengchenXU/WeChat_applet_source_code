@@ -1,0 +1,30 @@
+.comments{
+  display:flex;
+  flex-direction: column;
+  padding: 5px 15px;
+}
+.total{
+  text-align:center;
+}
+.comment{
+  margin-top:10px;
+  display:flex;
+  flex-direction:row;
+  border-bottom:1px solid #eee
+}
+.image{
+  height:30px;
+  width:30px;
+  border-radius:50%;
+}
+.name{
+  color:#5D718D;
+  margin-left:10px;
+  line-height:30px;
+}
+.bottomLoad {
+  text-align:center;
+  color:grey;
+  font-style:italic;
+  margin-bottom:5px;
+}

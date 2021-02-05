@@ -1,0 +1,5 @@
+.item  {
+  font-size:17px;
+  background-color:white;
+  padding:10px 15px;
+}

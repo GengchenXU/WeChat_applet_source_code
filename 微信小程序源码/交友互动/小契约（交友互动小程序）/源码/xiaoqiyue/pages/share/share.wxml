@@ -1,0 +1,4 @@
+<view class="layout-column marUpTop" style="padding: 5px 15px;">
+    拉钩创建成功，邀请Ta和你拉钩吧。
+    <button open-type="share" type='primary' style="background-color: #265a88;width:100%;" size='default' class='marUpTop'>邀请</button>
+</view>

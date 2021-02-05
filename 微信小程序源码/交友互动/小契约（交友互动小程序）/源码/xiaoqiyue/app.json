@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/todo/todo",
+    "pages/msg/msg",
+    "pages/hook/hook",
+    "pages/me/me",
+    "pages/task/task",
+    "pages/agree/agree",
+    "pages/share/share",
+    "pages/apv/apv",
+    "pages/mine/mine",
+    "pages/relme/relme",
+    "pages/sys/sys",
+    "pages/feedback/feedback",
+    "pages/approver/approver",
+    "pages/dynamic/dynamic",
+    "pages/comment/comment",
+    "pages/good/good",
+    "pages/dynrelme/dynrelme",
+    "pages/dynmyself/dynmyself"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "小契约",
+    "navigationBarBackgroundColor": "#285A85",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#295B86",
+    "list": [{
+      "iconPath": "images/hook-noclick.png",
+      "selectedIconPath": "images/hook-click.png",
+      "pagePath": "pages/hook/hook",
+      "text": "拉钩"
+    }, {
+      "iconPath": "images/task-noclick.png",
+      "selectedIconPath": "images/task-click.png",
+      "pagePath": "pages/todo/todo",
+      "text": "任务"
+    },
+    {
+      "iconPath": "images/dynamic-noclick.png",
+      "selectedIconPath": "images/dynamic-click.png",
+      "pagePath": "pages/dynamic/dynamic",
+      "text": "动态"
+    }, {
+      "iconPath": "images/msg-noclick.png",
+      "selectedIconPath": "images/msg-click.png",
+      "pagePath": "pages/msg/msg",
+      "text": "消息"
+    }, {
+      "iconPath": "images/me-noclick.png",
+      "selectedIconPath": "images/me-click.png",
+      "pagePath":"pages/me/me",
+      "text":"我的"
+    }]
+  },
+  "debug": true
+}

@@ -1,0 +1,8 @@
+<view class="goods marUpTop">
+  <text class="total">共{{totalNum}}条</text>
+  <view class="good" wx:for="{{goods}}" wx:key="id" wx:for-item="good">
+    <image class="image" src="{{good.icon}}"></image>
+    <text class="name" style='width:{{windowWidth - 80}}px;'>{{good.name}}</text>
+  </view>
+  <text class="bottomLoad" bindtap='bottomLoad' hidden='{{initLoadDataNum < pageSize}}'>{{bottomLoadMsg}}</text>
+</view>

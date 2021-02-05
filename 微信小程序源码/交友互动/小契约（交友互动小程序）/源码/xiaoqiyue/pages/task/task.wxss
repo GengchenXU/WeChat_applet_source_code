@@ -1,0 +1,147 @@
+.task {
+    display:flex;
+    flex-direction: column;
+    padding: 5px 15px;
+}
+.approver{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+}
+.result {
+    width: auto;
+    height: 80px;
+    margin-left:5px;
+    margin-right:5px;
+    background-color: #F5F5F5;
+}
+.btn {
+    float:right;
+    margin-right:5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height:2.3;
+    font-size:13px;
+    padding:0 1.34em;
+    color:#FFFFFF;
+    background-color:#265A88;
+}
+.status {
+    color:white;
+    margin-left:60px;
+    background-color:#1296DB;
+    height:13px;
+    font-size:12px;
+    padding:2px 2px;
+}
+.status-notStart{
+  background-color:grey;
+}
+.status-suc{
+  background-color:green;
+}
+.status-fail{
+  background-color:red;
+}
+.icon {
+    margin-left: 10px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+}
+.content {
+    margin-left:10px;
+    margin-right:10px;
+    display:flex;
+    flex-direction:column;
+    width:240px;
+}
+.time {
+    font-size:12px;
+    color:gray;
+}
+.msg{
+    padding: 5px 5px 5px 5px;
+    font-family:"微软雅黑";
+    border-radius:5px;
+    font-size:13px;
+    word-break:break-all;
+}
+.mar-left {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.img {
+    height:15px;
+    width:20px;
+    position:absolute;
+    right:5px;
+}
+.name{
+  color:grey;
+  font-size:13px;
+  margin-top:5px;
+  word-break:break-all;
+}
+.border {
+    border-bottom:1px dashed #eee;
+}
+.line {
+  border-bottom:1px solid #eee;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.apv {
+  display:inline-block;
+  line-height:1.3;
+  font-size:12px;
+  padding:0;
+  height:18px;
+  margin-left:10px;
+  width:33px;
+  background-color:#295B86;
+  color:white;
+  border-bottom:groove;
+}
+.apvImage {
+  position:absolute;
+  right:10px;
+  height:35px;
+  width:35px;
+  bottom:0px;
+  z-index:100;
+}
+.relCss {
+  position:relative;
+}
+.hookStatus {
+  position:absolute;
+  width:45px;
+  height:45px;
+  top:5px;
+  right:15px;
+}
+.info {
+  color: grey;
+  margin-left:5px;
+  word-break:break-all;
+}
+.title {
+  width:85px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.otherInfo {
+  background-color:#F5F5F5;
+}
+.more {
+  width:20px;
+  height:15px;
+  margin-left:10px;
+  margin-right:10px;
+}

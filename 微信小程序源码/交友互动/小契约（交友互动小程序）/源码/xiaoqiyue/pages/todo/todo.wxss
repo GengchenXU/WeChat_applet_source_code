@@ -1,0 +1,37 @@
+page{
+  background-color: #F6F6F6;
+  height: 100%;
+}
+.parent {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.task {
+  border:2px solid;
+  border-radius:50%;
+  width:120px;
+  height:120px;
+  color:white;
+}
+.mine {
+  background-color:#265A88;
+}
+.relme {
+  background-color:#1296DB;
+  margin-top:50px;
+}
+.reward{
+  position:fixed;
+  width:35px;
+  height:35px;
+  top:-35px;
+  right:0px;
+}
+.pull{
+  position:fixed;
+  width:15px;
+  height:45px;
+  top:-18px;
+  right:10px;
+}
