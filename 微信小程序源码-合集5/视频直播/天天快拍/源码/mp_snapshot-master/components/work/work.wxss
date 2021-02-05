@@ -1,0 +1,148 @@
+@import '../../components/nine-photo-layout/nine-photo-layout.wxss';
+
+.work {
+    margin-top: 20rpx;
+    background: #fff;
+}
+/* 作者 */
+.work-author {
+    padding-left: 30rpx;
+    overflow: hidden;
+}
+.author-info {
+    display: flex;
+    align-items: center;
+    margin: 20rpx 0;
+}
+/*.author-info > view {
+    display: inline-block;
+}*/
+.author-info .head {
+    position: relative;
+    margin-right: 30rpx;
+}
+.author-info .head image {
+    display: block;
+}
+.author-info .info {
+    align-self: flex-end;
+}
+.work .avatar {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 100rpx;
+    background: #f2f2f2;
+}
+.auth-icon {
+    position: absolute;
+    left: 65rpx;
+    top: 68rpx;
+    width: 35rpx;
+    height: 35rpx;
+}
+.nickname {
+    margin-bottom: 30rpx;
+    font-size: 30rpx;
+    color: #353535;
+}
+.date {
+    color: #999;
+    font-size: 22rpx;
+}
+/* 作品 */
+.work-photos {
+    position: relative;
+}
+.score-panel-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300rpx;
+    height: 104rpx;
+    color: #fff;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABoCAYAAABLw827AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM0MjBDMDdGMzU0NzExRTc4N0MyOEU4NDM4MkFGNjJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM0MjBDMDgwMzU0NzExRTc4N0MyOEU4NDM4MkFGNjJFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzQyMEMwN0QzNTQ3MTFFNzg3QzI4RTg0MzgyQUY2MkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzQyMEMwN0UzNTQ3MTFFNzg3QzI4RTg0MzgyQUY2MkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6R22TaAAAFEElEQVR42uzd7W7iOBiAUYdyR3P/VzW/cZaOQHK9tuMkDl89R4oSRlWH3ZEevTYBphDCnwDQ9vd6XApHTI7vx3PyeE7O+fHPfLXmSZz9OwAdvu6NKYTn+zxdj9MtUOH2eE7OQwgW0BusuRCu9Hq6Pb6HK4/W7oid/DsAncH6ujXjPk3dr9Mjb8qUnXcRLKC3FaUjDVUap2l0rAQLWDNh9YaqFald8RIsYMSEVYvWNPJJ2HQHeoP1PWXFQqi+H6evHE5HPgmAnlZMhXNtiqrtZwkW8LAl4bSwFGztY00jngTAngnrVIlTa/ISLOAhE9bUOWENna4EC+jVe7/VYfdgCRawdcI6HRkmwQJGTFihEKvTQrTc6Q48bUlYilhp0ho+dQkWsHbCKm2sT5WfDSOnLsEC1gSrdhwyUQkWMGrS6o2UPSzg5UK1tFQULODhS8I8RsM/lUGwgLcnWMCWaeuhk5VgAUcHTbAAS0IAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAECxAsAMECECxAsAD2mQULeLUgzUfGSbAAS0LgV0xV+UT18ElLsIA1wcpj1fqZMDpkggWMDlc4KlqCBaxdEpaO4dOUYAEjJqulpV/PntamuAkWsCZYsRGxsGG5KFjAoRNWLDxuBcoeFvBQMQtVDA/evxIsYMuSMN/LKj0+JGSCBWyZsHpiNXxZKFhAb7DmwjmfuvKJbGi4BAtYO2HFjcvB3VOWYAF7J6zWJNX6GcECDgvWJZT3smLhzw8hWMCaJWGsBKp0F/zweAkW0ONSCVVsxCo0loqCBTxtwlq6P8uEBTx0wrqEn5vupfuyYmWisukOPHxJeCksD0vvLWy9MXpzvAQLWDth9S4Lhy4Hv52vx9/r8ZUcp+RcOqbknB4huwaep3VTZ76sy498msqPWPkdS/dn7Y7X+fYE0v+o0+0vvYdrKoRKsOAzgpWeLx3hat3WUPtMrGG3N9yDNd/iNGfTVKzEKhSu02gBzw9WHq5YuF4zbcXCdetN0cNvIE2DFZJA9SwB81jloRIueF6oahNOXLFEbE1dtd+x9FHJuz6RNA3WfbqaG5PVPUKnyjJQpOC1p6z01oPW8jCG9r1X+ePQmK4OWRKmx5ScY2G6mhqhEi94jUjVwtU6WtNW7Xrp23SGLgnzD5W/T1drQmVJCK+9JFwTrvxWhRiWP60hhvam+6YlYC1Y6WSVTlX5MjAUHtcmLOA1wpVe518YUVoe9ryiWLu7/dDPeD8ncZrD/zfT5+Q6ZhPVxWQFHzNphVB+FbE2dYXCdeuTG4YF6xJ+vgo4J9GZG0s/+1bwHtFq7WfVpq1arHo+070UqyE3kZ6zSua3KrSCFUxX8HZT1tqJa80kdfhXfp2zWF0Wpqm1S0ABg+cFausScWnqakXq0G+ATvewYsd0ZaqCz5q2el7Z643b4V9Xfw4/XyGshan2HkGxgveewGp7Ta3zUuSWYrU5YqVXCUuT1WwJCB+/RAwr41X7s+GTVW3Car1CuBSnKRy42QYMXQruCVgrVGtDuSlYoTBhhcrS8NCCAk+JWU941v780FjlwZoaT2ISKfjVS8e9+1HD3vxcekJTI1rAZ8dq9KQ09LaGuXO5Z7oCQXtKqNJg7f3lJi/47PC8zN9xfpP/EcDvil95OppnvQHeg+8lBN7GfwIMAO796ixtZFU+AAAAAElFTkSuQmCC');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+}
+.score-capital {
+    display: inline-block;
+    font-size: 60rpx;
+}
+.score-lower {
+    display: inline-block;
+    margin-top: 23rpx;
+}
+/* 作品详细信息 */
+.work-details {
+    color: #999;
+}
+.details {
+    padding: 24rpx 30rpx;
+    font-size: 28rpx;
+}
+.join-activity {
+    color: #32798d;
+    margin-bottom: 34rpx;
+}
+.labels-wrap,
+.location-wrap {
+    position: relative;
+    margin-bottom: 34rpx;
+    padding-left: 50rpx;
+}
+.icon-label,
+.icon-location {
+    position: absolute;
+    left: 0;
+    color: #bdc5c8;
+}
+.icon-label {
+    top: 0;
+}
+.icon-location:before {
+    font-size: 25rpx;
+	content: "\E007";
+}
+.labels {
+    width: 100%;
+    white-space: nowrap;
+}
+.labels text {
+    margin-right: 20rpx;
+}
+.des {
+    line-height: 1.4;
+    color: #666;
+}
+.comment-panel {
+    border-top: 2px dashed #f5f5f5;
+    padding: 30rpx;
+    font-size: 24rpx;
+}
+.comment-panel-hd {
+    position: relative;
+    height: 54rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-grade {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 60rpx;
+}
+.comment-icon {
+    vertical-align: -12rpx;
+    width: 54rpx;
+    height: 54rpx;
+    margin-right: 10rpx;
+}
+.work .comment {
+    padding-left: 0;
+    margin-top: 20rpx;
+}
+.comment-nickname {
+    color: #32798d;
+    margin-right: 14rpx;
+}

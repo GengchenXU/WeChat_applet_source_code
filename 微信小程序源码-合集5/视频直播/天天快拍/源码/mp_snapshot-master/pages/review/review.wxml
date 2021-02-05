@@ -1,0 +1,5 @@
+<view class="review">
+    <textarea bindconfirm="getValue" bindblur="getValue" placeholder="{{ placeholder }}" placeholder-style="#999" value="{{ value }}"/>
+</view>
+<!-- 发布按钮 -->
+<view class="btn btn-pub" bindtap="submitData">发布评论</view>

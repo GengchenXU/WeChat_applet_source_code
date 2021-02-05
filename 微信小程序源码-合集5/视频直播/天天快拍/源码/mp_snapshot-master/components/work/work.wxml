@@ -1,0 +1,74 @@
+<template name="work">
+    <view class="work">
+        <!-- 作者 -->
+        <navigator class="work-author" url="../../pages/work-details/work-details?id={{ item.id }}" hover-class="none">
+            <view class="author-info">
+                <view class="head">
+                    <image class="avatar" src="{{ item.src + '!170x170.jpg' }}" mode="aspectFill"></image>
+                    <image class="auth-icon" src="../../images/icon_v.jpg" wx:if="{{item.is_auth}}"></image>
+                </view>
+                <view class="info">
+                    <view class="nickname">{{item.nickname}}</view>
+                    <view class="date">{{item.date}}</view>
+                </view>
+            </view>
+        </navigator>
+        <!-- 作品 -->
+        <view class="work-photos" wx:if="{{ 0 < item.photos.length <= 9 }}">
+            <view class="score-panel-bg" wx:if="{{ item.score_count > 0 }}">
+                <text class="score-capital">{{item.score_integer}}</text>
+                <text class="score-lower">.{{item.score_decimal }}分/{{item.score_count}}人</text>
+            </view>
+            <view wx:if="{{ item.photos.length == 1 }}" class="photos photos-{{item.photos.length}}" bindtap="openSlider" id="{{ item.id }}">
+                <image src="{{ item.photos[0].src + '!720w.jpg' }}" mode="{{ 2/3 < item.scale < 2/3 ? 'widthFix' : 'aspectFill'}}"></image>
+            </view>
+            <view wx:else class="photos photos-{{item.photos.length}}" bindtap="openSlider" id="{{ item.id }}">
+                <block wx:for="{{ item.photos }}" wx:key="item" wx:for-index="idx">
+                    <image src="{{ item.src + '!720w.jpg' }}" mode="aspectFill" data-idx="{{ idx + 1 }}"></image>
+                </block>
+            </view>
+        </view>
+        <!-- 作品详细信息 -->
+        <view class="work-details">
+            <navigator class="details" url="../../pages/work-details/work-details?id={{ item.id }}&activity={{ item.is_belong_participate }}" hover-class="none">
+                <!-- 活动 -->
+                <navigator class="join-activity" url="../../pages/activity-details/activity-details?id={{ item.activity_id }}" wx:if="{{ item.is_belong_participate }}">{{item.activity_name}}</navigator>
+                <!-- 标签 -->
+                <view class="labels-wrap">
+                    <view class="icon-label">#</view>
+                    <scroll-view class="labels" scroll-x="{{ item.is_scroll_x }}">
+                        <block  wx:for="{{ item.labels }}" wx:key="item">
+                            <text>{{ item }}</text>
+                        </block>
+                    </scroll-view>
+                </view>
+                <!-- 地址 -->
+                <view class="location-wrap" wx:if="{{ item.location !== '未知' }}">
+                    <view class="icon icon-location"></view>
+                    <view class="location">{{ item.location }}</view>
+                </view>
+                <!-- 作品描述 -->
+                <view class="des">{{ item.des }}</view>
+            </navigator>
+            <!-- 评论面板 -->
+            <view class="comment-panel">
+                <view class="comment-panel-hd">
+                    <navigator url="../../pages/review/review?id={{ item.id }}">
+                        <image class="comment-icon" src="../../images/btn_home-comment01@3x.png"></image>
+                        <text>{{ item.comments_num }}评论</text>
+                    </navigator>
+                    <!-- 打分按钮 -->
+                    <image wx:if="{{ item.is_score !== 1 }}" hidden="{{ item.uid == uid }}" class="btn-grade" src="../../images/btn_home-score@3x.png" catchtap="openScorePanel" id="{{ item.id }}" data-index="{{ index }}" data-uid="{{ item.uid }}"></image>
+                </view>
+                <navigator class="comment-panel-bd" url="../../pages/comment-panel/comment-panel?id={{ item.id }}" wx:if="{{ item.comments_num > 0 }}">
+                    <block  wx:for="{{ item.comments }}" wx:key="item">
+                        <view class="comment" wx:if="{{ index < 3 }}">
+                            <text class="comment-nickname">{{ item.nickname }}:</text>
+                            <text class="comment-content">{{ item.content }}</text>
+                        </view>
+                    </block>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,12 @@
+/* pages/over_work/over_work.wxss */
+.defaultList{
+  margin: 0 0;
+}
+.forget{
+  text-align: center;
+  color: gray;
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+  font-size: 13px;
+}

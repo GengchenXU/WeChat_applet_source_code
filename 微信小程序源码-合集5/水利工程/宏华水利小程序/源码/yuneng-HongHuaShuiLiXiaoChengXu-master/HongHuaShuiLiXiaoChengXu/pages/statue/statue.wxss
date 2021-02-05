@@ -1,0 +1,87 @@
+/**index.wxss**/
+.topBg image{
+	display: block;
+	width: 100%;
+	height:160px;
+}
+.topBg{
+	position: relative;
+}
+.topBg .infoBox{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.topBg .infoBox .title{
+	color: white;
+	font-size: 12px;
+	opacity: 0.7;
+}
+.topBg .infoBox>.item{
+	padding: 0 20px;
+	text-align: center;
+}
+.topBg .infoBox>.item1{
+	flex:1;
+}
+.topBg .infoBox .title .borderB{
+	width: 100px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+.topBg .infoBox .title .borderB:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom:-5px;
+	width:30px;
+	height: 1px;
+	background: white;
+}
+.topBg .infoBox .day{
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: left;
+}
+.topBg .infoBox .imgbox{
+	text-align: right;
+}
+.topBg .infoBox .imgbox image{
+	width: 40px;
+}
+.setBox{
+	background: white;
+	padding:40px 20px;
+	margin: 0 10px;
+	border-radius: 8px;
+	box-shadow: 0px 5px 5px #e4f3ff;
+}
+.setBox .item{
+	text-align: center;
+}
+.setBox .speedBg{
+	height: 250px;
+	width: 40px;
+	margin: 10px auto;
+	border-radius: 100px;
+	background: #e9f1f7;
+	position: relative;
+}
+.setBox .speedBg .speed{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#79d4fe), to(#379aef));  
+	border-radius: 100px;
+}
+.setBox .item b{
+	color: #3b98e7;
+	font-weight: bold;
+}
+
+.setBox .item span{
+	color: #424242;
+}

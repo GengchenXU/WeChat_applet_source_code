@@ -1,0 +1,70 @@
+<import src="../../components/nine-photo-layout/nine-photo-layout.wxml"></import>
+<import src="../../components/comment/comment.wxml"></import>
+<import src="../../components/load/load.wxml"></import>
+<import src="../../components/slider/slider.wxml"></import>
+<import src="../../components/score-panel/score-panel.wxml"></import>
+<import src="../../components/review-up-tab/review-up-tab.wxml"></import>
+<import src="../../components/footer-panel/footer-panel.wxml"></import>
+
+<view class="work-details">
+    <view class="work" hidden="{{ item.is_hide_work }}">
+        <!-- 作者 -->
+        <navigator class="work-author" hover-class="none">
+            <view class="author-info">
+                <view class="head">
+                    <image class="avatar" src="{{ item.src + '!170x170.jpg' }}" mode="aspectFill"></image>
+                    <image class="auth-icon" src="../../images/icon_v.jpg" wx:if="{{item.is_auth}}"></image>
+                </view>
+                <view class="info">
+                    <view class="nickname">{{item.nickname}}</view>
+                    <view class="date">{{item.date}}</view>
+                </view>
+            </view>
+            <view class="score-wrap" wx:if="{{ item.score_count > 0 }}">
+                <text class="score-capital">{{item.score_integer}}</text>
+                <text class="score-lower">.{{item.score_decimal }}分/{{item.score_count}}人</text>
+            </view>
+        </navigator>
+        <!-- 作品 -->
+        <view class="work-photos" wx:if="{{ 0 < item.photos.length <= 9 }}"> 
+            <template is="nine-photo-layout" data="{{ item }}"></template>
+        </view>
+        <!-- 作品详细信息 -->
+        <view class="work-info">
+            <navigator class="details" hover-class="none">
+                <!-- 快拍今天  -->
+                <navigator open-type="navigateBack" delta="1" class="join-activity">天天快拍，记录身边的每一天。</navigator>
+                <!-- 标签 -->
+                <view class="labels-wrap">
+                    <view class="icon-label">#</view>
+                    <scroll-view class="labels" scroll-x="{{ item.is_scroll_x }}">
+                        <block  wx:for="{{ item.labels }}" wx:key="item">
+                            <text>{{ item }}</text>
+                        </block>
+                    </scroll-view>
+                </view>
+                <!-- 地址 -->
+                <view class="location-wrap" wx:if="{{ item.location !== '未知' }}">
+                    <view class="icon icon-location"></view>
+                    <view class="location">{{ item.location }}</view>
+                </view>
+                <!-- 作品描述 -->
+                <view class="des">{{ item.des }}</view>
+            </navigator>
+        </view>
+
+     <!--作品详情评论点赞列表  -->
+       <template is="review-up-tab" data="{{ item,thumbs,navStyleData,loadStyleData,tabLoadStyleData }}"></template>
+   
+    </view>
+
+      <!-- 底部打分评论面板 -->
+      <template is="footer-panel" data="{{ item }}"></template>
+    
+</view>
+
+
+<!-- 查看大图 -->
+<template is="slider" data="{{ slider }}"></template>
+<!-- 打分面板 -->
+<template is="score-panel" data="{{ score_panel }}"></template>

@@ -1,0 +1,47 @@
+page, .tags {
+    height: 100%;
+}
+.tags {
+    padding: 30rpx;
+    background: #ececec; 
+    font-size: 30rpx;
+}
+.add-tag {
+    width: 206rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    background: #fff;
+    padding: 0 34rpx;
+    margin-bottom: 28rpx;
+    border-radius: 30rpx;
+}
+.tag-wrap:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+.tag-wrap view {
+    padding: 18rpx 34rpx;
+    border-radius: 30rpx;
+    background: #fff;
+    color: #7aa5b1;
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+    float: left;
+}
+.tag-wrap view.active {
+    background: #adc9d1;
+    color: #fff;
+}
+.btn-confirm {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100rpx;
+    background: #7aa5b1;
+    text-align: center;
+    line-height: 100rpx;
+    color: #fff;
+    font-size: 26rpx;
+}

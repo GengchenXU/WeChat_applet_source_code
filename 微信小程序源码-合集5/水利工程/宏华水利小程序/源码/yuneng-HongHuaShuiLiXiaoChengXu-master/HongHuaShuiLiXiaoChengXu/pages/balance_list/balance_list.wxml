@@ -1,0 +1,18 @@
+<view class="bg-gray">
+	
+  <view class='dataList flex align between'>
+    <view class='item'><span>余额充值</span><small>2016-12-15</small></view>
+    <view class='item'><b>+1000.00</b></view>
+  </view><!-- dataList -->
+
+  <view class='dataList flex align between'>
+    <view class='item'><span>余额充值</span><small>2016-12-15</small></view>
+    <view class='item'><b>+1000.00</b></view>
+  </view><!-- dataList -->
+
+  <view class='dataList flex align between'>
+    <view class='item'><span>余额充值</span><small>2016-12-15</small></view>
+    <view class='item'><b>+1000.00</b></view>
+  </view><!-- dataList -->
+
+</view><!--bg-gray-->

@@ -1,0 +1,22 @@
+<!--pages/over_work/over_work.wxml-->
+<view class='bgGray'>
+
+<view class='space10'></view>
+
+<view class="defaultList">
+		<view class="list flex align inputItem">
+			<view class="icon item"><image  mode="widthFix" src="../../image/wcfw_icon_sbm_default@3x.png"></image></view>
+			<view class="text item"> <input placeholder="请填写员工识别码"/></view>
+		</view>
+</view>
+
+<view class='space50'></view>
+
+<view class='thisbtn'>完成服务</view>
+
+<view class='space60'></view>
+
+<text class='forget'>忘记识别码?</text>
+
+
+</view>

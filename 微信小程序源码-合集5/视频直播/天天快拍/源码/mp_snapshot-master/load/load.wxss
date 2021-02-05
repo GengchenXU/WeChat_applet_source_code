@@ -1,0 +1,14 @@
+/* laoding */
+.loading {
+    display: block;
+    margin: auto;
+    width: 40rpx;
+    height: 40rpx;
+    padding: 20rpx 0;
+}
+/* finish */
+.finish {
+    padding: 20rpx 0;
+    font-size: 20rpx;
+    text-align: center;
+}

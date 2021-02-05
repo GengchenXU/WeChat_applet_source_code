@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+
+<view class='login'>
+  <text class='title'>宏华净水</text>
+
+  <view class='inputBox flex align border-bottom'>
+      <view class='item'><image mode="widthFix" src="../../image/icon_login_left_phone@3x.png"></image></view>
+      <view class='item input'><input placeholder='请输入手机号码' type='number' maxlength='11'></input></view>
+  </view><!--inputBox-->
+
+  <view class='inputBox flex align  border-bottom'>
+      <view class='item'><image mode="widthFix" src="../../image/icon_login_left_lock@3x.png"></image></view>
+      <view class='item input'><input placeholder='请输入密码' password='true'></input></view>
+  </view><!--inputBox-->
+
+  <view class='thisbtn' bindtap='gowork'>员工登录</view>
+
+</view>
+
+<image mode='widthFix' src='../../image/pho_login_bottom@3x.png' class='loginbg'></image>

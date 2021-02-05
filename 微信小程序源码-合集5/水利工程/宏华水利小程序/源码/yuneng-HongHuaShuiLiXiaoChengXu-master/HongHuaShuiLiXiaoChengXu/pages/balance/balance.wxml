@@ -1,0 +1,49 @@
+<view class="bg-gray">
+	<view class="topBg">
+		<div class="flex align infoBox">
+			<div class="item">
+				
+				<div class="title">
+					<div class="borderB">当前余额</div>
+				</div>
+				
+				<div class="day">297.00</div><!--day-->
+				
+			</div>
+		</div><!--infoBox-->
+	  <image style="" mode="scaleToFill" src="../../image/pho_home_top@3x.png"></image>
+	</view><!--topBg-->
+	
+	<div class="space20"></div>
+	
+	<view class="defaultList">
+		 
+		<view class="list flex align rightNav" bindtap='gorecharge'>
+			<view class="icon item"><image style="" mode="widthFix" src="../../image/yggl_icon_ygcz_default@3x.png"></image></view>
+			<view class="text item">余额充值</view>
+		</view>
+		
+		<view class="list flex align rightNav" bindtap='gobalancelist'>
+			<view class="icon item"><image style="" mode="widthFix" src="../../image/yggl_icon_czjl_default@3x.png"></image></view>
+			<view class="text item">充值记录</view>
+		</view>
+		
+		<view class="list flex align rightNav" bindtap='gobuyrecord'>
+			<view class="icon item"><image style="" mode="widthFix" src="../../image/yggl_icon_gmjl_default@3x.png"></image></view>
+			<view class="text item">购买记录</view>
+		</view>
+		
+	</view><!--defaultList-->
+	
+	<div class="space20"></div>
+	
+	<view class="defaultList">
+		
+		<view class="list flex align rightNav">
+			<view class="icon item"><image style="" mode="widthFix" src="../../image/yggl_icon_cjwt_default@3x.png"></image></view>
+			<view class="text item">常见问题</view>
+		</view>
+		
+	</view><!--defaultList-->
+	
+</view><!--bg-gray-->

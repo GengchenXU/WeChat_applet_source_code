@@ -1,0 +1,23 @@
+<template name="score-panel">
+    <view class="score-panel-mask" hidden="{{ score_panel.is_hide_score_panel }}" bindtap="closeScorePanel">
+        <view class="score-panel" catchtap="openScorePanel" animation="{{ score_panel.animationData }}">
+            <view class="score-panel-inner">
+                <view class="score-panel-bd">
+                    <image class="score-panel-bd-bg" src="../../images/bg_home-give-score@3x.png" mode="widthFix"></image>
+                    <view class="score">{{ score_panel.score }}</view>
+                </view>
+                <view class="score-panel-ft">
+                    <view class="threshold-score">
+                        <view class="min-score">0</view>
+                        <view class="max-score">100</view>
+                    </view>
+                    <view class="rangeslider">
+                        <view class="slider-bar" style="width: {{ score_panel.pos }}px"></view>
+                        <view class="slider-btn" style="left: {{ score_panel.pos }}px" bindtouchstart="startScore" bindtouchmove="gradeScore" bindtouchend="endScore"></view>
+                    </view>
+                </view>
+            </view>
+            <button class="btn-confirm" catchtap="submitScore">确认</button> 
+        </view>
+    </view>
+</template>

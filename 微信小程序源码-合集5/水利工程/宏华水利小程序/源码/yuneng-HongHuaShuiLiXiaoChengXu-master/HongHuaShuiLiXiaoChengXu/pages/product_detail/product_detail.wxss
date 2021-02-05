@@ -1,0 +1,14 @@
+swiper image{
+	width: 100%;
+	display: block;
+}
+.defaultList{
+	margin: 0 0;
+}
+.price{
+  font-weight: bold;
+}
+.rowimg.change{
+  transition: all 0.3s;
+  transform: rotate(180deg)
+}

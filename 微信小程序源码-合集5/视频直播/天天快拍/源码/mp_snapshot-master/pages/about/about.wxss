@@ -1,0 +1,6 @@
+@import '../../components/wxParse/wxParse.wxss';
+.about {
+    padding: 20rpx;
+    font-size:28rpx;
+    line-height:48rpx;
+}

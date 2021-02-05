@@ -1,0 +1,43 @@
+.bgGray{
+	min-height: 100%;
+	display: block;
+	background: #f0f2f5;
+  padding-bottom: 10px;
+  border: 1px solid #ffffff;
+}
+ .newList{
+	background: white;
+  margin-top: 10px;
+  padding: 0 0;
+}
+
+ .newList .title{
+ 		color: #424242;
+ 		font-size: 15px;
+ 		line-height: 1.5em;
+ 		height:80px;
+ }
+.newList .imgbox{
+	width: 150px;
+}
+.newList .imgbox image{
+	width: 100%;
+}
+.newList .text{
+	padding-left: 10px;
+  line-height:2em;
+  color: gray;
+  font-size: 13px;
+  flex:1;
+}
+.newList .info{
+	margin-top: 10px;
+}
+.newList .info small{
+	margin-right: 10px;
+	font-size: 12px;
+}
+.newList .info small image{
+	width: 12px;
+	margin-right:10px;
+}

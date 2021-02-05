@@ -1,0 +1,10 @@
+<template name="nine-photo-layout">
+    <view wx:if="{{ item.photos.length == 1 }}" class="photos photos-{{item.photos.length}}" catchtap="openSlider" id="{{ item.id }}">
+        <image src="{{ item.photos[0].src + '!720w.jpg' }}" mode="{{ 2/3 < item.scale < 2/3 ? 'widthFix' : 'aspectFill'}}"></image>
+    </view>
+    <view wx:else class="photos photos-{{item.photos.length}}" catchtap="openSlider" id="{{ item.id }}">
+        <block wx:for="{{ item.photos }}" wx:key="item" wx:for-item="photo" wx:for-index="idx">
+            <image src="{{ photo.src+ '!720w.jpg' }}" mode="aspectFill" data-idx="{{ idx + 1 }}"></image>
+        </block>
+    </view>
+</template>

@@ -1,0 +1,11 @@
+<template name="load">
+  <view wx:if="{{tabLoadStyleData}}">
+    <image class="loading" src="../../images/loading.gif" hidden="{{ tabLoadStyleData.hide_loading }}"></image>
+    <view class="finish" wx:if="{{ tabLoadStyleData.is_finish }}">已经全部加载完毕</view>
+  </view>
+  <view wx:else>
+    <image class="loading" src="../../images/loading.gif" hidden="{{ loadStyleData.hide_loading }}"></image>
+    <view class="finish" wx:if="{{ loadStyleData.is_finish }}">已经全部加载完毕</view>
+    <view class="finish" wx:if="{{ loadStyleData.has_no_data }}">{{ loadStyleData.tips }}</view>
+  </view>
+</template>

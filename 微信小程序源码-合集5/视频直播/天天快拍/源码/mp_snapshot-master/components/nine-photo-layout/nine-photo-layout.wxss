@@ -1,0 +1,131 @@
+.photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.photos image {
+    background: #f2f2f2;
+}
+.photos-1 image {
+    height: 660rpx;
+    width: 100%;
+}
+.photos-2 image {
+    width: 100%;
+    height: 441rpx;
+}
+.photos-2 image:nth-child(1) {
+    margin-bottom: 4rpx;
+}
+.photos-3 image {
+    height: 373rpx;
+    width: 373rpx;
+}
+.photos-3 image:nth-child(1) {
+    width: 100%;
+    height: 573rpx;
+    margin-bottom: 4rpx;   
+}
+.photos-4 image {
+    width: 247.33rpx;
+    height: 247.33rpx;
+}
+.photos-4 image:nth-child(1) {
+    width: 100%;
+    height: 573rpx;
+    margin-bottom: 4rpx;
+}
+.photos-5 {
+    display: block;
+}
+.photos-5:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.photos-5 image {
+    float: left;
+    width: 246rpx;
+    height: 246rpx;
+}
+.photos-5 image:nth-child(1) {
+    width: 500rpx;
+    height: 496rpx;
+    margin-right: 4rpx;
+}
+.photos-5 image:nth-child(2) {
+    margin-bottom: 4rpx;
+}
+.photos-5 image:nth-child(4),
+.photos-5 image:nth-child(5) {
+    width: 373rpx;
+    height: 373rpx;
+    margin-top: 4rpx;
+}
+.photos-5 image:nth-child(4) {
+    margin-right: 4rpx;
+}
+.photos-6 {
+    display: block;
+}
+.photos-6:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.photos-6 image {
+    float: left;
+    width: 247rpx;
+    height: 247rpx;
+    margin-right: 4.88rpx;
+    margin-top: 4rpx;
+}
+.photos-6 image:nth-child(1) {
+    width: 500rpx;
+    height: 496rpx;
+    margin-top: 0;
+    margin-right: 4rpx;
+}
+.photos-6 image:nth-child(2) {
+    margin-top: 0;
+}
+.photos-6 image:nth-child(2),
+.photos-6 image:nth-child(3) {
+    width: 246rpx;
+    height: 246rpx;
+    margin-right: 0;
+}
+.photos-6 image:nth-child(6) {
+    margin-right: 0;
+}
+.photos-7 image {
+    width: 247rpx;
+    height: 247rpx;
+    margin-top: 4rpx;
+}
+.photos-7 image:nth-child(1) {
+    width: 100%;
+    height: 573.5rpx;
+    margin-top: 0;
+}
+.photos-8 image {
+    width: 247rpx;
+    height: 247rpx;
+    margin-top: 4rpx;
+}
+.photos-8 image:nth-child(1),
+.photos-8 image:nth-child(2) {
+    width: 373rpx;
+    height: 373rpx;
+    margin-top: 0;
+}
+.photos-9 image {
+    width: 247rpx;
+    height: 247rpx;
+    margin-top: 4rpx;
+}
+.photos-9 image:nth-child(1),
+.photos-9 image:nth-child(2),
+.photos-9 image:nth-child(3) {
+    margin-top: 0;
+}

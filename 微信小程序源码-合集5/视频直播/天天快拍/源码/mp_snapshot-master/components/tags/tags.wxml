@@ -1,0 +1,9 @@
+<view class="tags">
+    <input placeholder="#添加标签" placeholder-style="color: #7aa5b1" class="add-tag" bindconfirm="addTag" maxlength="8" value="{{ value }}"/>
+    <view class="tag-wrap"  bindtap="selectedTag">
+        <block wx:for="{{ tags }}" wx:key="item">
+            <view class="tag {{ item.is_selected ? 'active' : '' }}" id="{{ item.id }}" data-idx="{{ index }}">#{{ item.text }}#</view>
+        </block>
+    </view>
+    <navigator class="btn btn-confirm" delta="1" open-type="navigateBack">确定</navigator>
+</view>

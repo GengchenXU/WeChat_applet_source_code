@@ -1,0 +1,87 @@
+<import src="../../components/load/load.wxml"></import>
+<import src="../../components/slider/slider.wxml"></import>
+<import src="../../components/fall-layout/fall-layout.wxml"></import>
+
+<!-- 头部:日期选择  -->
+<view class="head">
+    <navigator class="pre" wx:if="{{ date.pre == 0 }}" url="../../pages/about/about">了解快拍</navigator>
+    <view class="pre" wx:else bindtap="getPre" data-pre="{{ date.pre }}">前一天</view>
+    <picker mode="date" bindchange="getSelect" value="{{ date.current }}" start="{{ date_range.start }}" end="{{ date_range.end }}">
+        <view class="picker">
+            <text>{{ date.current_month }}月{{ date.current_date }}日</text>
+            <text>周{{ date.current_day }}</text>
+            <image src="../../images/btn_find_calendar@3x.png"></image>
+        </view>
+    </picker>
+    <navigator class="next" wx:if="{{ date.next == 0 }}" url="../../pages/about/about">了解快拍</navigator>
+    <view class="next" bindtap="getNext" data-next="{{ date.next }}" wx:else>后一天</view>
+</view>
+
+<!-- top1 -->
+<navigator class="top-photo" wx:if="{{ top_photo.photos.length > 0 }}" url="../../pages/work-details/work-details?id={{ top_photo.id }}" hover-class="none">
+    <!-- top1日期  -->
+    <view class="top-photo-date" wx:if="{{ date.next == 0 }}">{{ date.pre_month }}月{{ date.pre_date }}日TOP1</view>
+    <view class="top-photo-date" wx:else>{{ date.current_month }}月{{ date.current_date }}日TOP1</view>
+
+    <!-- top1图片展示 -->
+    <view class="top-photo-main" catchtap="openSlider" id="{{ top_photo.id }}">
+        <view class="top-photo-rewards">
+            <image src="../../images/icon_find_reward@3x.png"></image>
+            <view class="rewards">￥{{ top_photo.rewards }}</view>
+        </view>
+        <view wx:if="{{ top_photo.photos.length == 1 }}" class="photos photos-{{top_photo.photos.length}}">
+            <image src="{{ top_photo.photos[0].src + '!720w.jpg' }}" mode="{{ 2/3 < item.scale < 2/3 ? 'widthFix' : 'aspectFill'}}"></image>
+        </view>
+        <view wx:else class="photos photos-{{top_photo.photos.length}}">
+            <block wx:for="{{ top_photo.photos }}" wx:key="item" wx:for-item="photo" wx:for-index="idx">
+                <image src="{{ photo.src+ '!720w.jpg' }}" mode="aspectFill" data-idx="{{ idx + 1 }}"></image>
+            </block>
+        </view>
+    </view>
+
+    <!-- top1详细信息  -->
+    <view class="top-photo-details">
+        <view class="top-photo-author">作者: {{ top_photo.author }}</view>
+        <view class="top-photo-location" wx:if="{{ top_photo.location !== '未知' }}">地点: {{ top_photo.location }}</view>
+        <view class="top-photo-des" wx:if="{{ top_photo.des !== '' }}">说明: {{ top_photo.des }}</view>
+        <view class="top-photo-opinion"><text>点评:</text>{{ top_photo.opinion }}</view>
+    </view>
+
+    <!-- 加入讨论  -->
+    <view class="join-review" catchtap="joinReview">加入讨论({{ top_photo.comment_count }})</view>
+</navigator>
+
+<!-- 投稿作品  -->
+<view class="main">
+    <!-- 投稿作品:头部banner  -->
+    <view class="banner">
+        <image src="../../images/icon_find_gao@3x.png"></image>
+        <text> {{ date.current }}投稿作品</text>
+    </view>
+
+    <!-- 瀑布流展示作品  -->
+    <view class="photos-wrap">
+        <block wx:for="{{ photos }}" wx:key="item" wx:if="{{ 0 < photos.length < 9 }}">
+            <navigator class="work" url="../../pages/work-details/work-details?id={{ item.id }}">
+                <view class="work-head">
+                    <image class="work-head-avatar" src="{{ item.avatar }}"></image>
+                    <view>{{ item.nickname }}</view>
+                </view>
+                <view class="work-cover">
+                    <image class="work-cover-photo" src="{{ item.cover }}!720w.jpg" mode="widthFix"></image>
+                    <view class="work-cover-count">{{ item.count }}</view>
+                </view>
+                <view class="work-des">{{ item.des }}</view>
+            </navigator>
+        </block>
+    </view>
+</view>
+
+<!-- 加载更多  -->
+<template is="load" data="{{ loadStyleData }}"></template>
+
+<!-- 查看大图 -->
+<template is="slider" data="{{ slider }}"></template>
+
+<!-- 快拍  -->
+<view class="btn-fastphoto" bindtap="uploadPhoto">快拍</view>

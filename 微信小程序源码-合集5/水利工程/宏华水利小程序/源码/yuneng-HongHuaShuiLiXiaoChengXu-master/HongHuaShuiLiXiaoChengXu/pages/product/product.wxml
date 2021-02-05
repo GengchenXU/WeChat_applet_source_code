@@ -1,0 +1,23 @@
+<view class="bgGray">
+	
+	<view class="productList flex align" bindtap="godetail">
+		<view class="imgbox item"><image style="" mode="widthFix" src="../../image/ydjl_img@3x.png"></image></view>
+		<view class="text item">
+			<view class="title">鱼鹰8号金色版</view>
+			<view>品牌：盛源阳光</view>
+			<view>型号SY-98</view>
+			<view class="price">预定：<b>3000.00</b><small>(原价：4500)</small></view>
+		</view>
+	</view><!--productList-->
+
+  <view class="productList flex align" bindtap="godetail">
+		<view class="imgbox item"><image style="" mode="widthFix" src="../../image/ydjl_img@3x.png"></image></view>
+		<view class="text item">
+			<view class="title">鱼鹰8号金色版</view>
+			<view>品牌：盛源阳光</view>
+			<view>型号SY-98</view>
+			<view class="price">预定：<b>3000.00</b><small>(原价：4500)</small></view>
+		</view>
+	</view><!--productList-->
+	
+</view>

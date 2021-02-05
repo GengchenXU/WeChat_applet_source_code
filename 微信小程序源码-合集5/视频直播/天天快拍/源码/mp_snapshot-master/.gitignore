@@ -1,0 +1,9 @@
+# system
+.DS_Store
+*/.DS_Store 
+
+# eidtor 
+.idea
+typings/wx.d.ts
+typings
+.vscode

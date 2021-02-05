@@ -1,0 +1,32 @@
+/* pages/recharge/recharge.wxss */
+.main{
+  padding: 20px;
+}
+text{
+  font-size: 12px;
+  color: gray;
+  display: block;
+  margin: 20px auto;
+}
+.itemBox{
+  flex-flow: wrap;
+}
+.itemBox view{
+  width: 33.3%;
+  box-sizing: border-box;
+}
+.itemBox view>div{
+  text-align: center;
+  padding: 20px;
+  margin:5px;
+  border-radius: 8px;
+  background: white;
+  border: 2px solid white;
+  color: gray;
+  font-size: 15px;
+}
+.itemBox view.active>div{
+  background: #ddf0ff;
+  border: 2px solid #5cbcfe;
+  color: #2c98ef;
+}

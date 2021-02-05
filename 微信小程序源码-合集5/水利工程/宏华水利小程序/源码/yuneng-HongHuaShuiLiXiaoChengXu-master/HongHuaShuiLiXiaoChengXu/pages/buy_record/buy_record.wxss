@@ -1,0 +1,15 @@
+/* pages/buy_record.wxss */
+.productList{
+  position: relative;
+}
+.statueicon{
+  position: absolute;
+  background-image:linear-gradient(to right,#78d3fe,#3ca4fb);
+  color: white;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  top: 20px;
+  left: 0;
+}

@@ -1,0 +1,11 @@
+/* pages/login/login.wxss */
+.login{
+  position: relative;
+  z-index: 11;
+}
+.loginbg{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}

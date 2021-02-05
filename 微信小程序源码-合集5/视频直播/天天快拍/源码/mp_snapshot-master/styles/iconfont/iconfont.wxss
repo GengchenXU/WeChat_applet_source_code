@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "iconFont";
+	src: url('https://images.mepai.me/xcx/fonts/iconFont.eot');
+	src: url('https://images.mepai.me/xcx/fonts/iconFont.eot?#iefix') format('eot'),
+		url('https://images.mepai.me/xcx/fonts/iconFont.woff2') format('woff2'),
+		url('https://images.mepai.me/xcx/fonts/iconFont.woff') format('woff'),
+		url('https://images.mepai.me/xcxfonts/iconFont.ttf') format('truetype'),
+		url('https://images.mepai.me/xcx/fonts/iconFont.svg#iconFont') format('svg');
+}
+
+.icon:before {
+	font-family: "iconFont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-btn_home-comment:before {
+	content: "\E001";
+}
+
+.icon-camera:before {
+	content: "\E002";
+}
+
+.icon-close:before {
+	content: "\E003";
+}
+
+.icon-details:before {
+	content: "\E004";
+}
+
+.icon-icon_find-join:before {
+	content: "\E005";
+}
+
+.icon-icon_home-gl:before {
+	content: "\E006";
+}
+
+.icon-icon_home-position:before {
+	content: "\E007";
+}
+
+.icon-icon_mine-not-concerned:before {
+	content: "\E008";
+}
+
+.icon-icon_people-count:before {
+	content: "\E009";
+}
+
+.icon-icon_sk-count:before {
+	content: "\E00A";
+}

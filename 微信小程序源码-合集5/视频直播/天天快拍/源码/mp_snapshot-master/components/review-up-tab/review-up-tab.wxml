@@ -1,0 +1,55 @@
+<import src="../../components/comment/comment.wxml"></import>
+<import src="../../components/load/load.wxml"></import>
+<import src="../../components/thumb/thumb.wxml"></import>
+
+<template name="review-up-tab">
+    <!-- 评论和点赞面板 -->
+    <view class="work-comment-panel" wx:if="{{ item.comments_num > 0 ||item.up_count > 0 }}">
+      <view class="comment-panel-hd">
+        <view class='tab-panel' bindtap="switchTab">
+          <view class="tab-nav {{navStyleData.nav.is_active_comments?'active':''}}" id="{{navStyleData.id.comments}}">{{ item.comments_num }}条评论</view>
+          <text>|</text>
+          <view class="tab-nav {{navStyleData.nav.is_active_thubms?'active':''}}" id="{{navStyleData.id.thubms}}">{{ item.up_count }}条点赞</view>
+        </view>
+        <view class='reward-panel'>
+          <text class='reward-num'>{{ item.reward_count }}人已赏</text>
+          <view class='reward-users-head' wx:for="{{ item.reward_users }}" wx:key="item">
+            <view class='user-head-pic'>
+              <image src="{{item.avatar}}" mode="aspectFill"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      
+      <!--评论列表  -->
+      <view hidden="{{navStyleData.navContent.is_hide_comments}}">
+        <view wx:if="{{ item.comments_num > 0}}">
+          <navigator class="comment-panel-bd" hover-class="none">
+            <block wx:for="{{ item.comments }}" wx:key="item">
+              <template is="comment" data="{{ item }}"></template>
+            </block>
+          </navigator>
+          <!-- 加载更多 -->
+          <template is="load" data="{{ loadStyleData }}"></template>
+        </view>
+        <view wx:else>
+          <text class='promt-msg'>沙发是你的了，给个鼓励吧</text>
+        </view>
+      </view>
+
+      <!--点赞列表  -->
+      <view hidden="{{navStyleData.navContent.is_hide_thubms}}">
+        <view wx:if="{{ item.up_count > 0}}">
+          <block wx:for="{{ thumbs }}" wx:key="item">
+            <template is="thumb" data="{{ item }}"></template>
+          </block>
+          <!-- 加载更多 -->
+          <template is="load" data="{{ tabLoadStyleData }}"></template>
+        </view>
+        <view wx:else>
+          <text class='promt-msg'>第一个点赞很重要</text>
+        </view>
+      </view>
+    </view>
+
+</template>

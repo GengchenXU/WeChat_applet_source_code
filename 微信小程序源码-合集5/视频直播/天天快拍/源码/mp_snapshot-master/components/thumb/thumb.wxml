@@ -1,0 +1,11 @@
+<template name="thumb">
+  <view class="comment thumb">
+    <view class="comment-head">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill"></image>
+      <image class="auth-icon" src="../../images/icon_v.jpg" wx:if="{{item.is_auth}}"></image>
+    </view>
+    <view class="comment-main">
+      <view class="nickname">{{ item.nickname }}</view>
+    </view>
+  </view>
+</template>

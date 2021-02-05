@@ -1,0 +1,59 @@
+<block wx:if="{{ route == 'puzzel' }}">
+    <view class="puzzel">
+        <button class="btn btn-add-photo" bindtap="addPhoto">添加照片</button>
+        <view class="tips" wx:if="{{ photos.length > 1 }}">拖动可调整顺序,长按删除,预览方向不影响上传结果</view>
+        <view class="photos photos-{{ photos.length }}" bindtouchstart="startMove" bindtouchmove="move" bindtouchend="endMove" bindlongtap="delPhoto">
+            <block wx:for="{{ photos }}" wx:key="item">
+                <image data-index="{{ index }}" src="{{ item.src }}" class="photo photo-{{ index + 1 }}" mode="aspectFill" style="width: {{ item.width }}px; height: {{ item.height }}px; top: {{ item.y }}px; left: {{ item.x }}px; opacity: {{ item.opacity }}; z-index: {{ item.zIndex }}"></image>
+            </block>
+        </view>
+        <view class="btn btn-next-step" bindtap="toWorkEdit">下一步</view>
+    </view>
+</block>
+<block wx:if="{{ route=='work-edit' }}">
+    <view class="work-edit">
+        <!-- 图片 -->
+        <scroll-view scroll-x="{{ is_scroll_x }}}" class="photos-wrap" bindtap="toPuzzel">
+            <block wx:for="{{ photos }}" wx:key="item">
+                <image mode="aspectFill" src="{{ item.src }}"></image>
+            </block>
+        </scroll-view>
+
+        <!-- 编辑框 -->
+        <view class="edit-content">
+            <textarea placeholder="和大家分享分享照片背后的故事（限140字）" placeholder-style="color: #999" bindblur="getContentValue" bindinput="changeTips" value="{{ content }}"/>
+            <view class="tips" hidden="{{ remain.hidden }}">还可以输入{{ remain.num }}字</view>
+        </view>
+
+        <!-- 位置 -->
+        <view class="location-wrap">
+            <view class="icon icon-location"></view>
+            <view bindtap="chooseLocation" class="location">{{ location }}</view>
+        </view>
+
+        <!-- 标签 -->
+        <view class="tags-wrap" bindtap="toTags">
+            <view class="icon icon-tag">#</view>
+            <view class="add-tags" wx:if="{{ selectedTags.length == 0 }}" hover-class="none">添加标签</view>
+            <scroll-view wx:else class="add-tags" scroll-x="{{ is_scroll_x }}">
+                <block wx:for="{{ selectedTags }}" wx:key="item">
+                    <text>{{ item.text }}</text>
+                </block>
+            </scroll-view>
+        </view>
+
+        <!-- 发布按钮 -->
+        <view class="btn btn-pub" bindtap="submitData">发布</view>
+    </view>
+</block>
+<block wx:if="{{ route=='tags' }}">
+    <view class="tags">
+        <input placeholder="#添加标签" placeholder-style="color: #7aa5b1" class="add-tag" bindconfirm="addTag" value="{{ value }}"/>
+        <view class="tag-wrap"  bindtap="selectedTag">
+            <block wx:for="{{ tags }}" wx:key="item">
+                <view class="tag {{ item.is_selected ? 'active' : '' }}" id="{{ item.id }}" data-idx="{{ index }}">#{{ item.text }}#</view>
+            </block>
+        </view>
+        <view class="btn btn-confirm" bindtap="toWorkEdit">确定</view>
+    </view>
+</block>

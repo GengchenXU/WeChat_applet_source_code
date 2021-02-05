@@ -1,0 +1,7 @@
+.bgGray{
+	min-height: 100%;
+	display: block;
+	background: #f0f2f5;
+  padding-bottom: 10px;
+  border: 1px solid #ffffff;
+}

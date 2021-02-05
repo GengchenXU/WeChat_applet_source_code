@@ -1,0 +1,83 @@
+<view class="bgGray">
+	
+	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorcolor}}" indicator-active-color="{{indicatorActive}}">
+	  <block wx:for="{{imgUrls}}">
+	    <swiper-item>
+	      <image src="{{item}}" class="slide-image" mode="widthFix"/>
+	    </swiper-item>
+	  </block>
+	</swiper>
+	
+	<div class="space10"></div>
+	
+	<view class="defaultList">
+
+    <view class="list flex align rightNav">
+			<view class="icon item"><image  mode="widthFix" src="../../image/icon_home_top_water-full@3x.png"></image></view>
+			<view class="text item">产品名称</view>
+			<view class="text fullother">鱼鹰3号金色版</view>
+		</view>
+    
+		<view class="list flex align rightNav" bindtap='showdetail'>
+			<view class="icon item"><image  mode="widthFix" src="../../image/icon_buy_left_product@3x.png"></image></view>
+			<view class="text item">产品详情</view>
+			<view class="text fullother">点击展开<image  mode="widthFix" src="../../image/icon_buy_right_arrow@3x.png" class="rowimg  {{showdetail==true ? 'change':''}}"></image></view>
+		</view>
+
+	</view><!--defaultList-->
+	
+ 
+  <view class="detailBox" wx:if="{{showdetail}}">
+    <view class='border-bottom'></view>
+    <view class='dataList'>
+      <view class='list'>设备名称:<text>鱼鹰8号</text></view>
+      <view class='list'>设备版本:<text>金色版本</text></view>
+      <view class='list'>设备编号:<text>DF234</text></view>
+      <view class='list'>商品价格:<text class='statu2'>254.00</text></view>
+      <view class='list'>其他规格:<text>规格内容</text></view>
+    </view><!-- dataList -->
+  </view><!-- detailBox -->
+
+	<div class="space10"></div>
+	
+	<view class="defaultList">
+		
+		<view class="list flex align inputItem">
+			<view class="icon item"><image  mode="widthFix" src="../../image/icon_buy_left_portrait@3x.png"></image></view>
+			<view class="text item"> <input placeholder="请填写收货人姓名"/></view>
+		</view>
+		
+		<view class="list flex align inputItem">
+			<view class="icon item"><image  mode="widthFix" src="../../image/icon_buy_left_phone@3x.png"></image></view>
+			<view class="text item"> <input placeholder="请填写收货人电话"/></view>
+		</view>
+		
+		<view class="list flex align inputItem">
+			<view class="icon item"><image  mode="widthFix" src="../../image/icon_buy_left_address@3x.png"></image></view>
+			<view class="text item"> <input placeholder="请填写收货人地址"/></view>
+		</view>
+		
+		<view class="list flex align inputItem">
+			<view class="icon item"><image  mode="widthFix" src="../../image/icon_buy_left_time@3x.png"></image></view>
+			<view class="inputBox item" style="text-align: left;margin-left: 10px;">
+				<picker mode="date" value="{{thisdate}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+				    <view class="picker">{{thisdate}}</view>
+				</picker>
+			</view>
+		</view>
+		
+	</view><!--defaultList-->
+	
+	<view class="space60"></view>
+	
+</view>
+
+
+
+<view class="flex align between bottomBox">
+	<view class="item btn1">
+		<image  mode="widthFix" src="../../image/icon_buy_left_advisory@3x.png"></image><span>立即咨询</span>
+	</view>
+	<view class="item btn2">立即预定(￥200.00)</view>
+</view>
+

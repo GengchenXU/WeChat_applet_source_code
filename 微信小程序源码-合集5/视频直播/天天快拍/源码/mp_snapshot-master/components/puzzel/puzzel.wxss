@@ -1,0 +1,71 @@
+.puzzel {
+    padding-top: 35rpx;
+    overflow: hidden;
+}
+.btn {
+    color: #fff;
+}
+.btn-add-photo {
+    width: 300rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+    margin-bottom: 19rpx;
+    background-color: #adc9d1;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    border: none;
+}
+.btn-next-step {
+    position:fixed;
+    background-color:#7ba6b1;
+    width:690rpx;
+    bottom:40rpx;
+    left:50%;
+    transform:translateX(-50%);
+    height:88rpx;
+    border-radius:10rpx;
+    line-height:88rpx;
+    text-align:center;
+}
+.tips {
+    font-size: 24rpx;
+    color: #999;
+    margin-bottom: 19rpx;
+    text-align: center;
+}
+.photos {
+    position: relative;
+    width: 680rpx;
+    margin: 0 auto;
+}
+.photos .photo {
+    position: absolute;
+}
+.photos-1 {
+    height: 900rpx;
+}
+.photos-2 {
+    height: 808rpx;
+}
+.photos-3 {
+    height: 864rpx;
+}
+.photos-4 {
+    height: 748rpx;
+}
+.photos-5 {
+    height: 796rpx;
+}
+.photos-6 {
+    height: 680rpx;
+}
+.photos-7 {
+    height: 882rpx;
+    width: 613rpx;
+}
+.photos-8 {
+    height: 792rpx;
+}
+.photos-9 {
+    height: 680rpx;
+}

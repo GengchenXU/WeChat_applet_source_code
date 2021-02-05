@@ -1,0 +1,56 @@
+/* pages/work_list/work_list.wxss */
+.topBox{
+  background: white;
+  padding:10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.08);
+}
+.topBox .item{
+  width: 33.3%;
+  color: gray;
+  font-size: 14px;
+  position: relative;
+}
+.topBox .item.active{
+  color: #45a9fd;
+}
+.topBox .item.active::after{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 60%;
+  left: 20%;
+  bottom:-8px;
+  background: #45a9fd;
+  border-radius: 100px;
+}
+.dataList{
+  margin-bottom: 0;
+}
+.btnBox{
+  padding: 10px;
+  background: white;
+  text-align: right;
+}
+.btnBox .btn{
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.btnBox .btn.btn1{
+   color: #2c98ef;
+   border: 1px solid #2c98ef;
+}
+.btnBox .btn.btn2{
+     background-image:linear-gradient(to right,#78d3fe,#3ca4fb);
+     color: white;
+}
+.listBox{
+  margin-bottom: 10px;
+}

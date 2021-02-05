@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<view class="topBg">
+
+  <view class='loginbtn' bindtap='gologin'>员工登录</view>
+
+	<div class="flex align infoBox">
+		<div class="item">
+			
+			<div class="title">制水剩余天数</div>
+			
+			<div class="day flex between">
+				
+				<div class="item textLeft">297<small>天</small></div>
+				
+				<div class="item textRight">
+					
+					<div class="statue">
+						<image style="" mode="widthFix" src="../../image/icon_home_top_no-water-@3x.png"></image><div>缺水</div>
+					</div>
+					
+					<div class="statue">
+						<image style="" mode="widthFix" src="../../image/icon_home_top_water-full@3x.png"></image><div>水满</div>
+					</div>
+					
+				</div>
+				
+			</div><!--day-->
+			
+		</div>
+	</div><!--infoBox-->
+  <image style="" mode="scaleToFill" src="../../image/pho_home_top@3x.png"></image>
+</view><!--topBg-->
+
+
+<view class="contrller">
+	
+	<view class="contrllerBg">
+			<view hover-class="hoverclass" class="ctrlBtn btn1" bindtap="showModal" data-title="机器将自动冲洗，是否操作？">
+				<image style="" mode="widthFix" src="../../image/icon_home_center_rinse@3x.png"></image>
+			</view>
+			<view hover-class="hoverclass" class="ctrlBtn btn2"  bindtap="gorepair">
+				<image style="" mode="widthFix" src="../../image/icon_home_center_service@3x.png"></image>
+			</view>
+			<view hover-class="hoverclass" class="ctrlBtn btn3" bindtap="gostatue">
+				<image style="" mode="widthFix" src="../../image/icon_home_center_core@3x.png"></image>
+			</view>
+			<view hover-class="hoverclass" class="ctrlBtn btn4" bindtap="showModal"  data-title="机器将自动制水，是否操作？">
+				<image style="" mode="widthFix" src="../../image/icon_home_center_water@3x.png"></image>
+			</view>
+			<view hover-class="hoverclass" class="ctrlBtn btn5"  bindtap="showModal" data-title="机器将关闭，是否操作？">
+				<image style="" mode="widthFix" src="../../image/icon_home_top_switch@3x.png"></image>
+			</view>
+		 <image style="" mode="widthFix" src="../../image/pho_home_center@3x.jpg"></image>
+	</view><!--contrllerBg-->
+	
+</view><!--contrller-->
+

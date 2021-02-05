@@ -1,0 +1,10 @@
+<view class="puzzel">
+    <button class="btn btn-add-photo" bindtap="addPhoto">添加或删除照片</button>
+    <view class="tips" wx:if="{{ photos.length > 1 }}">拖动图片可以调整顺序</view>
+    <view class="photos photos-{{ photos.length }}" bindtouchstart="startMove" bindtouchmove="move" bindtouchend="endMove">
+        <block wx:for="{{ photos }}" wx:key="src">
+            <image data-index="{{ index }}" src="{{ item.src }}" class="photo photo-{{ index + 1 }}" mode="aspectFill" style="width: {{ item.width }}px; height: {{ item.height }}px; top: {{ item.y }}px; left: {{ item.x }}px; opacity: {{ item.opacity }}; z-index: {{ item.zIndex }}"></image>
+        </block>
+    </view>
+    <view class="btn btn-next-step" bindtap="toWorkEdit">下一步</view>
+</view>

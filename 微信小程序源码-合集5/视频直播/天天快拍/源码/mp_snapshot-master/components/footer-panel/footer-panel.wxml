@@ -1,0 +1,14 @@
+<template name="footer-panel">
+  <!-- 底部打分评论面板 -->
+  <view class="footer" hidden="{{ is_hide_footer }}">
+    <!-- 打分按钮 -->
+    <image wx:if="{{ item.is_score !== 1 }}" class="btn-grade" src="../../images/btn_find-score@3x.png" catchtap="openScorePanel" id="{{ item.id }}" data-uid="{{ item.uid }}"></image>
+    <!--点赞  -->
+    <image wx:if="{{ item.is_up !== 1 }}" class='icon-up' bindtap='toggleThumb' data-thumb='{{item.is_up}}' id="{{ item.id }}" src='../../images/icon-bad.png'></image>
+    <image wx:else class='icon-up' bindtap='toggleThumb' data-thumb='{{item.is_up}}' id="{{item.id}}" src='../../images/icon-good.png'></image>
+    <!-- 评论 -->
+    <view class="footer-comment">
+      <image class="comment-icon" bindtap='reviewLink' id='{{ item.id }}' src="../../images/btn_home-comment01@3x.png"></image>
+    </view>
+  </view>
+</template>

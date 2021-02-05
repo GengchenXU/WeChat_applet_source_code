@@ -1,0 +1,18 @@
+<template name="comment">
+    <view class="comment">
+        <view class="comment-head">
+              <image class="avatar" src="{{item.src}}" mode="aspectFill"></image>
+              <image class="auth-icon" src="../../images/icon_v.jpg" wx:if="{{item.is_auth}}"></image>
+        </view>
+        <navigator class="comment-main"  wx:if="{{is_show_comment}}"  url="../../pages/review/review?id={{ item.works_id }}&reply={{ item.id }}&nickname={{ item.nickname }}" open-type="redirect">
+            <view class="nickname">{{ item.nickname }}</view>
+            <view class="date">{{ item.date }}</view>
+            <view class="content">{{ item.content }}</view>
+        </navigator>
+         <navigator class="comment-main"  wx:if="{{!is_show_comment}}" url=""  open-type="redirect" bindtap="loginItem">
+            <view class="nickname">{{ item.nickname }}</view>
+            <view class="date">{{ item.date }}</view>
+            <view class="content">{{ item.content }}</view>
+        </navigator>
+    </view>
+</template>

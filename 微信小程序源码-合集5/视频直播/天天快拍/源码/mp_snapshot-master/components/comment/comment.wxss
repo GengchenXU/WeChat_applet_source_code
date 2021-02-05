@@ -1,0 +1,47 @@
+.comment {
+    position: relative;
+    padding-left: 150rpx;
+}
+.comment-head {
+    position:absolute;
+    top:30rpx;
+    left:30rpx;
+    background:#ccc;
+    border-radius:50%;
+    width:92rpx;
+    height:92rpx;
+}
+.comment-head .avatar {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 90rpx
+}
+.comment-head .auth-icon {
+    position: absolute;
+    left: 65rpx;
+    top: 68rpx;
+    width: 35rpx;
+    height: 35rpx;
+}
+.comment-main {
+    padding: 25rpx 25rpx 22rpx 5rpx;
+    border-bottom: 1px solid #e3e3e3;
+}
+.thumb .comment-main {
+padding:45rpx 25rpx 32rpx 5rpx;
+}
+.comment-main .nickname {
+    font-size: 30rpx;
+    color: #353535;
+    margin-bottom: 15rpx;
+}
+.comment-main .date {
+    font-size: 18rpx;
+    color: #999;
+    margin-bottom: 20rpx;
+}
+.comment-main .content {
+    font-size: 24rpx;
+    color: #666;
+    line-height: 1.4;
+}

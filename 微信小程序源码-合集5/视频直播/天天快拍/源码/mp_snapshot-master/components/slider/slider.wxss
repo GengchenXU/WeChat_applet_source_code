@@ -1,0 +1,85 @@
+@import '../../styles/iconfont/iconfont.wxss';
+
+/* 滑动区域 */
+.slider-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	z-index: 2;
+}
+.slider {
+	width: 100%;
+	height: 100%;
+}
+.slider-loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50rpx;
+    height: 50rpx;
+}
+.slider .pic-num {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 12%;
+	color: #fff;
+	z-index: 1;
+}
+.slider-cont {
+	height: 100%;
+	text-align: center;
+	box-sizing:border-box;
+}
+.slider-cont image {
+	width: 100%;
+	vertical-align: middle;
+}
+/* exif图标  */
+.icon-details {
+	position: absolute;
+	left: 38rpx;
+	bottom: 38rpx;
+	color: #fff;
+	font-size: 56rpx;
+	z-index: 1;
+}
+/* Exif信息面板 */
+.exif {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	padding: 28rpx 28rpx 100rpx 70rpx;
+	font-size: 30rpx;
+}
+.exif view {
+	margin-bottom: 23rpx;
+}
+.exif view:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+.exif view text {
+	float: left;
+}
+.exif view text:nth-child(1) {
+	text-align: right;
+	color: #666;
+	margin-right: 28rpx;
+	width: 160rpx;
+}
+.exif view text:nth-child(2) {
+	color: #fff;
+	width: 460rpx;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

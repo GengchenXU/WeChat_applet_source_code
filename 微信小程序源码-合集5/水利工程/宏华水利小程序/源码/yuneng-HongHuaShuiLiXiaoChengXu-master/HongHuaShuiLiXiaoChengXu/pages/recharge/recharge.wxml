@@ -1,0 +1,12 @@
+<!--pages/recharge/recharge.wxml-->
+<view class='bg-gray'>
+
+<view class='main'>
+  <text>选择充值金额</text>
+  <view class='flex between itemBox'>
+      <view class="{{activeIndex == index ? 'active':''}}"  wx:for="{{numArray}}" bindtap='activethis' data-thisindex='{{index}}'><div>{{item}}元</div></view>
+  </view>
+</view>
+<view class='thisbtn'>立即充值</view>
+
+</view>

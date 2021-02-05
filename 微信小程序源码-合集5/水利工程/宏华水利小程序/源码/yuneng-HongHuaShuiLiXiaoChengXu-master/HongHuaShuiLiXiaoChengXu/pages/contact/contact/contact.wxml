@@ -1,0 +1,50 @@
+<view class="contactBox">
+	<view bindtap="gomap">
+		<view class="icon">
+			<image mode="widthFix" src="img/map@2x.png" class="image"></image>
+		</view>成都市高新区环球中心W6区2028
+	</view>
+	
+	<view class="contactList">
+		<view class="icon">
+			<image mode="widthFix" src="img/icon_zxkf@2x.png" class="image"></image>
+		</view>
+		<button type="primary" bindtap="primary" session-from="weapp" open-type="contact" size="default" class="contact"> 立即咨询 </button> 在线客服
+	</view>
+	
+	<view bindtap="call" data-tel="028-62030710">
+		<view class="icon">
+			<image mode="widthFix" src="img/tel@2x.png" class="image"></image>
+		</view>+86 18111594813
+	</view>
+	
+	<view bindtap="call" data-tel="17713602090">
+		<view class="icon">
+			<image mode="widthFix" src="img/phone@2x.png" class="image"></image>
+		</view>17713602090
+		<view class="small">(24小时热线)</view>
+	</view>
+	
+	<view bindtap="call" data-tel="17713602090">
+		<view class="icon">
+			<image mode="widthFix" src="img/email@2x.png" class="image"></image>
+		</view>1279598865@qq.com
+		<view class="small"></view>
+	</view>
+	
+	<view bindtap="call" data-tel="028-62030710">
+		<view class="icon">
+			<image mode="widthFix" src="img/qq.png" class="image"></image>
+		</view>1279598865
+	</view>
+	
+	<view bindtap="copyUrl" data-text="网址">
+		<view class="icon">
+			<image mode="widthFix" src="img/icon_wz@2x.png" class="image"></image>
+		</view><text selectable="true">http://www.angkebrand.com/</text>
+		<view class="small"></view>
+	</view>
+	
+</view>
+
+<map id="map" latitude="30.619850" longitude="104.043170" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height:150px;"></map>

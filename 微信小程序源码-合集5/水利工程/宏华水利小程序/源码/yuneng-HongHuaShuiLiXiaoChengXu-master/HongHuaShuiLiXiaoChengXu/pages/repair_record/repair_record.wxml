@@ -1,0 +1,18 @@
+<view class="bg-gray">
+	
+  <view class='dataList'>
+    <view class='list'>维修部件:<text>阳光滤芯</text></view>
+    <view class='list'>问题描述:<text>这是问题的描述</text></view>
+    <view class='list'>提交时间:<text>2016-02-15</text></view>
+    <view class='list'>维修时间:<text>2016-02-15</text></view>
+    <view class='list'>状态:<text class='statu1'>已处理</text></view>
+  </view><!-- dataList -->
+
+  <view class='dataList '>
+    <view class='list'>维修部件:<text>阳光滤芯</text></view>
+    <view class='list'>问题描述:<text>这是问题的描述</text></view>
+    <view class='list'>提交时间:<text>2016-02-15</text></view>
+    <view class='list'>状态:<text class='statu2'>未处理</text></view>
+  </view><!-- dataList -->
+
+</view><!--bg-gray-->

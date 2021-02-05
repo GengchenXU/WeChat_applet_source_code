@@ -1,0 +1,65 @@
+<view class="bg-gray">
+	<view class="topBg">
+		<div class="flex align between infoBox">
+			<div class="item item1">
+				<div class="day">鱼鹰8号 金色版(SY-DSF4)</div><!--day-->
+			</div>
+			<div class="item imgbox">
+				 <image style="" mode="widthFix" src="../../image/lx_icon_wx_default@3x.png" bindtap="gorepair"></image>
+			</div>
+		</div><!--infoBox-->
+	  <image style="" mode="scaleToFill" src="../../image/pho_home_top@3x.png"></image>
+	</view><!--topBg-->
+	
+	<div class="space20"></div>
+	
+	<view class="setBox">
+		
+		<view class="flex align between">
+			
+			<view class="item">
+				<b>25%</b>
+				<div class="speedBg">
+					<div class="speed" style="height: 50%;"></div>
+				</div>
+				<span>PP棉</span>
+			</view>
+			
+			<view class="item">
+				<b>25%</b>
+				<div class="speedBg">
+					<div class="speed" style="height: 50%;"></div>
+				</div>
+				<span>PP棉</span>
+			</view>
+			
+			<view class="item">
+				<b>25%</b>
+				<div class="speedBg">
+					<div class="speed" style="height: 50%;"></div>
+				</div>
+				<span>PP棉</span>
+			</view>
+			
+			<view class="item">
+				<b>25%</b>
+				<div class="speedBg">
+					<div class="speed" style="height: 50%;"></div>
+				</div>
+				<span>PP棉</span>
+			</view>
+			
+			<view class="item">
+				<b>25%</b>
+				<div class="speedBg">
+					<div class="speed" style="height: 50%;"></div>
+				</div>
+				<span>PP棉</span>
+			</view>
+			
+		</view><!--flex-->
+		
+	</view><!--setBox-->
+	
+	
+</view><!--bg-gray-->

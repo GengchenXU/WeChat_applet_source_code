@@ -1,0 +1,72 @@
+<!--pages/work_list/work_list.wxml-->
+<view class='bgGray'>
+
+  <view class='topBox flex align'>
+    <view class="item {{tabindex==1 ? 'active':''}}" data-index='1' bindtap='tapchange'>待安装</view>
+    <view class="item {{tabindex==2 ? 'active':''}}"  data-index='2' bindtap='tapchange'>待维修</view>
+    <view class="item {{tabindex==3 ? 'active':''}}"  data-index='3' bindtap='tapchange'>处理记录</view>
+  </view><!--topBox-->
+
+<view class='space50'></view>
+
+<!--class='statu2'  -->
+  <view class='contentBox box1' wx:if="{{contentActive==1}}">
+     
+     <view class='listBox' wx:for="{{boxdata1}}">
+      <view class='dataList border-bottom'>
+        <view class='list'>安装时间:<text>{{item.date}}</text></view>
+        <view class='list'>安装地址:<text>{{item.addr}}</text></view>
+        <view class='list'>安装设备:<text>{{item.product}}</text></view>
+        <view class='list'>客户姓名:<text>{{item.user}}</text></view>
+        <view class='list'>订单编号:<text>{{item.order}}</text></view>
+        <view class='list'>客户备注:<text>{{item.remark}}</text></view>
+      </view><!-- dataList -->
+      <view class='btnBox'>
+            <view class='btn btn1' bindtap='calltel' data-tel='8888888'>联系客户</view>
+            <view class='btn btn2' bindtap='go_oveWork'>安装完成</view>
+      </view>
+    </view><!---listBox-->
+
+  </view><!--contentBox-->
+
+  <view class='contentBox box2'  wx:if="{{contentActive==2}}">
+     
+     <view class='listBox' wx:for="{{boxdata2}}">
+     <view class='dataList border-bottom'>
+        <view class='list'>安装时间:<text>{{item.date}}</text></view>
+        <view class='list'>安装地址:<text>{{item.addr}}</text></view>
+        <view class='list'>维修设备:<text>{{item.parts}}</text></view>
+        <view class='list'>客户姓名:<text>{{item.user}}</text></view>
+        <view class='list'>订单编号:<text>{{item.order}}</text></view>
+        <view class='list'>问题描述:<text>{{item.remark}}</text></view>
+      </view><!-- dataList -->
+      <view class='btnBox'>
+            <view class='btn btn1' bindtap='calltel' data-tel='8888888'>联系客户</view>
+            <view class='btn btn2' bindtap='go_oveWork'>维修完成</view>
+      </view>
+    </view><!---listBox-->
+
+  </view><!--contentBox-->
+
+
+   <view class='contentBox box3' wx:if="{{contentActive==3}}">
+     
+     <view class='listBox' wx:for="{{boxdata3}}">
+     <view class='dataList border-bottom'>
+        <view class='list'>服务类型:
+            <text class='statu2' wx:if="{{item.type==1}}">安装</text>
+            <text class='statu1' wx:if="{{item.type==2}}">维修</text>
+        </view>
+        <view class='list'>服务时间:<text>{{item.date}}</text></view>
+        <view class='list'>服务地址:<text>{{item.addr}}</text></view>
+        <view class='list'>服务设备:<text>{{item.parts}}</text></view>
+        <view class='list'>客户姓名:<text>{{item.user}}</text></view>
+        <view class='list'>订单编号:<text>{{item.order}}</text></view>
+        <view class='list'>问题描述:<text>{{item.remark}}</text></view>
+      </view><!-- dataList -->
+    </view><!---listBox-->
+
+  </view><!--contentBox-->
+
+
+</view>

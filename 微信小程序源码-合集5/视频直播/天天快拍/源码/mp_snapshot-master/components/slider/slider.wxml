@@ -1,0 +1,63 @@
+<template name="slider">
+    <view class="slider-wrap"  hidden="{{ slider.is_hide_slider_wrap }}">
+        <view class="slider" id="slider" hidden="{{ slider.is_hide_slider }}">
+            <!-- 数字 -->
+            <view class="pic-num">{{ slider.current }}/{{ slider.photos.length }}</view>
+
+            <!-- 图片 -->
+            <swiper class="slider-cont" bindchange="sliderNumChange"  style="line-height: {{ slider.lineHeight }}px">
+                <block wx:for="{{ slider.photos }}" wx:key="{{ item }}">
+                    <swiper-item>
+                        <scroll-view style="height: 100%" scroll-y="true" bindtap="closeSlider">
+                            <image src="{{ item.src + '!720w.jpg' }}" mode="widthFix"></image>
+                        </scroll-view>
+                    </swiper-item>
+                </block>
+            </swiper>
+
+            <!-- exif图标 -->
+            <view class="icon icon-details" bindtap="toggleOpenExif"></view>   
+
+            <!-- exif信息 -->
+            <view class="exif" hidden="{{ slider.is_hidden_exif }}">
+                <view><text>品牌</text><text>{{ slider.photos[slider.current-1].exif.make }}</text></view>
+                <view><text>型号</text><text>{{ slider.photos[slider.current-1].exif.model }}</text></view>
+                <view>
+                    <text>焦距</text>
+                    <text wx:if="{{ slider.photos[slider.current-1].exif.focalLength === '' }}"></text>
+                    <text wx:else>{{ slider.photos[slider.current-1].exif.focalLength }} mm</text>
+                </view>
+                <view>
+                    <text>光圈</text> 
+                    <text wx:if="{{ slider.photos[slider.current-1].exif.fNumber === '' }}"></text>
+                    <text wx:else>F {{ slider.photos[slider.current-1].exif.fNumber }}</text>
+                </view>
+                <view>
+                    <text>快门速度</text>
+                     <text wx:if="{{ slider.photos[slider.current-1].exif.shutterSpeed === '' }}"></text>
+                     <text wx:else>{{ slider.photos[slider.current-1].exif.shutterSpeed }} s</text> 
+                </view>
+                <view>
+                    <text>ISO</text>
+                    <text>{{ slider.photos[slider.current-1].exif.iso }}</text>
+                </view>
+                <view>
+                    <text>曝光补偿</text>
+                    <text wx:if="{{ slider.photos[slider.current-1].exif.exposure === '' }}">0EV</text>
+                    <text wx:else>{{ slider.photos[slider.current-1].exif.exposure }} EV</text>
+                </view>
+                <view>
+                    <text>镜头</text>
+                    <text>{{ slider.photos[slider.current-1].exif.lens }}</text>
+                </view>
+                <view>
+                    <text>拍摄日期</text>
+                    <text wx:if="{{ slider.photos[slider.current-1].exif.create_time === '' }}"></text>
+                    <text wx:else>{{ slider.photos[slider.current-1].exif.create_time }}</text>
+                </view>
+             
+            </view>
+        </view>
+        <image class="slider-loading" src="../../images/loading.gif" hidden="{{ slider.is_hide_loading }}"></image>
+    </view>
+</template>

@@ -1,0 +1,216 @@
+@import '../../components/nine-photo-layout/nine-photo-layout.wxss';
+@import '../../components/load/load.wxss';
+@import '../../components/slider/slider.wxss';
+
+page {
+    padding-top: 80rpx;
+    background: #f5f5f5;
+}
+/* 头部:日期选择  */
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80rpx;
+    background: #05272e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #adc9d1;
+    font-size: 24rpx;
+    z-index: 1;
+}
+.head .picker {
+    position: relative;
+    top: -5rpx;
+}
+.head .picker image {
+    position: relative;
+    top: 5rpx;
+    width: 15px;
+    height: 30rpx;
+}
+.head .picker text:nth-child(2) {
+    margin-left: 10rpx;
+    margin-right: 15rpx;
+} 
+/* top1  */
+.top-photo {
+    position: relative;
+    padding-bottom: 164rpx;
+    background: #fff;
+    border-bottom: 2px solid #f5f5f5;
+}
+/* top1:加入讨论按钮 */
+.top-photo .join-review {
+    position: absolute;
+    bottom: 50rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240rpx;
+    height: 62rpx;
+    line-height: 62rpx;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #88b3dd;
+    border-radius: 4px;
+    color: #88b2e2;
+    font-size: 28rpx;
+}
+/* top1:日期 */
+.top-photo-date {
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: #32798d;
+    text-align: center;
+}
+/* top1:作品图片  */
+.top-photo-main {
+    position: relative;
+}
+.top-photo-rewards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fffaf0;
+    font-size: 18rpx;
+}
+.top-photo-rewards image {
+    width: 110rpx;
+    height: 110rpx;
+}
+.top-photo-rewards .rewards {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:18rpx;
+    width:70%;
+    text-align:center;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+/* top1:作品详细信息 */
+.top-photo-details {
+    padding: 0 30rpx;
+    font-size: 28rpx;
+    color: #666;
+}
+.top-photo-details view {
+    margin-top: 20rpx;
+}
+.top-photo-author,
+.top-photo-location {
+    color: #333;
+}
+.top-photo-des,
+.top-photo-opinion {
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+.top-photo-opinion text {
+    color: #88b3e2;
+    margin-right: 20rpx;
+}
+/* 投稿作品 */
+.main {
+    position: relative;
+    background: #f5f5f5;
+}
+/* 投稿作品:头部banner  */
+.main .banner {
+    height: 80rpx; 
+    display: flex;
+    align-items: center;
+    padding-left: 30rpx;
+    background: #fff;
+    color: #333;
+    font-size: 30rpx;
+    margin-bottom: 12rpx;
+}
+.main .banner image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 12rpx;
+}
+/* 投稿作品:瀑布流展示  */
+.main .photos-wrap {
+    padding: 20rpx 20rpx 0;
+    column-count: 2;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    
+    column-gap: 10rpx;
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+}
+.main .photos-wrap .work {
+    color: #666;
+    font-size: 24rpx;
+    background: #fff;
+    margin-bottom: 20rpx;
+    display: inline-block;
+    border-radius: 6rpx;
+    width: 100%;
+}
+.main .photos-wrap .work-head {
+    height: 156rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .photos-wrap .work-head-avatar {
+    height: 80rpx;
+    width: 80rpx;
+    border-radius: 80rpx;
+}
+.main .photos-wrap .work-cover {
+    position: relative;
+}
+.main .photos-wrap .work-cover-photo {
+    width: 100%;
+    display: inline-block;
+}
+.main .photos-wrap .work-cover-count {
+    position: absolute;
+    top: 10rpx;
+    right: 10rpx;
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    border-radius: 40rpx;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    font-size: 26rpx;
+    text-align: center;
+}
+.main .photos-wrap .work-des {
+    padding: 20rpx 15rpx;
+    color: #999;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* 快拍  */
+.btn-fastphoto {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40rpx;
+    width: 140rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 30rpx;
+    color: #fff;
+    font-size: 34rpx;
+    box-shadow: 0px 0px 10px #1397dc;
+    background: #01bef5
+}
+/* 加载更多 */
+.finish {
+    background: #f5f5f5;
+}

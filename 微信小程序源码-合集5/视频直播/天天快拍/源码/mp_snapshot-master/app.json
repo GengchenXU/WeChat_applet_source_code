@@ -1,0 +1,16 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/about/about",
+        "pages/work-details/work-details",
+        "pages/review/review",
+        "pages/upload-photo/upload-photo"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#05272e",
+        "navigationBarTextStyle": "#fff",
+        "navigationBarTitleText": "天天快拍",
+        "backgroundTextStyle": "dark"
+    },
+    "debug": true
+}

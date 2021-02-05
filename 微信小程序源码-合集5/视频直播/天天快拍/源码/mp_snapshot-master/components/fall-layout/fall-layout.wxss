@@ -1,0 +1,65 @@
+
+.item_single{
+  margin:0rpx 6rpx 0rpx 0rpx;
+}
+.item_double{
+  margin:0rpx 0rpx 0rpx 6rpx;
+}
+
+/* 投稿作品:瀑布流展示  */
+.main .photos-wrap {
+   width:367rpx;
+   display: inline-block;
+   vertical-align:top;
+}
+.main .photos-wrap .work {
+    color: #666;
+    font-size: 24rpx;
+    background: #fff;
+    margin-bottom: 12rpx;
+    display: inline-block;
+    border-radius: 6rpx;
+    width: 100%;
+}
+.main .photos-wrap .work-head {
+    height: 156rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .photos-wrap .work-head-avatar {
+    height: 80rpx;
+    width: 80rpx;
+    border-radius: 80rpx;
+}
+.main .photos-wrap .work-cover {
+    position: relative;
+}
+.main .photos-wrap .work-cover-photo {
+    width: 100%;
+    display: inline-block;
+}
+.main .photos-wrap .work-cover-count {
+    position: absolute;
+    top: 10rpx;
+    right: 10rpx;
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    border-radius: 40rpx;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    font-size: 26rpx;
+    text-align: center;
+}
+
+.main .photos-wrap .work-des {
+    padding: 20rpx 15rpx;
+    color: #999;
+    height:60rpx;
+    line-height:60rpx;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}

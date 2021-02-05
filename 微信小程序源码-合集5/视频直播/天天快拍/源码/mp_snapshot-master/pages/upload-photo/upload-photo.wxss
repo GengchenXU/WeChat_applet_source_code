@@ -1,0 +1,7 @@
+@import '../../components/puzzel/puzzel.wxss';
+@import '../../components/work-edit/work-edit.wxss';
+@import '../../components/tags/tags.wxss';
+
+page {
+    font-family: "PingFangSC-Light" ,"Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}

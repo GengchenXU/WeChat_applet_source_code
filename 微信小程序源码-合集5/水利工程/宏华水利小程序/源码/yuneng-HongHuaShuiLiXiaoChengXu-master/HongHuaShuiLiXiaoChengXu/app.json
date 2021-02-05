@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/balance/balance",
+    "pages/product/product",
+    "pages/contact/contact",
+    "pages/statue/statue",
+    "pages/repair/repair",
+    "pages/product_detail/product_detail",
+    "pages/balance_list/balance_list",
+    "pages/buy_record/buy_record",
+    "pages/recharge/recharge",
+    "pages/repair_record/repair_record",
+    "pages/work_list/work_list",
+    "pages/login/login",
+    "pages/over_work/over_work"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2c98ef",
+    "navigationBarTitleText": "宏华净水",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "selectedColor": "#3594d8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/nav_home_bottom_home_default@3x.png",
+        "selectedIconPath": "image/nav_home_bottom_home_selected@3x.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "产品",
+        "iconPath": "image/nav_home_bottom_product_default@3x.png",
+        "selectedIconPath": "image/nav_home_bottom_product_selected@3x.png"
+      },
+      {
+        "pagePath": "pages/balance/balance",
+        "text": "余额",
+        "iconPath": "image/nav_home_bottom_over_default@3x.png",
+        "selectedIconPath": "image/nav_home_bottom_over_selected@3x.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "image/nav_home_bottom_speaker_default@3x.png",
+        "selectedIconPath": "image/nav_home_bottom_speaker_selected@3x.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

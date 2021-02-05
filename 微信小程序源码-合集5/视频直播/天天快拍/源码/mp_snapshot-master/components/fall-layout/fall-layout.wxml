@@ -1,0 +1,39 @@
+<template name='fall-layout'>
+  <view style="display:none">
+    <image wx:for="{{photos}}" wx:key="item" id="{{item.id}}" src="{{item.cover}}" bindload="onImageLoad"></image>
+  </view>
+  <scroll-view scroll-y="true" wx:if="{{photos.length}}">
+    <view style="width:100%">
+      <view class="item_single photos-wrap">
+        <view wx:for="{{fallLayout.col1}}" wx:key="item">
+          <navigator class="work" open-type="navigate" id="{{ item.id }}" url="{{ '../work-details/work-details?id='+ item.id}}">
+            <view class="work-head">
+              <image class="work-head-avatar" src="{{ item.avatar }}"></image>
+              <view>{{ item.nickname }}</view>
+            </view>
+            <view class="work-cover">
+              <image class="work-cover-photo" src="{{ item.cover }}!720w.jpg" mode="widthFix"></image>
+              <view class="work-cover-count">{{ item.count }}</view>
+            </view>
+            <view class="work-des">{{ item.des }}</view>
+          </navigator>
+        </view>
+      </view>
+      <view class="item_double photos-wrap">
+        <view wx:for="{{fallLayout.col2}}" wx:key="item">
+          <navigator class="work" open-type="navigate" id="{{ item.id }}" url="{{ '../work-details/work-details?id=' + item.id}}">
+            <view class="work-head">
+              <image class="work-head-avatar" src="{{ item.avatar }}"></image>
+              <view>{{ item.nickname }}</view>
+            </view>
+            <view class="work-cover">
+              <image class="work-cover-photo" src="{{ item.cover }}!720w.jpg" mode="widthFix"></image>
+              <view class="work-cover-count">{{ item.count }}</view>
+            </view>
+            <view class="work-des">{{ item.des }}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</template>
