@@ -1,0 +1,12 @@
+page{
+  font: 14px "微软雅黑";
+  line-height: 1.5;
+  background: #f2f2f2;
+}
+.clearfix:after{
+  content: '';
+  clear: both;
+  overflow: hidden;
+  height: 0; 
+  display: block; 
+}

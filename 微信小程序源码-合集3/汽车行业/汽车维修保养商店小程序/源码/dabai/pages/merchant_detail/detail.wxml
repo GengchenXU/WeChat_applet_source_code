@@ -1,0 +1,28 @@
+<map class="maps" id="map2" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{20}}" markers="{{markers}}"></map>
+
+<!-- detail content start -->
+<view class="detail-box">
+    <view class="detail-title">{{shopname}}</view>
+    <view class="detail-content">
+        <view class="detail-price">
+            <text class="new-price">评分：{{pjStar}}分</text>
+        </view>
+        <view class="join-group" data-value="{{shoptel}}" bindtap="callMerchant">拨打商家电话</view>
+    </view>
+    <view class="icon-img"></view>
+</view>
+<!-- / detail content end -->
+
+<view class="otherAddress">
+    <text>地址：{{shopaddress}}</text>
+</view>
+
+<view class="goods-detail" wx:for="{{welfareListType}}" wx:key="id">
+    <view class="title-box">{{item.typeName}}</view>
+    <view class="goods-detail-text" wx:for="{{item.welfareListTypeEntity}}" wx:for-item="cell" wx:key="name" data-value="{{cell.welfareid}}" bindtap="gotoWelfareDetail">
+    	{{cell.servicename}}
+    	<text class="item-welfare">￥{{cell.discountprice}}</text>
+    </view>
+</view>
+
+<view class="fight-group-title" bindtap="callService">*如商家无法服务或对商家不满意，请按此拨打售后</view>

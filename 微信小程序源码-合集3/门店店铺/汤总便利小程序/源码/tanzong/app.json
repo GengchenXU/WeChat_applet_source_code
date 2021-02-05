@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/newdetail",
+    "pages/prefer/index",
+    "pages/prefer/detail",
+    "pages/shoppingCart/index",
+    "pages/shoppingCart/submitOrder",
+    "pages/shoppingCart/confirmPayment",
+    "pages/shoppingCart/paymentSucces",
+    "pages/mine/index",
+    "pages/mine/order",
+    "pages/mine/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f8b62b",
+    "navigationBarTitleText": "汤总便利",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "selectedColor":"#f8b62b",
+    "backgroundColor":"#f3f3f3",
+    "borderStyle":"#e8e8e8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"./assets/nav_icon01_off.png",
+        "selectedIconPath":"./assets/nav_icon01_on.png"
+      },
+      {
+        "pagePath": "pages/prefer/index",
+        "text": "优选",
+        "iconPath": "./assets/nav_icon02_off.png",
+        "selectedIconPath": "./assets/nav_icon02_on.png"
+      },{
+        "pagePath": "pages/shoppingCart/index",
+        "text": "购物车",
+        "iconPath": "./assets/nav_icon03_off.png",
+        "selectedIconPath": "./assets/nav_icon03_on.png"
+      },{
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "./assets/nav_icon04_off.png",
+        "selectedIconPath": "./assets/nav_icon04_on.png"
+      }
+    ],
+    "networkTimeout": {
+      "request": 10000,
+      "downloadFile": 10000
+    },
+    "debug": true
+  }
+}

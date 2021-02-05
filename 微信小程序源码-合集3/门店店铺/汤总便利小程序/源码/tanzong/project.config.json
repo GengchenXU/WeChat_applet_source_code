@@ -1,0 +1,47 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wx35896cd2de8efb05",
+	"projectname": "%E6%B1%A4%E6%80%BB%E4%BE%BF%E5%88%A9",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "test",
+					"pathName": "pages/shoppingCart/confirmPayment",
+					"query": "id=14"
+				},
+				{
+					"id": -1,
+					"name": "shopcart",
+					"pathName": "pages/shoppingCart/index",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "test",
+					"pathName": "pages/mine/order",
+					"query": ""
+				}
+			]
+		}
+	}
+}

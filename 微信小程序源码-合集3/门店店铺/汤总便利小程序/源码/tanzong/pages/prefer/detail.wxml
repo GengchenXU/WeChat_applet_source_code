@@ -1,0 +1,60 @@
+<!--pages/prefer/detail.wxml-->
+<view class="container">
+  <view class="swiper-box">
+    <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" style="height:580rpx;">
+      <block wx:for="{{1}}" wx:key="idx" wx:for-index="idx" >
+        <swiper-item>
+          <view class="banner">
+            <image src="{{goods.img_url}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- <view class="shopCart" bindtap="goShopCart">
+      <image src="/assets/images/orderBox.png"></image>
+      <view class="shopCart-num font-color-c24e4e">0</view>
+    </view> -->
+
+  </view>
+  <view class="commodityInfo line-before-bottom">
+    {{goods.title}}
+  </view>
+  <view class="choose-amount line-before-bottom">
+    <view class="choose-amount-hd">
+      {{goods.prices}}元
+    </view>
+    <view class="choose-amount-bd">
+      商品规格：{{goods.spec}}/{{goods.unit}}
+    </view>
+
+  </view>
+  <view class="choose-num line-before-bottom">
+    <text>订购数量</text>
+    <view class="minus  {{buyNumber == 1 ? 'hui': ''}}" bindtap='numJianTap' >
+      <image class="minusicon" src="/assets/minus.png"></image>
+    </view>
+    <text class="amount">{{buyNumber}}</text>
+    <view class="add  {{buyNumber == buyNumMax ? 'hui': ''}}" bindtap='numJiaTap'>
+      <image class="chooseicon" src="/assets/add.png"></image>
+    </view>
+  </view>
+  <view class='other-goods'>
+      <image src='/assets/weekgy.png' class='title'></image>
+      <view class='good-list'>
+          <view class='list' wx:for="{{goodslist}}" wx:for-index="idx" wx:key="idx" wx:for-item="item"  bindtap="goOtherGoods" data-id='{{item.id}}'>
+              <image  class="goods-image " src='{{item.img_url}}'></image>
+              <text style='font-size:24rpx;'>{{item.title}}</text>
+          </view>
+      </view>
+
+  </view>
+</view>
+<view class="fixed-ft but-group ">
+  <view class="but-box playOrder" bindtap="playOrder">立即订购</view>
+  <view class="but-box addCart " bindtap="addCart">加入购物车</view>
+  <view class="shop-cart-btn" bindtap="goShopCart">
+    <image src='/assets/cart.png' class="shopCart"></image>
+    <view class="shop-num">({{shopNum}})</view>
+    购物车   
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<view class="home-wrap">
+  <swiper indicator-dots="true" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+    <view wx:for="{{banner}}" wx:key="unique">
+      <swiper-item>
+        <view>
+          <navigator url="{{item.jumpurl}}"><image src="{{item.adimage}}" mode="scaleToFill center" class="banner"></image></navigator>
+        </view>
+      </swiper-item>
+    </view>
+  </swiper>
+  <view class="scroll-txt" bindtap="search">
+  	<icon type="search" size="14" style="margin: 0px 5px 0 0"></icon>
+    <text class="scroll-ads">搜索</text>
+  </view>
+  <view class="ads-list">
+  	<view class="ads-item" bindtap="vipcard">
+	    <image src="../../images/index_vip.png" mode="scaleToFill center"></image>
+	    <text>云车会员卡</text>
+    </view>
+    <view class="ads-item" bindtap="gotoWeizhang">
+	    <image src="../../images/index_weizhang.png" mode="scaleToFill center"></image>
+	    <text>违章查询</text>
+    </view>
+  </view>
+  <view class="workbench">
+    <text class="title">商家专区</text>
+    <view class="hot-list">
+      <view class="hot-item" wx:for="{{shopType}}" wx:key="unique" wx:for-item="item" data-id="{{item.type}}" data-title="{{item.typeName}}" bindtap="gotoShop">
+        <image src="{{item.icon}}" mode="scaleToFill center"></image>
+        <text>{{item.typeName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="workbench">
+    <text class="title">汽车服务</text>
+    <view class="hot-list">
+      <view class="hot-item" wx:for="{{serviceType}}" wx:key="unique" wx:for-item="item" data-id="{{item.type}}" data-title="{{item.typeName}}" bindtap="gotoService">
+        <image src="{{item.icon}}" mode="scaleToFill center"></image>
+        <text>{{item.typeName}}</text>
+      </view>
+    </view>
+  </view>
+</view>

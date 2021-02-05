@@ -1,0 +1,52 @@
+<!--pages/mine/detail.wxml-->
+<view class="page">
+      <view class='payinfo'>
+         <view style='font-size:40rpx;'>{{ detail.status=='101' ? '未支付' : '已完成'}}</view>
+         <view class='font-color-999'>{{ detail.status=='101' ? '如有需要请重新购买' : '感谢您的使用,欢迎再次光临'}}</view>
+      </view>
+
+      <view class="goods-list">
+          <view class='list' wx:for="{{detail.detail}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
+            <text class='list-hd' style='width:450rpx;'>{{itemName.prodcut_name}}</text>
+            <text class='list-bd'>x{{itemName.num}}</text>
+            <text class='list-bd'>{{itemName.total}}元</text>
+          </view>
+      </view>
+
+         <view class="goods-list">
+          <view class='list'>
+            <text class='list-hd'>商品总价</text>
+            <text class='list-bd'>{{detail.payable_total}}元</text>
+          </view>
+           <view class='list'>
+            <text class='list-hd'>优惠金额</text>
+            <text class='list-bd'>{{detail.discount_total}}元</text>
+          </view>
+           <view class='list'>
+            <text class='list-hd'>实付金额</text>
+            <text class='list-bd'>{{detail.fact_total}}元</text>
+          </view>
+           <view class='list'>
+            <text class='list-hd'>支付方式</text>
+            <text class='list-bd'>微信支付</text>
+          </view>
+      </view>
+         <view class="goods-list">
+          <view class='list'>
+            <text class='list-hd'>订单类型</text>
+            <text class='list-bd'>扫码下单</text>
+          </view>
+           <view class='list'>
+            <text class='list-hd'>下单时间</text>
+            <text class='list-bd'>{{detail.ctime}}</text>
+          </view>
+           <view class='list'>
+            <text class='list-hd'>订单编号</text>
+            <text class='list-bd'>{{detail.order_no}}</text>
+          </view>
+           <view class='list'>
+            <text class='list-hd'>下单货架</text>
+            <text class='list-bd'>{{shelves_name}}</text>
+          </view>
+      </view>
+</view>

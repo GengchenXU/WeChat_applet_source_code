@@ -1,0 +1,11 @@
+/* pages/index/newdetail.wxss */
+@import "/wxParse/wxParse.wxss";
+.content{
+  padding: 20rpx;
+}
+.title{
+  font-size: 36rpx;
+  font-weight: 24rpx;
+  text-align: center;
+  padding:20rpx 0;
+}

@@ -1,0 +1,32 @@
+<!--pages/mine/index.wxml-->
+<view class="page">
+    <view class='mine'>
+       <view class='userinfo'>
+          <image src='../../assets/myorder_logo01.png' class='logo'></image>
+          <image src='../../assets/myorder_logo02.png' class="logo_icon"></image>
+       </view>
+       <view class='accountinfo'>
+          <view class="hd">
+             <view>积分</view>
+             <view>0</view>
+          </view>
+          <view class='line'></view>
+          <view class="bd">
+             <view>优惠券</view>
+             <view>0</view>
+          </view>
+       </view>
+
+         <view class="listgroup line-after-top">
+           <navigator url="/pages/mine/order" class="view-list arrow-right line-before-bottom" hover-class="weui-cell_active">
+               <view class="list-text">我的订单</view>
+           </navigator>
+            <navigator url="" class="view-list arrow-right line-before-bottom" hover-class="weui-cell_active">
+               <view class="list-text">系统设置</view>
+           </navigator>
+            <navigator url="" class="view-list arrow-right line-before-bottom" hover-class="weui-cell_active">
+               <view class="list-text">关于汤总便利</view>
+           </navigator>
+        </view>
+    </view>
+</view>

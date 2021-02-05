@@ -1,0 +1,8 @@
+<!--pages/index/newdetail.wxml-->
+<!--解析富文本编辑器-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='content'>
+   <view class='title'>{{newsdetail.title}}</view>
+   <template is="wxParse" data="{{wxParseData:body.nodes}}"/>
+</view>
+

@@ -1,0 +1,71 @@
+<import src="../../template/loading" />
+<!--pages/mine/order.wxml-->
+<view class="page">
+ <scroll-view class="post-list" style='height:{{height}}px' enable-back-to-top="true" bindscrolltolower="loadMore" bindscrolltoupper="onRefresh" upper-threshold="0" lower-threshold="20" scroll-y="true">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+         
+            <view class="list-group">
+              <navigator url="/pages/mine/detail?id={{item.id}}&shelves_name={{item.shelves_name}}" class="orderList bg-color-white" hover-class="weui-cell_active" wx:for="{{list1}}" wx:for-item="item" wx:key="index">
+                <view class="orderList-hd ">
+                  <text class="font-color-999">{{item.ctime}}</text>
+                  <text class="font-color-999">{{item.order_no}}</text>
+                </view>
+                <view class="orderList-bd ">
+                  <text>{{item.detail[0].prodcut_name}}等{{item.num}}件商品</text>
+                  <text>{{item.fact_total}}元</text>
+                </view>
+                <view class="orderList-ft ">
+                  <text class="font-color-f8b62b">{{item.shelves_name}}-扫码</text>
+                  <text>微信支付</text>
+                </view>
+              </navigator>
+            </view>
+            <!--加载更多模版-->
+            <!-- <block wx:if="{{hasMore}}">
+              <template is="loading" />
+            </block>
+            <block wx:if="{{blogs.length<1}}">
+              <template is="nodata1" />
+            </block>
+            <block wx:else>
+              <template is="nodata" />
+            </block> -->
+          
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+         
+          <view class="list-group">
+            <navigator url="/pages/mine/detail?id={{item.id}}&shelves_name={{item.shelves_name}}" class="orderList bg-color-white" hover-class="weui-cell_active" wx:for="{{list2}}" wx:for-item="item" wx:key="index">
+              <view class="orderList-hd ">
+                <text class="font-color-999">{{item.ctime}}</text>
+                <text class="font-color-999">{{item.order_no}}</text>
+              </view>
+              <view class="orderList-bd ">
+                <text>{{item.detail[0].prodcut_name}}等{{item.num}}件商品</text>
+                <text>{{item.fact_total}}元</text>
+              </view>
+              <view class="orderList-ft ">
+                <text class="font-color-f8b62b">{{item.shelves_name}}-扫码</text>
+                <text>微信支付</text>
+              </view>
+            </navigator>
+          </view>
+        
+        </view>
+
+      </view>
+    </view>
+  </view>
+  </scroll-view>
+</view>

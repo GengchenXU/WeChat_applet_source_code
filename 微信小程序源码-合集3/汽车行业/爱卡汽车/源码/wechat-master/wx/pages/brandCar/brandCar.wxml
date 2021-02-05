@@ -1,0 +1,95 @@
+
+<!--搜索框 S-->
+<!--<view class="search-view">
+    <view class="city">北京</view>
+    <form class="search-form">
+        <input type="text" class="search-input" value="" placeholder="搜索"  bindfocus="" bindinput="" auto-focus="true" name="" />
+        <icon  class="search-icon" type="search" size="15" color="#3572ce"></icon>
+    </form>
+</view>-->
+
+<!--搜索框 E-->
+<!--标签切换S-->
+<!--标签切换头部S-->
+
+<!--标签切换头部E-->
+
+<!--标签切换内容S-->
+<!--<swiper class="swiper-content" current="{{currentTab}}" duration="300" style="height:{{winHeight}}px" bindchange="bindChange" circular="true">
+    <swiper-item>-->
+    <scroll-view class="swiper-content" style="height:{{winHeight}}px" scroll-y="true" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" >
+<!--选项卡 S-->
+    <!--<view class="swiper-head">
+        <view class="swiper-head-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+        品牌选车
+        </view>
+        <view class=" swiper-head-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+        条件选车
+        </view>
+    </view>-->
+<!--选项卡 E-->
+<!--热门品牌 S-->
+    <view class="hot-view">
+        <text id="hot">热门品牌</text>
+        <view class="hot-item">
+            <view class="hot-row">
+                <view wx:for="{{brandData.hot}}" wx:if="{{index < 5}}" data-id="{{item.pbid}}" bindtap="showDrawer">
+                    <image class="img img-hot" src="https://img{{num}}.xcarimg.com/PicLib/logo/pl{{item.pbid}}_160s.png"  mode="aspectFit">
+                    </image>
+                    <view class="hot-name">
+                        {{item.pbname}}
+                    </view>
+                </view>
+            </view>
+            <view class="hot-row">
+                <view  wx:for="{{brandData.hot}}" wx:if="{{index > 4}}" data-id="{{item.pbid}}" bindtap="showDrawer">
+                    <image class="img img-hot" src="https://img{{num}}.xcarimg.com/PicLib/logo/pl{{item.pbid}}_160s.png"  mode="aspectFit">
+                    </image>
+                    <view class="hot-name">
+                        {{item.pbname}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+<!--热门品牌 E-->
+
+<!--品牌列表 S-->
+<view class="brand-scroll">
+    <view class="brand-item" wx:for="{{brandList}}" wx:for-index="letterIndex" wx:for-item="letterItem">
+        <text id="{{letterItem.flag}}">{{letterItem.flag}}</text>
+        <view wx:for="{{letterItem.items}}" wx:for-item="carItem" bindtap="showDrawer" data-id="{{carItem.pbid}}">
+            <image class="img img-list" src="https://img{{num}}.xcarimg.com/PicLib/logo/pl{{carItem.pbid}}_160s.png"  mode="aspectFit"></image>
+            <view class="brand-name">{{carItem.pbname}}</view>
+        </view>
+    </view>
+</view>
+<!--品牌列表 E-->
+    </scroll-view>
+<!--字母列表 S-->
+<view class="letter-item {{ismove==1?'letter-hover':''}}" bindtap ="clickLetter" catchtouchmove="touchMove" catchtouchend="touchEnd">
+    <view class="letter-li" data-letter="hot">热</view>
+    <view class="letter-li {{selected == letterIndex ? ' red':' '}}" data-current="{{letterIndex}}" wx:for="{{brandList}}" wx:for-item="letterItem" wx:for-index="letterIndex" data-letter="{{letterItem.flag}}" >{{letterItem.flag}}</view>
+</view>
+<!--字母列表 E-->
+
+
+<!--抽屉 S-->
+<import src="../drawer/drawer.wxml"/>
+<template is="drawer" data="{{showDrawerFlag,animationData,drawerSeriesData,num}}"></template>
+<!--抽屉 E--> 
+
+<!--</swiper-item>-->
+    <!--<swiper-item>
+        <view>条件选车</view>
+    </swiper-item>-->
+<!--</swiper>-->
+<!--标签切换内容E-->
+
+<!--标签切换 E-->
+
+
+
+
+
+

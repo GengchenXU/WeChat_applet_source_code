@@ -1,0 +1,78 @@
+/*mask*/  
+.drawer-mask {  
+  width: 100%;  
+  height: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  z-index: 1000;  
+  background: #000;  
+  opacity: 0.5;  
+  overflow: hidden;  
+}  
+/*content*/  
+.drawer-box {  
+  width: 80%;  
+  height:100%;
+  overflow: hidden;  
+  position: fixed;  
+  right: -80%;  
+  bottom:0;
+  z-index: 1001;  
+  background: #fff;  
+}  
+.drawer-head{
+ text-align:center;
+ font-size:32rpx;
+ color:#444;
+ height:88rpx;
+ width:100%;
+ line-height: 88rpx;
+ background:#f3f3f3;
+ border-bottom:solid 1rpx #dedede;
+}
+.drawer-content {  
+  height:100%;  
+  overflow-y:hidden;  
+}  
+.drawer-content-item > text{
+  display:block;
+  background:#eee;
+  color:#777;
+  font-size:30rpx; 
+  height:60rpx;
+  line-height:60rpx;
+  padding:17rpx 32rpx;
+}
+::-webkit-scrollbar{ 
+    /*隐藏滚动条*/
+    width:0;
+    height:0;
+    color:transparent;
+}
+.drawer-child{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size:30rpx;
+    height:139rpx;
+    padding:20rpx 32rpx;
+}
+.drawer-child:not(:last-child){
+    border-bottom:solid 1rpx #eee;
+}
+.drawer-info{
+    padding-left:34rpx;
+}
+.drawer-info > text{
+    display:block;
+    padding-bottom:20rpx;
+}
+.drawer-price{
+    color:#e74b3c;
+    padding-top:20rpx;
+}
+.drawer-close{
+    position:absolute;
+    right:20rpx;
+}

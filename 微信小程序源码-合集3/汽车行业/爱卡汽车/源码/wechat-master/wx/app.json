@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/brandCar/brandCar",
+    "pages/index/index",
+    "pages/photoPage/photoPage",
+    "pages/logs/logs",
+    "pages/seriesDetail/seriesDetail",
+    "pages/seriesDetail/p1/p1",
+    "pages/seriesDetail/p2/p2",
+    "pages/seriesDetail/p3/p3",
+    "pages/overView/overView",
+    "pages/configure/configure",
+    "pages/askPrice/askPrice"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3572ce",
+    "navigationBarTitleText": "爱卡汽车",
+    "navigationBarTextStyle":"#fff"
+  }
+}

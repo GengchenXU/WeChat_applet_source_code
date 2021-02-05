@@ -1,0 +1,37 @@
+<image src="{{welfareJson.servicepicurl}}" class="avatar" mode="aspectFill"></image>
+
+<!-- detail content start -->
+<view class="detail-box">
+    <view class="detail-title">{{welfareJson.servicename}}</view>
+    <view class="detail-content">
+        <view class="detail-price">
+            <text class="new-price">云车价:￥{{welfareJson.discountprice}}</text>
+            <text class="market-price">市场价:￥{{welfareJson.marketprice}}</text>
+        </view>
+        <view class="join-group" data-value="{{welfareJson.shoptel}}" bindtap="callMerchant">拨打商家电话</view>
+    </view>
+    <view class="icon-img"></view>
+</view>
+<!-- / detail content end -->
+
+<view class="otherAddress">
+    <text>地址：{{welfareJson.shopaddress}}</text>
+</view>
+
+<view wx:if="{{welfareJson.abstr!=''}}" class="goods-detail">
+    <view class="title-box">服务内容</view>
+    <view class="goods-detail-text">
+    	{{welfareJson.abstr}}
+    </view>
+</view>
+
+<view wx:if="{{welfareJson.servicerequire!=''}}" class="goods-detail">
+    <view class="title-box">使用须知</view>
+    <view class="goods-detail-text">
+    	{{welfareJson.servicerequire}}
+    </view>
+</view>
+
+<view class="fight-group-title" bindtap="callService">*如商家无法服务或对商家不满意，请按此拨打售后</view>
+
+<view class="join" bindtap="buyWelfare">立即购买</view>

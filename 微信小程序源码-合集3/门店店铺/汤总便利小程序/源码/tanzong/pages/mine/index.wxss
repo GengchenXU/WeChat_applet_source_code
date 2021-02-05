@@ -1,0 +1,61 @@
+/* pages/mine/index.wxss */
+.page{
+   background-color: #f5f5f5;
+   min-height: 100vh;
+   overflow: hidden;
+}
+.mine{
+  padding: 40rpx;
+}
+.userinfo {
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 385rpx;
+  background-color: #f8b62b;
+  justify-content: center
+
+}
+.userinfo .logo{
+  width:380rpx;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}
+.logo_icon{
+  width: 260rpx;
+  height: 60rpx;
+}
+.accountinfo{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  position: relative;
+  margin: 40rpx auto;
+  align-items: center;
+  text-align: center
+}
+
+.accountinfo .hd,.accountinfo .bd{
+  flex: 1;
+  font-size:36rpx;
+}
+
+.line{
+  width: 1px;
+  height: 120rpx;
+  position: absolute;
+  left: 50%;
+  background-color: #e1e1e1;
+}
+
+.listgroup .view-list{
+    display: flex;
+    flex-direction: row;
+    height: 100rpx;
+    padding: 0 30rpx;
+    align-items: center;
+    color: #999999;
+    font-size: 32rpx;
+}
+

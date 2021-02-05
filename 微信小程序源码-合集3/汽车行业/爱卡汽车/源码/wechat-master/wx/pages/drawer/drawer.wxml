@@ -1,0 +1,39 @@
+<template name="drawer">
+   
+    <!--遮罩 S-->
+    <view class="drawer-mask" bindtap="hideDrawer" wx:if="{{showDrawerFlag}}" catchtouchmove></view> 
+    <!--遮罩 E-->
+    <!--抽屉内容 S-->
+    <scroll-view animation="{{animationData}}" class="drawer-box" scroll-y="true">
+    <!--<view class="drawer-head">-->
+        <!--<text wx:if="{{showBackFlag}}" class="drawer-back">返回</text>-->
+        <!--<text>选车系</text>-->
+    <!--</view>-->
+    <scroll-view class="drawer-content" scroll-y="true">
+        <view wx:for="{{drawerSeriesData}}" class="drawer-content-item">  
+            <text>{{item.text}}</text>
+                <view wx:for="{{item.children}}" class="drawer-child" bindtap="gotoSeries" data-pserid= "{{item.id}}" > 
+                        <image class="img img-drawer" src="https://img{{num}}.xcarimg.com/PicLib/s/s{{item.serid}}_240.jpg"></image>
+                        <view class="drawer-info">
+                            <text>{{item.text}}</text>
+                            <view wx:if="{{item.price.length!=0}}">
+                                <text wx:if="{{item.price.minprice!=item.price.maxprice}}">
+                                    <text class="drawer-price">{{item.price.minprice}}-{{item.price.maxprice}}</text>
+                                    <text>万</text>
+                                </text>
+                                <text wx:elif="{{item.price.minprice==item.price.maxprice}}">
+                                    <text class="drawer-price">{{item.price.minprice}}</text>
+                                    <text>万</text>
+                                </text>
+                                
+                            </view>
+                            <view wx:else>
+                                <text class="drawer-price">暂无报价</text>
+                            </view>
+                        </view>
+                </view>
+        </view>
+    </scroll-view>  
+    </scroll-view>
+    <!--抽屉内容 E-->
+</template>

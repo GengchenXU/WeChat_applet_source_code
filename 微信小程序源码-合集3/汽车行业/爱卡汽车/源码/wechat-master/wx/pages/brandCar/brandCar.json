@@ -1,0 +1,217 @@
+
+{
+	"status":1,
+	"msg":"数据获取成功",
+	"data":{
+		"list":[
+			{
+				"id": "1",
+                "text": "厂商／一汽奥迪",
+                "children":[
+                	{
+                		"id": "8",
+                        "text": "奥迪A4L",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	},
+                	{
+                		"id": "9",
+                        "text": "奥迪Q3",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	}
+                ]
+			},
+			{
+				"id": "1",
+                "text": "厂商／进口奥迪",
+                "children":[
+                	{
+                		"id": "8",
+                        "text": "进口奥迪A4L",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	},
+                	{
+                		"id": "9",
+                        "text": "进口奥迪Q3",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	}
+                ]
+			},
+            {
+				"id": "1",
+                "text": "厂商／一汽奥迪",
+                "children":[
+                	{
+                		"id": "8",
+                        "text": "奥迪A4L",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	},
+                	{
+                		"id": "9",
+                        "text": "奥迪Q3",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	}
+                ]
+			},
+			{
+				"id": "1",
+                "text": "厂商／进口奥迪",
+                "children":[
+                	{
+                		"id": "8",
+                        "text": "进口奥迪A4L",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	},
+                	{
+                		"id": "9",
+                        "text": "进口奥迪Q3",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	}
+                ]
+			},
+            {
+				"id": "1",
+                "text": "厂商／一汽奥迪",
+                "children":[
+                	{
+                		"id": "8",
+                        "text": "奥迪A4L",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	},
+                	{
+                		"id": "9",
+                        "text": "奥迪Q3",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	}
+                ]
+			},
+			{
+				"id": "1",
+                "text": "厂商／进口奥迪",
+                "children":[
+                	{
+                		"id": "8",
+                        "text": "进口奥迪A4L",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	},
+                	{
+                		"id": "9",
+                        "text": "进口奥迪Q3",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	}
+                ]
+			},
+            {
+				"id": "1",
+                "text": "厂商／一汽奥迪",
+                "children":[
+                	{
+                		"id": "8",
+                        "text": "奥迪A4L",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	},
+                	{
+                		"id": "9",
+                        "text": "奥迪Q3",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	}
+                ]
+			},
+			{
+				"id": "1",
+                "text": "厂商／进口奥迪",
+                "children":[
+                	{
+                		"id": "8",
+                        "text": "进口奥迪A4L",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	},
+                	{
+                		"id": "9",
+                        "text": "进口奥迪Q3",
+                        "xclass": "2",
+                        "xstatus": "2",
+                        "price":{
+                            "minprice":"15.8",
+                            "maxprice":"22.09"
+                        }
+                	}
+                ]
+			}
+		]
+	}
+}

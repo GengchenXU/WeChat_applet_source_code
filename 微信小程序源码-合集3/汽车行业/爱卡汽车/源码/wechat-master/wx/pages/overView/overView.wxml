@@ -1,0 +1,105 @@
+<!--pages/overView/overView.wxml-->
+<view class="detail-title">
+    <view class="detail-detail">综述</view>
+    <view class="detail-conf">
+        <navigator url="../configure/configure?cityid={{myData.cityId}}&pserid={{myData.pserId}}">配置</navigator>
+    </view>
+    <view class="detail-img">图片</view>
+</view>
+<scroll-view class="scroll-detail" style="height:600px;"  scroll-y="true">
+    <view class="detail-content" style="height:100%;">
+        <!--车系信息-S-->
+        <view class="detail-info">
+            <image src="{{detailData.brandUrl}}" class=" img img-info" mode="aspectFit"></image>
+            <view class="detail-info-txt">
+                <text>{{detailData.seriesName}}</text>
+                <view>
+                    <view wx:if="{{detailData.guidePrice != ''}}">
+                        <text>指导价：</text>
+                        <text class="red-price">{{detailData.guidePrice}} </text>
+                    </view>
+                    <text wx:if="{{detailData.guidePrice == ''}}">
+                        暂无报价
+                    </text>
+                </view>
+            </view>
+        </view>
+        <!--车系信息-E-->
+
+        <!--车系大图-S-->
+        <view class="detail-image">
+            <view class="wrap-tag">
+                <view class="tag-gray" wx:if="{{detailData.saleType==0}}">
+                    未上市
+                </view>
+                <view class="tag-gray" wx:if="{{detailData.saleType==1}}">
+                    停售
+                </view>
+                <view class="tag-red" wx:if="{{detailData.saleType==2}}">
+                    在售
+                </view>
+                <view class="tag-red" wx:if="{{detailData.saleType==3}}">
+                    即将上市
+                </view>
+            </view>
+            <image src="{{detailData.imageUrl}}" class="img img-detail" mode="widthFix"></image>
+            <view class="detail-image-info">
+                <view class="float-level">
+                    <text>{{detailData.level}}/</text>
+                    <text>{{detailData.displacement}}</text>
+                </view>
+                <view class="float-count">共{{detailData.imageCount}}张图</view>
+            </view>
+        </view>
+        <!--车系大图-E-->
+
+
+
+        <!--车系详情-S-->
+        <view class="detail-condition">
+            <!--售卖切换-S-->
+                <view class="detail-condition-title">
+                    <view  class="wrap {{currentTab == categoryItem.categoryName ?'on':''}}" bindtap="swichTab" data-current="{{categoryItem.categoryName}}" wx:for="{{detailData.categoryList}}" wx:for-item="categoryItem">
+                        <text>{{categoryItem.categoryName}}</text>
+                    </view>
+                </view>
+            
+            <!--售卖切换-E-->
+
+            <!--售卖内容-S-->
+            <view wx:for="{{detailData.categoryList}}" wx:for-item="categoryItem" wx:if="{{categoryItem.categoryName==currentTab}}">
+            <!--售卖切换-S-->
+            <!--<view class="detail-condition-title">
+                <view class="wrap" bindtap="swichTab" data-current="{{categoryItem.categoryName}}" >
+                    <text>{{categoryItem.categoryName}}</text>
+                </view>
+            </view>-->
+            <!--售卖切换-E-->
+                <view class="detail-condition-list" wx:for="{{categoryItem.subSeriesList}}" wx:for-item="subItem"><text class="name-section">{{subItem.sectionName}}</text>
+                        <!--车型详情-S-->
+                        <view class="list-detail" wx:for="{{subItem.carList}}" wx:for-item="carItem"><text class="list-head">{{carItem.carYear}}{{carItem.seriesName}}{{carItem.carName}}</text>
+                            <view class="list-price gray-price">
+                                <text>
+                                    <text class="red-price">{{carItem.localPrice}}</text>起
+                                </text>
+                                <text>厂商指导价：{{carItem.guidePrice}}起</text>
+                            </view>
+                            <view class="list-operate">
+                                <view class="btn-conf">
+                                    <navigator url="../configure/configure?cityid={{myData.cityId}}&mids={{carItem.carId}}">参数配置</navigator>
+                                </view>
+                                <view class="btn-askp">
+                                    <navigator url="../askPrice/askPrice?pserid={{myData.pserId}}&sourceid=666">询底价</navigator>
+                                </view>
+                                
+                            </view>
+                        </view>
+                        <!--车型详情-E-->
+                </view>
+            </view>
+            <!--售卖内容-E-->
+        </view>
+           
+     <!--车系详情-E-->
+    </view>
+</scroll-view>

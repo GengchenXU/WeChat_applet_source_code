@@ -1,0 +1,29 @@
+<!--pages/prefer/index.wxml-->
+<view calss="page">
+   <scroll-view scroll-y="true" class="prefer" style="height: {{height+'px'}};" bindscrolltoupper="upper" upper-threshold="50" lower-threshold="50" bindscrolltolower="lower"   scroll-top="20" wx:if="{{shelves_id}}">
+    <block wx:for="{{productList}}" wx:for-index="idx" wx:key="idx" wx:for-item="item" data-idx="{{idx}}">
+          <navigator url="/pages/prefer/detail?id={{item.id}}" class="weui-media-box weui-media-box_appmsg line-before-bottom" hover-class="weui-cell_active" >
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg bd-hd">
+                    <image class="weui-media-box__thumb" src="{{item.img_url}}" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg bd-bd">
+                    <view class="title">{{item.title}}</view>
+                    <view class="desc">
+                        <text class="desc-hd">{{item.prices}}元</text>
+                    </view>
+                </view>
+          </navigator>
+    </block>
+</scroll-view>
+<view wx:else>
+    <image src='../../assets/youxuan_logo.png' class='logo'></image>
+    <image src='../../assets/youxuan_introduce.png' class='introduce'></image>
+    <view class="font-color-f8b62b text-aglin-c">扫码定位货架、开启优质生活</view>
+    <view class='scancodebox'>
+      <image src='../../assets/scancode_small.png' class="scancode" ></image>
+      <view class="font-color-f8b62b text-aglin-c">扫码定位</view>
+    </view>
+</view>
+
+</view>
+

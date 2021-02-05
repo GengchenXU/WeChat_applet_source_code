@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,EAAE;EACD,KAAK,EAAC,GAAG;;AACT,KAAE;EACD,KAAK,EAAC,IAAI",
+"sources": ["sass/seriesDetail.scss"],
+"names": [],
+"file": "seriesDetail.wxss"
+}

@@ -1,0 +1,8 @@
+<!--pages/shoppingCart/confirmPayment.wxml-->
+<view class='page'>
+     <view class='margin-top-20 font-color-999'>商品合计：{{detail.fact_total}}元</view>
+     <view class='margin-top-20 font-color-999'>优惠金额：{{detail.discount_total}}元</view>
+     <view class='margin-top-20'>支付金额：{{detail.payable_total}}元</view>
+     <view  class='margin-top-20'>付款方式：微信</view>
+     <view class='but-box '> <button class="weui-btn" type="primary" bindtap="payOrder">确认支付</button></view>
+</view>

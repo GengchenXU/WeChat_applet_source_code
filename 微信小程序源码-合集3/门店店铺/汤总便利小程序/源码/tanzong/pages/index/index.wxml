@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="userinfo">
+      <image src='../../assets/index_logo.png'  class='logo'></image>
+      <view class="but" bindtap="controltap" >
+         <image src='../../assets/location.png' class="icon"></image>
+         <text>{{shelves_info.name ? shelves_info.name : '请扫码定位货架'}}</text>
+      </view>
+      <view class="scan" bindtap="controltap">
+         <image src="../../assets/scancode.png" class="scancode"></image>
+         <text>扫码购物</text>
+      </view>
+  </view>
+  <view class="shopping_guide">
+     <image src="../../assets/shoppingguide.png" class="shopping"></image>
+     <view class="bd">
+        <text class="bd-hd">购物指南</text>
+        <text class="bd-bd">简单三步 秒变达人</text>
+     </view>
+  </view>
+  <view class='news'>
+     <view class='news-hd'>
+        汤总播报
+     </view>
+     <view class='news-bd'>
+           <navigator url="newdetail?id={{item.id}}" class="weui-media-box weui-media-box_appmsg newslist" hover-class="weui-cell_active" wx:for="{{newsList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg bd-hd">
+                        <image class="weui-media-box__thumb" src="{{item.images[0]}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg bd-bd">
+                        <view class="title">{{item.title}}</view>
+                        <view class="desc">
+                           <text class="desc-hd">汤总播报</text>
+                           <text class="desc-bd">{{item.create_time}}</text>
+                        </view>
+                    </view>
+            </navigator>
+     </view>
+  </view>
+</view>

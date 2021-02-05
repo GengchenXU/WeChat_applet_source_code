@@ -1,0 +1,43 @@
+<view class="price-hd-slt"> 
+  <navigator url="##" class="button">
+
+    <view class="ui-inner">
+      <view class="inner-lt">
+        <image src="{{idx.carlist[0].children[0].img}}" alt=""></image>
+      </view>
+      <view class="inner-rt">
+        <view class="clr-gray9">{{idx['dealer-info'].coname}}</view>
+        <view class="name">
+          <text class="clr-red">{{idx.carlist[0].children[0].price}}</text>万</view>
+        <view class="clr-gray7">{{idx['pser-info'].pbname}}/{{idx['pser-info'].typename}}</view>
+      </view>
+    </view>
+    <!--向下箭头-->
+    <icon class="price-hd-down"></icon>
+    
+  </navigator>
+</view>
+<view class="price-con">
+
+  <!--车型-->
+  <view class="newest-wrap-top" wx:if="{{idx['dealer-info'].coname}}">
+    <text class="clr-red">[4S]</text>
+    <text class="newest-slt-info">{{idx['dealer-info'].coname}}</text>
+    <icon class='btn03-bg'></icon>
+    <text class='whole-country'>售全国</text>
+  </view>
+
+  <!--表单-->
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <input name="name" placeholder="姓名(最多四字)" maxlength="4" />
+    </view>
+    <view class="section">
+      <input name="number" placeholder="手机" maxlength="11" />
+    </view>    
+    <view class="btn-area">
+      <button formType="submit">获取促销价</button>
+    </view>
+  </form>
+
+</view>

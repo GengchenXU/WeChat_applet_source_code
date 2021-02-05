@@ -1,0 +1,29 @@
+/* pages/mine/detail.wxss */
+page{
+  min-height: 100%;
+  background-color: #F2f2f2;
+}
+.payinfo{
+  display: flex;
+  height: 264rpx;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.goods-list{
+  padding:  10rpx 20rpx;
+  background-color: #ffffff;
+  margin-bottom: 30rpx;
+}
+.goods-list .list{
+    line-height: 1;
+    height: 90rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.goods-list .list .list-hd{
+  color: #999999;
+}
+

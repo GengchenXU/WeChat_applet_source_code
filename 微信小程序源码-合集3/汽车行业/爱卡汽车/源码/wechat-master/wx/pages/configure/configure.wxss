@@ -1,0 +1,423 @@
+
+view{font-family: "\534E\6587\7EC6\9ED1",Helvetica, Arial,sans-serif;}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+view,text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    word-break: break-all;
+    outline: none;
+}
+.nav {
+    margin-top: 0 !important;
+    background: #fff;
+    height:68rpx;
+}
+.nav text {
+    width: 25%;
+    float: left;
+        font-size: 30rpx;
+        height:68rpx;
+    line-height: 23rpx;
+    color: #444;
+    text-align: center;
+    border-bottom: 1rpx solid #e8e8e8;
+    border-right: 1rpx solid #e8e8e8;
+}
+.detailed-wrap{
+  width:100%;
+  height:auto;
+  margin-top:20rpx;}
+.detailed-wrap .compare-box {
+    position: relative;
+    width: 100%;
+    min-height: 140rpx;}
+
+.detailed-wrap .compare-box .fixedbox {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.detailed-wrap .compare-box .head-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.detailed-wrap .compare-box .header {
+    display: table;
+    width: 100%;
+    height: 140rpx;
+    background-color: #fff;
+}
+.detailed-wrap .compare-box .header .left-box {
+    display: table-cell;
+    width: 250rpx;
+    height: 140rpx;
+    border: solid #d7d7d7 1rpx;
+    border-left: 0;
+    border-bottom: 0;
+    vertical-align: middle;
+    font-size: 30rpx;
+    line-height: 26rpx;
+    padding: 32rpx 50rpx;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    transform: translate(0, 0) translateZ(0);
+    -webkit-transform: translate(0, 0) translateZ(0);
+    background-color: #fff;
+}
+.detailed-wrap .compare-box .head-fixed .header .left-box, .detailed-wrap .compare-box .head-fixed .header .main-box .list {
+    border-bottom: solid #d7d7d7 1px;
+}
+
+.detailed-wrap .compare-box .header .left-box .form {
+    width:150rpx;
+    height: 30rpx;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+.detailed-wrap .compare-box .header .left-box .form .checkboxs {
+    display: inline-block;
+    width: 25rpx;
+    height: 25rpx;
+   background:url('Images/dif.png') no-repeat;
+     background-size:cover;
+    vertical-align: middle;
+    margin-right: 10rpx;
+    overflow: hidden;
+    line-height: 25rpx;
+    text-align: center;
+}
+.detailed-wrap .compare-box .header .left-box .form.checked .checkboxs {
+    background:url('Images/hidnone.png') no-repeat;
+    background-size:cover;
+    border:none;
+    border-radius: none;
+    background-color: none;
+
+}
+
+ 
+.detailed-wrap .compare-box .header .left-box .form .icon-tick {
+    font-size: 25rpx;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+}
+
+
+.detailed-wrap .compare-box .header .left-box .form .ebed {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 28rpx;
+}
+.detailed-wrap .compare-box .markbar {
+    display: none;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 0 0 0 30rpx;
+    font-size: 28rpx;
+    line-height: 60rpx;
+    color: #777;
+    background-color: #f3f3f3;
+    pointer-events: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 60rpx;
+    font-weight: bold;
+    border-bottom: 1rpx solid #d7d7d7;
+}
+.detailed-wrap .compare-box .header .main-box {
+    display: table-cell;
+    position: relative;
+    overflow: hidden;
+}
+.detailed-wrap .compare-box .header .main-box .list-group {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    font-size: 0;
+    white-space: nowrap;
+}
+.detailed-wrap .compare-box .header .main-box .list {
+    position: relative;
+    width: 250rpx;
+    display: inline-block;
+    vertical-align: top;
+    border: solid #d7d7d7 1rpx;
+    border-left: none;
+    border-bottom: 0;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    padding: 40rpx 20rpx;
+    box-sizing: border-box;
+    white-space: normal;
+    height: 100%;
+    background-color: #fff;
+}
+.content{background-color:#f3f3f3}
+.detailed-wrap .compare-box .header .main-box .list text {
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.detailed-wrap .compare-box .header .main-box .list icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 22rpx;
+    height: 22rpx;
+    background:url(Images/close.png) no-repeat;
+    background-size:cover;
+    font-size: 14rpx;
+    line-height: 22rpx;
+    color: #fff;
+    text-align: center;
+    z-index: 2000;
+}
+
+/*配置页面参数区*/
+.detailed-wrap .detail-box {
+    display: table;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    overflow: hidden;
+}
+/*配置页面参数区左侧start*/
+.detailed-wrap .detail-box .left-box {
+    display: table-cell;
+    width: 252rpx;
+}
+.detailed-wrap .detail-box .left-box .left-group .h4 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 0 0 0 30rpx;
+    font-size: 28rpx;
+   border-top:solid #d7d7d7 1rpx;
+    line-height: 56rpx;
+    color: #777;
+    background-color: #f3f3f3;
+    pointer-events: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.detailed-wrap .detail-box .left-box .left-group .h4 .markup {
+    position: absolute;
+    right: 30rpx;
+    font-size: 0;
+}
+.detailed-wrap .detail-box .left-box .left-group .h4 .markup label {
+    font-size: 28rpx;
+    margin-left: 20rpx;
+}
+.detailed-wrap .detail-box .left-box .left-group .h4 .markup label .iconcss {
+    font-size: 0;
+    display: inline-block;
+    margin-left: 5rpx;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.detailed-wrap .detail-box .left-box .left-group .h4 .markup label:nth-of-type(1) .iconcss {
+    width: 20rpx;
+    height: 20rpx;
+    background-color: #777;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+    border-radius: 10rpx;
+}
+.detailed-wrap .detail-box .left-box .left-group .h4 .markup label:nth-of-type(2) .iconcss {
+    width: 20rpx;
+    height: 20rpx;
+    border: 1rpx solid #777;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+    border-radius: 10rpx;
+}
+.detailed-wrap .detail-box .left-box .left-group .h4 .markup label:nth-of-type(3) .iconcss {
+    width: 14rpx;
+    height: 4rpx;
+    background-color: #777;
+}
+.detailed-wrap .detail-box .left-box .left-group .placeholder {
+    line-height: 59rpx;
+    width: 100%;
+}
+.detailed-wrap .detail-box .left-box .item {
+    display: table;
+    width: 100%;
+    text-align: center;
+    color: #999;
+    vertical-align: middle;
+}
+.detailed-wrap .detail-box .left-box .hid{display:none} 
+.detailed-wrap .detail-box .left-box .pbig {
+    height: 128rpx;
+   
+}
+.detailed-wrap .detail-box .left-box .item text.inner {
+    display: table-cell;
+    height: 72rpx;
+    padding: 5rpx 20rpx;
+    overflow: hidden;
+    font-size: 28rpx;
+    line-height: 30rpx;
+    color: #666;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    border: solid #d7d7d7 1px;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+/*配置页面参数区左侧end*/
+/*配置页面参数区右侧start*/
+.detailed-wrap .detail-box .main-box {
+    position: relative;
+    display: table-cell;
+    overflow: hidden;
+}
+.detailed-wrap .detail-box .main-box .data-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 0;
+    white-space: nowrap;
+}
+.detailed-wrap .detail-box .main-box .data-group:nth-of-type(1) .item:nth-of-type(2) {
+    height: 128rpx;
+}
+.detailed-wrap .detail-box .main-box .data-group view.h4txt {
+    line-height: 59rpx;
+}
+.detailed-wrap .detail-box .main-box .data-group .item {
+    display: table;
+    position: relative;
+    width: auto;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+.detailed-wrap .detail-box .main-box .data-group .hid{display:none}
+.detailed-wrap .detail-box .main-box .data-group .item view.inner .price {
+    display: block;
+}
+.detailed-wrap .detail-box .main-box .data-group .item view.inner .btnxj {
+    display: inline-block;
+    width: 150rpx;
+    height: 45rpx;
+    -webkit-border-radius: 5rpx;
+    -moz-border-radius: 5rpx;
+    border-radius: 5rpx;
+    background-color: #3572ce;
+    font-size: 24rpx;
+    line-height: 45rpx;
+    color: #fff;
+    text-align: center;
+    margin-top: 10rpx;
+}
+.detailed-wrap .detail-box .main-box .data-group:nth-of-type(1) .item:first-child {
+    margin-top: 0;
+}
+.detailed-wrap .detail-box .main-box .data-group .item view.inner {
+    display: table-cell;
+    width: 250rpx;
+    height: 72rpx;
+    padding: 4rpx 20rpx;
+    overflow: hidden;
+    font-size: 28rpx;
+    line-height: 30rpx;
+    color: #444;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    border: solid #d7d7d7 1rpx;
+    border-left: none;
+    border-bottom: 0;
+    
+}
+.hideSame ul .same-group,.hideNull ul .same-group{
+  color: #999!important;
+}
+/*配置页面参数区右侧end*/
+/*目录部分*/
+.list-slidenav {
+    position: fixed;
+    z-index: 3;
+    left: 30rpx;
+    bottom: 164rpx;
+    width: 90rpx;
+    height: 66rpx;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 30rpx;
+    line-height: 66rpx;
+    color: #fff;
+    text-align: center;
+}
+.slidenavbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 32;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#slidelist {
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: 33;
+    width: 318rpx;
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+    overflow: hidden;
+}
+#slidelist view {
+    height: 84rpx;
+    width: 100%;
+    font-size: 32rpx;
+    line-height: 84rpx;
+    color: #444;
+    text-align: left;
+    border-bottom: 1rpx solid #e3e3e3;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    text-indent: 75rpx;
+}
+#slidelist view.actived {
+    background-color: #fff;
+    color: #3572ce;
+}
+#slidelist view icon {
+    position: absolute;
+    width: 4rpx;
+    height: 4rpx;
+    background-color: #444;
+    margin: 38rpx 0 0 -30rpx;
+}

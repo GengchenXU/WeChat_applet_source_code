@@ -1,0 +1,15 @@
+/* pages/shoppingCart/confirmPayment.wxss */
+page{
+  min-height: 100%;
+  background-color: #F2f2f2;
+  text-align: center;
+}
+.but-box{
+  margin-top: 50rpx;
+}
+button[type="primary"].weui-btn {
+  width: 90%;
+  margin: 0 auto;
+  background-color:#f8b62b;
+   border-radius:56px;
+}

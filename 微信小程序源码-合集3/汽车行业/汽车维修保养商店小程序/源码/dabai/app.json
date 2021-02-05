@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/merchant/merchant",
+    "pages/search/search",
+    "pages/merchant_detail/detail",
+    "pages/welfare_detail/detail",
+    "pages/vip/vip",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#479de6",
+    "navigationBarTitleText": "云车",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b0b0b0",
+    "selectedColor": "#479de6",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/welfare_normal.png",
+      "selectedIconPath": "images/welfare_pressed.png",
+      "text": "福利"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "iconPath": "images/user_normal.png",
+      "selectedIconPath": "images/user_pressed.png",
+      "text": "我的"
+    }]
+  },
+  "debug": true
+}

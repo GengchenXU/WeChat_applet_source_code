@@ -1,0 +1,110 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 540rpx;
+  background-color: #f8b62b;
+}
+
+.logo {
+  width: 270rpx;
+  height: 80rpx;
+}
+
+.but{
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius:56px;
+  width: 600rpx;
+  height: 110rpx;
+  margin: 54rpx auto 50rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  color:#ffffff;
+}
+
+.scan{
+  display: flex;
+  flex-direction: column;
+  color: #d99b16;
+
+}
+.scancode{
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 10rpx;
+}
+.shopping_guide{
+  width: 630rpx;
+  height:190rpx;
+  padding:20rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2eeee;
+  margin: 40rpx auto;
+}
+.shopping_guide .shopping{
+  width: 200rpx;
+  height: 190rpx;
+  margin: 0 80rpx 0 30rpx;
+}
+
+.shopping_guide .bd{
+  display:inline-flex;
+  flex-direction: column;
+  height: 190rpx;
+  justify-content: center;
+  
+}
+.shopping_guide .bd .bd-hd{
+  font-size: 48rpx;
+  color: #54514a;
+  font-weight: bold;
+}
+.shopping_guide .bd .bd-bd{
+  color: #a8a296
+}
+.newslist{
+  padding:20rpx 40rpx;
+}
+.news .news-hd{
+  color: #f8b62b;
+  font-size: 30rpx;
+  padding-left: 40rpx;
+}
+.news .bd-hd{
+  width: 160rpx;
+  height: 160rpx;
+
+}
+.news .bd-bd{
+  
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ .news .bd-bd .title{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  color: #000000;
+  font-size: 30rpx;
+
+}
+.news .bd-bd .desc{
+  color: #999;
+  font-size: 26rpx;
+}
+.news .bd-bd .desc .desc-hd{
+  margin-right: 20rpx;
+}
+
+.weui-media-box:before{
+  border: none;
+}

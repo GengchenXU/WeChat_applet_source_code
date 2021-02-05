@@ -1,0 +1,32 @@
+<import src="../../components/widget/rating.wxml"/>
+<view class="container">
+  <view class="search_bar">
+    <input placeholder="搜索门店/福利" auto-focus class="search_bar_txt" bindblur="searchName"/>
+    <text class="search_btn" bindtap="searchWelfare">搜索</text>          
+  </view>
+  	<navigator wx:for="{{merchantList}}" wx:key="" class="hot-item-box" url="../merchant_detail/detail?id={{item.serviceuserid}}">
+        <view class="hot-item-top">
+            <view class="hot-img">
+                <image mode="aspectFill" src="{{item.servicepicurl}}"></image>
+            </view>
+
+            <view class="hot-item-top-right">
+                <text class="hot-item-title">{{item.shopname}}</text>
+                <view class="rating" class="item-title">
+	            	<template is="m-rating" data="{{count: item.pjStar, size: 's'}}"/>
+	            	<view class="hot-item-price">{{item.pjStar}}分</view>
+	            </view>
+                <view class="hot-item-No-time-box">
+                    <text class="hot-item-time">商家地址：{{item.shopaddress}}</text>
+                </view>
+            </view>
+        </view>
+        
+        <view class="hot-item-btm">
+	        <view class="service-container" wx:for="{{item.welfarelist}}" wx:for-item="cell">
+	            <text class="service-name">{{cell.servicename}}</text>
+	            <text class="hot-item-btn">{{cell.discountprice}}元</text>
+	        </view>
+        </view>
+    </navigator>
+</view>

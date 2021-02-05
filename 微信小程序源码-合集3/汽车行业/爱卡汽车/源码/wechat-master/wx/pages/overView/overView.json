@@ -1,0 +1,215 @@
+{
+    "status": 1,
+    "msg": "数据获取成功",
+"data": {
+        "brandUrl":" http://localhost:5000/chu.png ",
+        "seriesName": "奥迪A6L",
+        "guidePrice": "41.53-75.76万",
+        "imageUrl": "http://localhost:5000/chu.png",
+        "saleType": 1,
+        "imageCount": 6283,
+        "level": "中大型车",
+        "displacement": "1.2T",
+        "categoryList": [
+            {
+                "categoryName": "在售",
+                "subSeriesList": [
+                    {
+                        "sectionName": "2T 140kw在售",
+                        "carList": [
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 技术型",
+                                "seriesName": "大众CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            },
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 非技术型",
+                                "seriesName": "奥迪CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            }
+                        ]
+                    },
+                    {
+                        "sectionName": "3T 140kw在售",
+                        "carList": [
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 技术型",
+                                "seriesName": "大众CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "categoryName": "即将上市",
+                "subSeriesList": [
+                    {
+                        "sectionName": "4T 140kw即将上市",
+                        "carList": [
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 技术型",
+                                "seriesName": "大众CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            }
+                        ]
+                    },
+                    {
+                        "sectionName": "5T 140kw即将上市",
+                        "carList": [
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 技术型",
+                                "seriesName": "大众CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "categoryName": "停售",
+                "subSeriesList": [
+                    {
+                        "sectionName": "2T 140kw",
+                        "carList": [
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 技术型",
+                                "seriesName": "大众CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            }
+                        ]
+                    },
+                    {
+                        "sectionName": "2T 140kw",
+                        "carList": [
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 技术型",
+                                "seriesName": "大众CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            }
+                        ]
+                    },
+                    {
+                        "sectionName": "2T 140kw",
+                        "carList": [
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 技术型",
+                                "seriesName": "大众CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            }
+                        ]
+                    },
+                    {
+                        "sectionName": "2T 140kw",
+                        "carList": [
+                            {
+                                "seriesId": 8,
+                                "carId": 28976,
+                                "carName": "TFSI 技术型",
+                                "seriesName": "大众CC",
+                                "carYear": "2016款",
+                                "saleType": 1,
+                                "guidePrice": "41.53万",
+                                "powerType": 1,
+                                "taxDown": 0,
+                                "displacement": "1.8T",
+                                "chairCount": 5, 
+                                "localPrice": "29.44万",
+                                "transmission": "7档 双离合变速箱",
+                                "drive": "前置前驱"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

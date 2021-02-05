@@ -1,0 +1,81 @@
+/**weui.wxss**/
+@import 'style/weui.wxss';
+/**app.wxss**/
+page{
+    font-size: 32rpx;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 40rpx;
+}
+
+
+/**公用的相关**/
+/**字**/
+.font-color-999{
+  color: #999999
+}
+.font-color-f8b62b{
+  color: #f8b62b
+}
+.margin-top-20{
+   margin-top: 40rpx;
+}
+.line-after-top,.line-before-bottom{
+  position: relative;
+}
+
+.line-after-top:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #e1e1e1;
+  width: 100%;
+}
+
+.line-before-bottom:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #e1e1e1;
+  width: 100%;
+}
+/*arrow  箭头*/
+.arrow-right{
+   position: relative;
+}
+.arrow-right::before{
+  content: '';
+  width: 16rpx;
+  height: 16rpx;
+  position: absolute;
+  top: 50%;
+  right: 30rpx;
+  margin-top: -8rpx;
+  background: transparent;
+  border: 4rpx solid #dddddd;
+  border-top: none;
+  border-right: none;
+  z-index: 2;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+/**底部**/
+.fixed-ft{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}

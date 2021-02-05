@@ -1,0 +1,30 @@
+{
+    "status": 1,
+    "msg"   : "数据获取成功",
+    "data"  : {
+        "dealer-info"   :{
+            "did"       :"48057",
+            "coname"    :"北京捷亚泰中兴汽车销售有限公司",
+            "isvip"     :"1",
+            "provinceid":"1",
+            "cityid"    :"475",
+            "psname"    :"奥迪Q7",
+            "pbname"    :"奥迪",
+            "typename"  :"小型车"
+        },
+        "carlist"       :[
+            {
+                "text"      :"2016款",
+                "children"  :[
+                    {
+                        "id"    :"32028",
+                        "text"  :"1.2Tnbsp;XEnbsp;CVT时尚版",
+                        "img"   :"//img1.xcarimg.com/b8/s7351/20160321144159302315041967102.jpg",
+                        "price" :"4.01-5",
+                        "status":"2"
+                    }              
+                ]    
+            }
+        ]
+    }
+}

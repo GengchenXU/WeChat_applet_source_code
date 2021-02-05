@@ -1,0 +1,19 @@
+<!--加载更多 模版-->
+<template name="loading">
+    <view class="weui-loadmore">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+    </view>
+</template>
+
+<template name="nodata">
+    <view class="weui-loadmore">
+        <view class="weui-loadmore__tips" style="color:#888">就这么多了</view>
+    </view>
+</template>
+
+<template name="nodata1">
+    <view class="weui-loadmore">
+        <view class="weui-loadmore__tips" style="color:#888">还没有任何数据...</view>
+    </view>
+</template>

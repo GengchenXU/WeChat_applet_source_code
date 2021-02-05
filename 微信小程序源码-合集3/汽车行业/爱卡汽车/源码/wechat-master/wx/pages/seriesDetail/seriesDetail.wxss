@@ -1,0 +1,11 @@
+.a {
+  color: red;
+}
+.a .b {
+  color: blue;
+}
+.img{
+  background-size: cover;
+}
+
+/*# sourceMappingURL=seriesDetail.wxss.map */

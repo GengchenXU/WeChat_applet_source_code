@@ -1,0 +1,90 @@
+<view class="wrapper">
+  <view class="nav clearfix">
+    <text>
+      综述
+    </text>
+    <text>
+      配置
+    </text>
+    <text>
+      经销商
+    </text>
+    <text>
+      图片
+    </text>
+  </view>
+  <view class="content">
+
+    <!--按车型/按颜色start-->
+    <view class="deptsel-type">
+      <view class="conditions">
+        <view class="txt">按车型：</view>
+        <navigator url="javascript:" class="analog-sel js-cartype" data-id="">
+          <text class="inner-txt">不限车型</text>
+          <icon class="icon-rt">e</icon>
+        </navigator>
+      </view>
+      <view class="conditions">
+        <view class="txt">按颜色：</view>
+        <navigator url="javascript:" class="analog-sel js-getcolor" data-id="0">
+          <text class="inner-txt">不限颜色</text>
+          <icon class="icon-rt">e</icon>
+        </navigator>
+      </view>
+    </view>
+
+    <!--按车型/按颜色end-->
+
+    <!--标题start-->
+    <view class="article-tabs">
+      <view>
+        <navigator url="//a.xcar.com.cn/photo/148_0_0/#display" data-type="0" class="cur">全部</navigator>
+      </view>
+      <view>
+        <navigator url="//a.xcar.com.cn/photo/148_1_0/#display" data-type="1" class="">外观</navigator>
+      </view>
+      <view>
+        <navigator url="//a.xcar.com.cn/photo/148_2_0/#display" data-type="2" class="">细节</navigator>
+      </view>
+      <view>
+        <navigator url="//a.xcar.com.cn/photo/148_3_0/#display" data-type="3" class="">座椅</navigator>
+      </view>
+      <view>
+        <navigator url="//a.xcar.com.cn/photo/148_4_0/#display" data-type="4" class="">中控</navigator>
+      </view>
+      <view>
+        <navigator url="//a.xcar.com.cn/photo/148_5_0/#display" data-type="5" class="">其他</navigator>
+      </view>
+      <view>
+        <navigator url="//a.xcar.com.cn/photo/148_6_0/#display" data-type="6" class="">重要细节</navigator>
+      </view>
+    </view>
+
+    <!--标题end-->
+
+    <!--区域start-->
+    <view class="picture-wrap">
+      <view class="module-title">
+        <navigator href="//a.xcar.com.cn/photo/148_1_0#display" class="more">更多
+          <icon class="icon-bg">e</icon>
+        </navigator>
+        <text class="txt">外观(166张)</text>
+      </view>
+
+      <!--图片列表 -->
+      <view class="picture-list clearfix">
+        <view>
+          <navigator url="//a.xcar.com.cn/photo/148-1/3134820.html#zoneclick=102781" class="img-wrap lazy loaded" style="background-image: url('http://img1.xcarimg.com/b22/s8593/20170222111121751871854561316.jpg?imageView2/1/w/240/h/180/'); background-size: 100%; background-color: transparent;">
+            <img src="http://img1.xcarimg.com/b22/s8593/20170222111121751871854561316.jpg?imageView2/1/w/240/h/180/" alt="" width="105" height="79" />
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+    <!--区域end-->
+
+
+
+    
+  </view>
+</view>

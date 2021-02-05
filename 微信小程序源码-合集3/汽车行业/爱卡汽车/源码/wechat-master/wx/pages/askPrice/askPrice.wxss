@@ -1,0 +1,150 @@
+page{
+    background: #eee;
+}
+
+.price-hd-slt{
+    position: relative;
+    margin-bottom: 20rpx;
+    background: #fff;
+}
+.price-hd-slt .button{
+    display: block;
+    height: 150rpx;
+    padding: 40rpx 30rpx 0;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    color: #444;
+    line-height: 42rpx;
+}
+.price-hd-slt .ui-inner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-left: 180rpx;
+    text-align: left;
+    word-break: break-all;
+    word-spacing: normal;
+    text-indent: 0;
+}
+/*车型图片*/
+.price-hd-slt .inner-lt {
+    position: absolute;
+    left: 0;
+    top: 6rpx;
+    width: 150rpx;
+    height: 108rpx;
+    overflow: hidden;
+    font-size: 30rpx;
+}
+.price-hd-slt .inner-lt image{
+    width: 100%;
+    height: 100%;
+}
+.price-hd-slt .inner-rt .clr-gray9 {
+    display: block;
+    font-size: 30rpx;
+    line-height: 45rpx;
+}
+.price-hd-slt .inner-rt .name {
+    display: block;
+    font-size: 28rpx;
+}
+.price-hd-slt .inner-rt .clr-gray7 {
+    color: #999;
+    font-size: 24rpx;
+}
+.price-hd-slt .inner-rt .clr-red {
+    color: #e74b3c;
+}
+/*向下箭头*/
+.price-hd-slt .price-hd-down {
+    position: absolute;
+    right: 35rpx;
+    top: 50%;
+    width: 36rpx;
+    height: 23rpx;
+    margin-top: -11.5rpx;
+    background: url(http://a.xcar.com.cn/nxcar/dist/img/btn_2.png?951834d6d6cedc877c35b9b157a199c4) -702rpx -395.46rpx no-repeat;
+    -webkit-background-size: 959.4rpx auto;
+}
+
+.price-con {
+    padding: 30rpx 30rpx 47rpx;
+    background: #fff;
+}
+.price-con .clr-red {
+    color: #e74b3c;
+}
+.price-con .newest-wrap-top {
+    position: relative;
+    margin-bottom: 18rpx;
+    font-size: 30rpx;
+    line-height: 48rpx;
+}
+.price-con .newest-wrap-top span {
+    float: left;
+}
+.price-con .whole-country{
+    display: inline-block;
+    width: 74rpx;
+    height: 28rpx;
+    border: 1px solid #3572ce;
+    border-radius: 2rpx;
+    color: #3572ce;
+    font-size: 18rpx;
+    line-height: 28rpx;
+    text-align: center;
+    vertical-align: 6rpx;
+}
+.price-con .btn03-bg {
+    display: inline-block;
+    width: 30.42rpx;
+    height: 28.08rpx;
+    margin: 0 20rpx 0 10rpx;
+    background-image: url(http://a.xcar.com.cn/nxcar/dist/img/btn_04.png?29fa33d73b7bd1f7f98d10bf6a442a39);
+    background-repeat: no-repeat;
+    background-position: -49.14rpx -470.34rpx;
+    -webkit-background-size: 351rpx auto;
+}
+
+/*表单*/
+form .section {
+    display: block;
+    position: relative;
+    margin-bottom: 20rpx;
+    border: 1px solid #cfcfcf;  
+    border-radius: 5rpx;  
+}
+form input {
+    width: 100%;
+    padding: 0 18rpx;
+    height: 63rpx;
+    -webkit-appearance: none;
+    font-size: 28rpx;
+    line-height: 63rpx;
+    box-sizing: border-box;
+}
+/*提交*/
+form .btn-area {
+    padding: 20rpx 140rpx 0;
+}
+form button {
+    display: block;
+    width: 100%;
+    background-color: #3572ce;
+    border-radius: 10rpx;
+    color: #fff;
+    font-size: 28rpx;
+    text-align: center;
+    line-height: 65rpx;
+}
+
+/*协议声明*/
+.point {
+    padding: 70rpx 30rpx 0;
+    font-size: 28rpx;
+    line-height: 34rpx;
+}
+.point a {
+    color: #3572ce;
+}

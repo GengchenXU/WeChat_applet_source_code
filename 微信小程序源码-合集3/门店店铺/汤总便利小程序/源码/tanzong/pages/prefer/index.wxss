@@ -1,0 +1,67 @@
+/* pages/prefer/index.wxss */
+.prefer .bd-hd{
+  width: 200rpx;
+  height: 200rpx;
+
+}
+.prefer .bd-bd{
+  height: 180rpx;
+  padding:10rpx 0;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ .prefer .bd-bd .title{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  color: #000000;
+  font-size: 30rpx;
+
+}
+.prefer .bd-bd .desc{
+  color: #999;
+  font-size: 26rpx;
+}
+.prefer .bd-bd .desc .desc-hd{
+  margin-right: 20rpx;
+  font-size: 36rpx;
+  color: #f8b62b
+}
+
+.weui-media-box:before{
+  border: none;
+}
+
+.logo{
+  width: 300rpx;
+  height:100rpx;
+  margin: 40rpx auto;
+  display: block;
+}
+.introduce{
+  width: 430rpx;
+  height: 370rpx;
+  display: block;
+  margin: 0rpx auto 40rpx auto;
+}
+.scancodebox{
+  position: absolute;
+  bottom: 70rpx;
+  width: 400rpx;
+  left: 50%;
+  margin-left: -200rpx;
+  display: block;
+}
+.scancode{
+  width: 150rpx;
+  height: 150rpx;
+  display:block;
+  margin: 0  auto 20rpx auto;
+}
+.text-aglin-c{
+  text-align: center
+}

@@ -1,0 +1,11 @@
+<view class="content">
+	<view class="content-1">
+	<!--<image src="{{seriesDetail.imageUrl}}"></image>-->
+	</view>
+	<!--<view class="content-2" bindtap="requestFun">request here</view>-->
+	<view class="content-3">{{seriesDetail.seriesName}}</view>
+	<block class="conditions" wx:for="{{conditions}}">
+		<view>{{item.name}}</view>
+	</block >
+</view>
+<navigator class="classname" url="p1/p2">跳转</navigator>
